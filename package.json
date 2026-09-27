@@ -1,8 +1,29 @@
 {
   "name": "copilot-builder-web",
-  "private": true,
   "version": "1.1.0",
+  "description": "Interaktivní generátor konfiguračních souborů pro GitHub Copilot (instrukce, agents, skills, prompty).",
+  "private": true,
   "type": "module",
+  "license": "MIT",
+  "author": "Matěj Hrabák (https://matejhrabak.cz)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Crazyka51/Copilot-instructions-builder.git"
+  },
+  "homepage": "https://github.com/Crazyka51/Copilot-instructions-builder#readme",
+  "bugs": {
+    "url": "https://github.com/Crazyka51/Copilot-instructions-builder/issues"
+  },
+  "keywords": [
+    "github-copilot",
+    "copilot-instructions",
+    "agents-md",
+    "skills",
+    "code-generator",
+    "react",
+    "typescript",
+    "vite"
+  ],
   "scripts": {
     "dev": "vite",
     "build": "tsc --noEmit && vite build",
