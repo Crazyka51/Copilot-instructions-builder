@@ -130,20 +130,6 @@ Aplikace **neobsahuje ručně psané šablony**. Všechny texty, karty, presety,
 > [!IMPORTANT]
 > Soubory `src/lib/templates.ts` a vše v `src/data/` jsou **generované**. Ruční úpravy přepíše příkaz `pnpm run extract`.
 
-## Parita s PowerShell verzí
-
-Tohle je nejzajímavější část projektu. Aby se dalo tvrdit, že webová verze dělá totéž co původní skript, prochází `pnpm parity` třemi scénáři a porovná **každý vygenerovaný soubor**. Markdown a YAML se srovnávají bajt po bajtu, JSON strukturálně, protože PowerShell jinak formátuje `ConvertTo-Json`.
-
-Výsledek: **8 z 8**, **12 z 12** a **5 z 5** souborů se shoduje.
-
-Pro plně reprodukovatelný test bez závislosti na původním umístění skriptu:
-
-```bash
-pnpm run vendor:ps1
-```
-
-Tím se `.ps1` zkopíruje do `scripts/vendor/` a zapíše se `manifest.json` s hashem SHA256. Cesta se hledá v pořadí: argument příkazové řádky, proměnná `CB_BUILDER_PS1`, vendorovaná kopie, výchozí umístění.
-
 ## Kontrola kvality
 
 ```bash
