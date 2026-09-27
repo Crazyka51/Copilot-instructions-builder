@@ -9,6 +9,7 @@
   <img src="https://img.shields.io/badge/testy-26%20proch%C3%A1z%C3%AD-00c88a?style=flat-square" alt="Testy">
   <img src="https://img.shields.io/badge/parita%20s%20PowerShellem-25%20z%2025-00c88a?style=flat-square" alt="Parita s PowerShellem">
   <img src="https://img.shields.io/badge/pnpm-vy%C5%BEadov%C3%A1n-F69220?style=flat-square&logo=pnpm&logoColor=white" alt="pnpm">
+  <img src="https://img.shields.io/badge/licence-MIT-00c88a?style=flat-square" alt="Licence MIT">
 </p>
 
 <p align="center">
@@ -249,3 +250,7 @@ Ano a klidně je to i žádoucí. Slouží jako startovní bod, ne jako něco, c
 
 **Proč je výstup shodný s PowerShell verzí?**
 Protože původní skript se pořád používá a nechceme, aby se obě verze rozešly. Paritní test je pojistka, že se tak nestane.
+
+## Licence
+
+[MIT](LICENSE). Projekt můžete používat, upravovat, šířit i prodávat. Stačí zachovat uvedení autora a text licence.
