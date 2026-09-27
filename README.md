@@ -222,8 +222,6 @@ docs/
 
 ## Časté otázky
 
-**Musím mít nainstalovaný PowerShell?**
-Ne. PowerShell potřebujete jen když chcete spustit paritní test nebo regenerovat data ze zdrojového skriptu. Aplikace samotná je čistý frontend.
 
 **Posílá se něco na server?**
 Ne. Všechno se počítá v prohlížeči, včetně generování souborů. Volby zůstávají ve vašem `localStorage`.
