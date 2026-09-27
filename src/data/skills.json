@@ -1,0 +1,930 @@
+{
+  "skills": [
+    {
+      "category": "Bezpečnost a soukromí",
+      "slug": "secure-input-validation",
+      "title": "Validace a sanitizace vstupů",
+      "description": "Validuj a sanitizuj uživatelský vstup na serveru. Použij při návrhu formulářů, API endpointů a zpracování dat od uživatele.",
+      "checklist": [
+        "Validuj typ, rozsah a tvar na serveru",
+        "Odmítej neznámá pole pomocí strict schématu",
+        "Limituj velikost payloadu a délky řetězců",
+        "Normalizuj data před samotnou validací"
+      ]
+    },
+    {
+      "category": "Bezpečnost a soukromí",
+      "slug": "xss-prevention",
+      "title": "Ochrana proti XSS",
+      "description": "Escapuj a sanitizuj veškerý výstup do HTML. Použij při renderu uživatelského nebo CMS obsahu.",
+      "checklist": [
+        "Využívej výchozí escapování šablony",
+        "Nepoužívej innerHTML bez sanitizace",
+        "Sanitizuj HTML z CMS na serveru",
+        "Nasazuj striktní Content Security Policy"
+      ]
+    },
+    {
+      "category": "Bezpečnost a soukromí",
+      "slug": "authn-authz",
+      "title": "Autentizace a autorizace",
+      "description": "Ověřuj identitu i oprávnění vždy na serveru. Použij při přidání chráněných stránek, API endpointů nebo rolí.",
+      "checklist": [
+        "Ověř session nebo token u každého chráněného požadavku",
+        "Kontroluj oprávnění u konkrétního zdroje",
+        "Nikdy nedůvěřuj roli poslané z klienta",
+        "Zaznamenej neúspěšné pokusy o přístup"
+      ]
+    },
+    {
+      "category": "Bezpečnost a soukromí",
+      "slug": "data-protection",
+      "title": "Ochrana citlivých dat",
+      "description": "Šifruj citlivá data a minimalizuj jejich sběr. Použij při práci s osobními údaji, tokeny a platebními daty.",
+      "checklist": [
+        "Ukládej pouze data nezbytná pro funkci",
+        "Hashuj hesla pomocí argon2 nebo bcrypt",
+        "Šifruj citlivá pole a tokeny v klidu",
+        "Nikdy neloguj osobní údaje ani tajemství"
+      ]
+    },
+    {
+      "category": "Bezpečnost a soukromí",
+      "slug": "dependency-security",
+      "title": "Bezpečnost závislostí",
+      "description": "Sleduj a aktualizuj závislosti, odstraňuj zranitelné balíčky. Použij při přidání nové knihovny nebo řešení bezpečnostního nálezu.",
+      "checklist": [
+        "Před přidáním balíčku ověř jeho údržbu a popularitu",
+        "Spouštěj audit závislostí v CI",
+        "Odstraň nepoužívané závislosti",
+        "Připni verze a používej lockfile"
+      ]
+    },
+    {
+      "category": "Bezpečnost a soukromí",
+      "slug": "secrets-management",
+      "title": "Správa tajemství a konfigurace",
+      "description": "Uchovávej tajemství mimo kód a ověřuj konfiguraci při startu. Použij při práci s API klíči, connection stringy a ENV proměnnými.",
+      "checklist": [
+        "Nikdy necommituj tajemství ani soubory .env",
+        "Validuj povinné ENV proměnné při startu",
+        "Používej oddělená prostředí a rotaci klíčů",
+        "V logu maskuj citlivé hodnoty"
+      ]
+    },
+    {
+      "category": "Architektura a návrh",
+      "slug": "layered-architecture",
+      "title": "Vrstvená architektura",
+      "description": "Drž oddělené prezentační, doménovou a datovou vrstvu. Použij při návrhu nového modulu nebo refaktoringu.",
+      "checklist": [
+        "Prezentační vrstva nepřistupuje přímo do databáze",
+        "Doménová logika nezávisí na frameworku",
+        "Datová vrstva zapouzdřuje přístup k datům",
+        "Závislosti směřuj dovnitř k doméně"
+      ]
+    },
+    {
+      "category": "Architektura a návrh",
+      "slug": "separation-of-concerns",
+      "title": "Oddělení odpovědností",
+      "description": "Každá jednotka má jednu jasnou odpovědnost. Použij při návrhu funkcí, komponent a modulů.",
+      "checklist": [
+        "Funkce řeší jednu věc a má popisný název",
+        "Nepřesouvej business logiku do komponent",
+        "Odděl vstupně-výstupní operace od výpočtu",
+        "Vyhýbej se globálnímu měnitelnému stavu"
+      ]
+    },
+    {
+      "category": "Architektura a návrh",
+      "slug": "design-patterns",
+      "title": "Návrhové vzory",
+      "description": "Používej zavedené vzory místo ad hoc řešení. Použij u opakujících se problémů s tvorbou objektů, stavem nebo komunikací.",
+      "checklist": [
+        "Zvol vzor podle problému, ne podle módy",
+        "Preferuj kompozici před dědičností",
+        "Zdokumentuj netriviální vzor v kódu",
+        "Nepřidávej abstrakci bez druhého použití"
+      ]
+    },
+    {
+      "category": "Architektura a návrh",
+      "slug": "dependency-injection",
+      "title": "Dependency injection",
+      "description": "Předávej závislosti zvenčí místo jejich vytváření uvnitř. Použij při návrhu služeb, repozitářů a testovatelných komponent.",
+      "checklist": [
+        "Závislosti přijímej konstruktorem nebo parametrem",
+        "Programuj proti rozhraní, ne proti implementaci",
+        "Umožni snadné nahrazení závislosti v testech",
+        "Vyhýbej se service locatoru"
+      ]
+    },
+    {
+      "category": "Architektura a návrh",
+      "slug": "modularity",
+      "title": "Modularita a hranice modulů",
+      "description": "Vymez moduly s jasným veřejným rozhraním. Použij při dělení monorepa nebo při růstu codebase.",
+      "checklist": [
+        "Modul exportuje jen své veřejné rozhraní",
+        "Zakaž cyklické závislosti mezi moduly",
+        "Sdílené typy umísti do samostatného balíčku",
+        "Vynuť hranice lint pravidlem"
+      ]
+    },
+    {
+      "category": "Architektura a návrh",
+      "slug": "architecture-decision-records",
+      "title": "Architektonická rozhodnutí (ADR)",
+      "description": "Zaznamenej významná technická rozhodnutí a jejich důvody. Použij při volbě knihovny, architektury nebo zásadní změně.",
+      "checklist": [
+        "Ukládej ADR do složky docs/adr",
+        "Uveď kontext, rozhodnutí a důsledky",
+        "Neměň stará ADR, přidej nové superseding",
+        "Odkazuj ADR z příslušného kódu"
+      ]
+    },
+    {
+      "category": "Datová vrstva",
+      "slug": "data-modeling",
+      "title": "Datové modelování",
+      "description": "Navrhni schéma s ohledem na integritu a budoucí rozvoj. Použij při návrhu nových tabulek a vztahů.",
+      "checklist": [
+        "Každá tabulka má primární klíč a časová razítka",
+        "Vztahy vynuť cizími klíči",
+        "Peníze ukládej v minor units jako integer",
+        "Normalizuj, dokud to nebolí, pak denormalizuj cíleně"
+      ]
+    },
+    {
+      "category": "Datová vrstva",
+      "slug": "database-migrations",
+      "title": "Migrace a verzování schématu",
+      "description": "Veškeré změny schématu řeš migrací v repozitáři. Použij při jakékoli změně tabulek nebo indexů.",
+      "checklist": [
+        "Migrace jsou verzované a idempotentní",
+        "Migraci spouštěj z přímého, ne poolovaného připojení",
+        "Napiš i reverzní migraci",
+        "Migraci otestuj na kopii produkčních dat"
+      ]
+    },
+    {
+      "category": "Datová vrstva",
+      "slug": "query-indexing",
+      "title": "Indexování a výkon dotazů",
+      "description": "Navrhuj dotazy s ohledem na indexy a plán provedení. Použij u pomalých dotazů nebo nových filtrů.",
+      "checklist": [
+        "Indexuj sloupce používané ve WHERE a JOIN",
+        "Vyhýbej se funkcím nad indexovaným sloupcem",
+        "Ověř plán dotazu přes EXPLAIN",
+        "Odstraň nepoužívané indexy"
+      ]
+    },
+    {
+      "category": "Datová vrstva",
+      "slug": "transactions-consistency",
+      "title": "Transakce a konzistence",
+      "description": "Chraň kritické operace transakcemi a správnou izolací. Použij při vícekrokových změnách souvisejících dat.",
+      "checklist": [
+        "Obklopuj vícekrokové změny transakcí",
+        "Drž transakce krátké",
+        "Řeš souběh optimistickým nebo pesimistickým zámkem",
+        "Neošetřuj transakce přes více požadavků"
+      ]
+    },
+    {
+      "category": "Datová vrstva",
+      "slug": "connection-pooling",
+      "title": "Connection pooling",
+      "description": "Používej pooling přiměřený prostředí (serverless vs server). Použij při připojení aplikace k databázi.",
+      "checklist": [
+        "V serverless použij HTTP driver nebo transaction pooler",
+        "V dlouho běžícím serveru nastav velikost poolu",
+        "Nevytvářej spojení na každý požadavek",
+        "Sleduj vyčerpání poolu"
+      ]
+    },
+    {
+      "category": "Datová vrstva",
+      "slug": "search-fulltext",
+      "title": "Fulltextové vyhledávání",
+      "description": "Řeš vyhledávání specializovaným nástrojem, ne dotazy LIKE. Použij při hledání v textovém obsahu.",
+      "checklist": [
+        "Použij fulltextový index nebo specializovaný engine",
+        "Zohledni diakritiku a stemming jazyka",
+        "Řeš relevanci a řazení výsledků",
+        "Odděl vyhledávání od transakční databáze"
+      ]
+    },
+    {
+      "category": "API vrstva",
+      "slug": "rest-conventions",
+      "title": "REST konvence",
+      "description": "Dodržuj konzistentní pojmenování a sémantiku HTTP. Použij při návrhu nových endpointů.",
+      "checklist": [
+        "Prostředky pojmenuj podstatným jménem v množném čísle",
+        "Používej správné metody GET, POST, PATCH a DELETE",
+        "Vracej odpovídající stavové kódy",
+        "Nepoužívej slovesa v cestě"
+      ]
+    },
+    {
+      "category": "API vrstva",
+      "slug": "api-validation",
+      "title": "Validace API vstupů",
+      "description": "Validuj vstup na hranici API a vracej srozumitelné chyby. Použij u každého endpointu přijímajícího data.",
+      "checklist": [
+        "Validuj tělo, parametry i hlavičky",
+        "Vracej stav 400 s popisem konkrétního pole",
+        "Ignoruj nebo odmítni neznámá pole",
+        "Limituj velikost těla požadavku"
+      ]
+    },
+    {
+      "category": "API vrstva",
+      "slug": "api-versioning",
+      "title": "Verzování API",
+      "description": "Zaváděj změny bez rozbití stávajících klientů. Použij při breaking change API.",
+      "checklist": [
+        "Verzi uváděj v cestě nebo v hlavičce",
+        "Breaking change jen v nové verzi",
+        "Udržuj starou verzi po dohodnutou dobu",
+        "Změní dokumentuj v changelogu"
+      ]
+    },
+    {
+      "category": "API vrstva",
+      "slug": "api-rate-limiting",
+      "title": "Rate limiting",
+      "description": "Omez počet požadavků podle identity klienta. Použij u veřejných i autentizovaných endpointů.",
+      "checklist": [
+        "Limituj podle IP adresy a uživatele",
+        "Vracej stav 429 s hlavičkou Retry-After",
+        "Použij trvanlivé počítadlo (Redis)",
+        "Nastav přísnější limit na citlivé operace"
+      ]
+    },
+    {
+      "category": "API vrstva",
+      "slug": "api-error-handling",
+      "title": "Chybové stavy a kódy",
+      "description": "Vracej jednotný tvar chyby bez úniku interních detailů. Použij při návrhu chybových odpovědí.",
+      "checklist": [
+        "Používej jednotný tvar chyby (code, message, details)",
+        "Nevracej ani neloguj stack trace klientovi",
+        "Rozlišuj chybu klienta a serveru",
+        "Zaznamenej chybu s korelačním ID"
+      ]
+    },
+    {
+      "category": "API vrstva",
+      "slug": "openapi-documentation",
+      "title": "Dokumentace API (OpenAPI)",
+      "description": "Udržuj strojově čitelnou specifikaci API. Použij při přidání nebo změně endpointu.",
+      "checklist": [
+        "Generuj OpenAPI z kódu nebo udržuj ručně",
+        "Dokumentuj schémata a chybové stavy",
+        "Publikuj interaktivní dokumentaci",
+        "Ověřuj platnost spec v CI"
+      ]
+    },
+    {
+      "category": "Frontend a UI",
+      "slug": "component-architecture",
+      "title": "Komponentová architektura",
+      "description": "Děl komponenty podle odpovědnosti a znovupoužitelnosti. Použij při tvorbě nových obrazovek a komponent.",
+      "checklist": [
+        "Odděl prezentační a kontejnerové komponenty",
+        "Drž komponentu malou a zaměřenou",
+        "Sdílené UI umísti do vlastního balíčku",
+        "Vyhýbej se předávání desítek props"
+      ]
+    },
+    {
+      "category": "Frontend a UI",
+      "slug": "state-management",
+      "title": "Správa stavu",
+      "description": "Zvol nejmenší dostačující úroveň stavu. Použij při sdílení dat mezi komponentami.",
+      "checklist": [
+        "Preferuj lokální stav před globálním",
+        "Server state řeš knihovnou jako TanStack Query",
+        "Neukládej odvozená data do stavu",
+        "Vyhýbej se duplicitě stavu"
+      ]
+    },
+    {
+      "category": "Frontend a UI",
+      "slug": "forms-validation",
+      "title": "Formuláře a validace",
+      "description": "Validuj na klientu pro uživatelský komfort a na serveru pro bezpečnost. Použij při tvorbě formulářů.",
+      "checklist": [
+        "Použij stejné schéma validace na klientu i serveru",
+        "Zobrazuj chybu u konkrétního pole",
+        "Zabraň dvojímu odeslání formuláře",
+        "Zachovej zadaná data při chybě"
+      ]
+    },
+    {
+      "category": "Frontend a UI",
+      "slug": "design-system-tokens",
+      "title": "Design systém a tokeny",
+      "description": "Definuj barvy, typografii a rozestupy jako tokeny. Použij při tvorbě UI komponent.",
+      "checklist": [
+        "Needitul hodnoty barev přímo v komponentě",
+        "Používej sémantické tokeny (surface, border, text)",
+        "Podporuj světlý i tmavý režim",
+        "Dokumentuj komponenty v katalogu"
+      ]
+    },
+    {
+      "category": "Frontend a UI",
+      "slug": "responsive-design",
+      "title": "Responzivní design",
+      "description": "Navrhuj od mobilu nahoru a testuj na reálných šířkách. Použij při tvorbě layoutu.",
+      "checklist": [
+        "Začni mobile-first breakpointy",
+        "Nepoužívej pevné šířky v pixelech u layoutu",
+        "Testuj ovládání dotykem i klávesnicí",
+        "Respektuj zvětšení textu uživatelem"
+      ]
+    },
+    {
+      "category": "Frontend a UI",
+      "slug": "seo-metadata",
+      "title": "SEO a metadata",
+      "description": "Poskytuj správné meta tagy a strukturovaná data. Použij u veřejně dostupných stránek.",
+      "checklist": [
+        "Unikátní title a description pro každou stránku",
+        "Doplň Open Graph a Twitter karty",
+        "Použij JSON-LD strukturovaná data",
+        "Generuj sitemap a robots.txt"
+      ]
+    },
+    {
+      "category": "Přístupnost (a11y)",
+      "slug": "semantic-html",
+      "title": "Sémantické HTML",
+      "description": "Používej správné HTML elementy místo univerzálních kontejnerů. Použij při tvorbě jakéhokoli UI.",
+      "checklist": [
+        "Použij nav, main, header, footer, button a ul",
+        "Drž nadpisy v hierarchickém pořadí",
+        "Nepoužívej kontejner tam, kde stačí button",
+        "Měj jeden hlavní nadpis na stránku"
+      ]
+    },
+    {
+      "category": "Přístupnost (a11y)",
+      "slug": "keyboard-navigation",
+      "title": "Navigace klávesnicí",
+      "description": "Vše ovladatelné klávesnicí s viditelným fokusem. Použij u interaktivních prvků.",
+      "checklist": [
+        "Všechny akce proveď i bez myši",
+        "Neodstraňuj outline bez náhrady",
+        "Zajisti logické pořadí tabulátoru",
+        "Zavírej modaly klávesou Escape"
+      ]
+    },
+    {
+      "category": "Přístupnost (a11y)",
+      "slug": "aria-screen-readers",
+      "title": "ARIA a čtečky obrazovky",
+      "description": "Doplň ARIA tam, kde sémantika nestačí. Použij u vlastních a složených komponent.",
+      "checklist": [
+        "Preferuj nativní sémantiku před ARIA",
+        "Popiš ikonová tlačítka přes aria-label",
+        "Oznamuj dynamické změny přes aria-live",
+        "Neskrývej fokusované prvky přes aria-hidden"
+      ]
+    },
+    {
+      "category": "Přístupnost (a11y)",
+      "slug": "accessible-media",
+      "title": "Přístupná média a alt texty",
+      "description": "Doplň alternativní text a titulky k médiím. Použij u obrázků, videí a ikon.",
+      "checklist": [
+        "Smysluplný alt text, u dekorativních prázdný",
+        "Doplň titulky u videa a přepis u audia",
+        "Nepoužívej obrázek jako jediný nositel textu",
+        "Zajisti ovládání přehrávače klávesnicí"
+      ]
+    },
+    {
+      "category": "Přístupnost (a11y)",
+      "slug": "color-contrast",
+      "title": "Kontrast a vizuální přístupnost",
+      "description": "Zajisti dostatečný kontrast a nespoléhej jen na barvu. Použij při návrhu barevných stavů.",
+      "checklist": [
+        "Dodrž kontrast textu alespoň 4.5:1",
+        "Nevyjadřuj stav pouze barvou",
+        "Ověř kontrast v tmavém i světlém režimu",
+        "Nepoužívej blikající obsah"
+      ]
+    },
+    {
+      "category": "Přístupnost (a11y)",
+      "slug": "accessible-forms",
+      "title": "Přístupné formuláře",
+      "description": "Propoj popisky, chyby a pole formuláře. Použij u každého formuláře.",
+      "checklist": [
+        "Každé pole má label propojený přes for a id",
+        "Chybu oznam přes aria-describedby",
+        "Povinná pole označ i textově",
+        "Seskup související pole pomocí fieldset"
+      ]
+    },
+    {
+      "category": "Testování a kvalita",
+      "slug": "testing-strategy",
+      "title": "Testovací strategie",
+      "description": "Rozvrhni testy podle rizika a nákladů. Použij při zavádění testů do projektu.",
+      "checklist": [
+        "Piš hodně unit, méně integračních a málo E2E testů",
+        "Testuj business logiku, ne framework",
+        "Kritické cesty pokryj E2E testem",
+        "Zajisti determinismus testů"
+      ]
+    },
+    {
+      "category": "Testování a kvalita",
+      "slug": "unit-testing",
+      "title": "Unit testy",
+      "description": "Testuj malé jednotky izolovaně a rychle. Použij pro funkce a čistou logiku.",
+      "checklist": [
+        "Jeden test ověřuje jedno chování",
+        "Název testu popisuje očekávané chování",
+        "Strukturuj test podle Arrange-Act-Assert",
+        "Vyhýbej se sdílenému měnitelnému stavu"
+      ]
+    },
+    {
+      "category": "Testování a kvalita",
+      "slug": "integration-testing",
+      "title": "Integrační testy",
+      "description": "Ověřuj spolupráci vrstev včetně databáze. Použij u repozitářů a API handlerů.",
+      "checklist": [
+        "Používej reálnou databázi v kontejneru",
+        "Každý test si připraví vlastní data",
+        "Uklízej data po skončení testu",
+        "Netestuj implementační detaily"
+      ]
+    },
+    {
+      "category": "Testování a kvalita",
+      "slug": "e2e-testing",
+      "title": "E2E testy",
+      "description": "Testuj klíčové uživatelské cesty v prohlížeči. Použij u kritických toků, jako je přihlášení nebo platba.",
+      "checklist": [
+        "Pokryj jen kritické toky",
+        "Selektory vybírej podle role nebo data-testid",
+        "Spouštěj testy proti reálnému buildu",
+        "Řeš přihlášení přes uložený stav"
+      ]
+    },
+    {
+      "category": "Testování a kvalita",
+      "slug": "mocking-fixtures",
+      "title": "Mockování a fixtures",
+      "description": "Nahrazuj vnější závislosti a připravuj testovací data. Použij u testů se sítí, časem nebo náhodou.",
+      "checklist": [
+        "Mockuj na hranici systému, ne uvnitř logiky",
+        "Použij MSW nebo obdobu na úrovni sítě",
+        "Zafixuj čas a náhodu v testech",
+        "Uchovávej fixtures v repozitáři"
+      ]
+    },
+    {
+      "category": "Testování a kvalita",
+      "slug": "type-safety",
+      "title": "Typová bezpečnost",
+      "description": "Vynuť striktní typy a validuj data na hranicích systému. Použij v TypeScript kódu.",
+      "checklist": [
+        "Zapni strict a zakaž typ any",
+        "Validuj externí data schématem (Zod)",
+        "Odvozuj typy ze schématu",
+        "Nepoužívej přetypování bez důvodu"
+      ]
+    },
+    {
+      "category": "DevOps a CI/CD",
+      "slug": "ci-pipeline",
+      "title": "CI pipeline",
+      "description": "Automatizuj kontrolu kvality u každé změny. Použij při nastavení CI.",
+      "checklist": [
+        "Spouštěj CI na každý pull request",
+        "Řaď kroky od nejrychlejšího",
+        "Cache závislosti",
+        "Zastav pipeline při první chybě"
+      ]
+    },
+    {
+      "category": "DevOps a CI/CD",
+      "slug": "cd-deployment",
+      "title": "Nasazení a release",
+      "description": "Nasaď automaticky a vratně. Použij při nastavení deploymentu.",
+      "checklist": [
+        "Nasazuj až po zeleném CI",
+        "Používej preview prostředí u pull requestu",
+        "Umožni rychlý rollback",
+        "Verzuj každý release tagem"
+      ]
+    },
+    {
+      "category": "DevOps a CI/CD",
+      "slug": "environments-config",
+      "title": "Prostředí a konfigurace",
+      "description": "Odděl konfiguraci od kódu a drž prostředí konzistentní. Použij při práci s ENV proměnnými.",
+      "checklist": [
+        "Konfiguraci načítej z prostředí",
+        "Nikdy necommituj soubor .env",
+        "Dokumentuj povinné proměnné v .env.example",
+        "Ověř konfiguraci při startu aplikace"
+      ]
+    },
+    {
+      "category": "DevOps a CI/CD",
+      "slug": "containerization",
+      "title": "Kontejnerizace",
+      "description": "Sestav malý, reprodukovatelný a bezpečný image. Použij při tvorbě Dockerfile.",
+      "checklist": [
+        "Použij multi-stage build",
+        "Nespouštěj kontejner jako root",
+        "Připni konkrétní verzi základního image",
+        "Přidej soubor .dockerignore"
+      ]
+    },
+    {
+      "category": "DevOps a CI/CD",
+      "slug": "infrastructure-as-code",
+      "title": "Infrastruktura jako kód",
+      "description": "Spravuj infrastrukturu deklarativně a verzovaně. Použij u cloudových zdrojů.",
+      "checklist": [
+        "Definuj veškeré zdroje v IaC",
+        "Změny infrastruktury procházejí review",
+        "Drž stav v bezpečném remote backendu",
+        "Odděl prostředí pomocí workspace"
+      ]
+    },
+    {
+      "category": "DevOps a CI/CD",
+      "slug": "monitoring-alerting",
+      "title": "Monitoring a alerting",
+      "description": "Měř zdraví aplikace a upozorňuj na anomálie. Použij po nasazení do produkce.",
+      "checklist": [
+        "Sleduj dostupnost, latenci a chybovost",
+        "Alertuj na symptomy, ne na příčiny",
+        "Každý alert má vlastní runbook",
+        "Sniž šum v alertech"
+      ]
+    },
+    {
+      "category": "Výkon a optimalizace",
+      "slug": "frontend-performance",
+      "title": "Výkon frontendu",
+      "description": "Sniž objem JavaScriptu a počet blokujících požadavků. Použij při pomalém načítání stránky.",
+      "checklist": [
+        "Děl kód a lazy-loaduj netriviální části",
+        "Neposílej klientu data, která nepotřebuje",
+        "Optimalizuj kritickou cestu renderu",
+        "Měř v reálném prostředí, ne jen lokálně"
+      ]
+    },
+    {
+      "category": "Výkon a optimalizace",
+      "slug": "backend-performance",
+      "title": "Výkon backendu",
+      "description": "Odstraň zbytečnou práci na serveru. Použij u pomalých endpointů.",
+      "checklist": [
+        "Vyhýbej se N+1 dotazům",
+        "Cacheuj drahé a stabilní výpočty",
+        "Přesuň práci mimo požadavek, kde to jde",
+        "Profiluj před optimalizací"
+      ]
+    },
+    {
+      "category": "Výkon a optimalizace",
+      "slug": "caching-strategies",
+      "title": "Cache strategie",
+      "description": "Cacheuj cíleně se správnou invalidací. Použij u drahých nebo opakovaných dat.",
+      "checklist": [
+        "Rozhodni, kde cache žije (klient, server, CDN)",
+        "Nastav TTL a způsob invalidace",
+        "Zahrň uživatele do cache klíče",
+        "Pozor na únik citlivých dat"
+      ]
+    },
+    {
+      "category": "Výkon a optimalizace",
+      "slug": "database-optimization",
+      "title": "Optimalizace databáze",
+      "description": "Zrychli dotazy pomocí schématu, indexů a plánu. Použij u pomalých dotazů.",
+      "checklist": [
+        "Změř plán dotazu před změnou",
+        "Přidej index podle reálných dotazů",
+        "Vyhýbej se dotazu SELECT s hvězdičkou",
+        "Zvaž materializovaný pohled u agregací"
+      ]
+    },
+    {
+      "category": "Výkon a optimalizace",
+      "slug": "media-optimization",
+      "title": "Optimalizace obrázků a médií",
+      "description": "Doručuj média v odpovídající velikosti a formátu. Použij u obrázků a videa.",
+      "checklist": [
+        "Použij moderní formáty AVIF a WebP",
+        "Nastav správné rozměry a srcset",
+        "Lazy-loaduj obsah pod přehybem",
+        "Videa streamuj, nestahuj celá"
+      ]
+    },
+    {
+      "category": "Výkon a optimalizace",
+      "slug": "cdn-delivery",
+      "title": "CDN a doručování obsahu",
+      "description": "Doručuj statický obsah z edge sítě. Použij u veřejných statických souborů.",
+      "checklist": [
+        "Drž statické assety na CDN s dlouhou cache",
+        "Verzuj názvy souborů kvůli cache busting",
+        "Necacheuj citlivá data na edge",
+        "Nastav správné cache hlavičky"
+      ]
+    },
+    {
+      "category": "Dokumentace a spolupráce",
+      "slug": "readme-onboarding",
+      "title": "README a onboarding",
+      "description": "Umožni novému vývojáři spustit projekt bez doplňujících otázek. Použij při založení projektu.",
+      "checklist": [
+        "Popiš účel, stack a požadavky",
+        "Uveď kroky spuštění jako kopírovatelný blok",
+        "Dokumentuj povinné ENV proměnné",
+        "Aktualizuj při změně postupu"
+      ]
+    },
+    {
+      "category": "Dokumentace a spolupráce",
+      "slug": "code-documentation",
+      "title": "Dokumentace kódu",
+      "description": "Dokumentuj veřejné rozhraní a netriviální rozhodnutí. Použij u exportovaných funkcí a složité logiky.",
+      "checklist": [
+        "Dokumentuj veřejné funkce a typy pomocí JSDoc",
+        "Komentuj důvod, ne popis kódu",
+        "Odstraň zastaralé komentáře",
+        "Nepiš komentáře, které jen opakují kód"
+      ]
+    },
+    {
+      "category": "Dokumentace a spolupráce",
+      "slug": "changelog-versioning",
+      "title": "Changelog a verzování",
+      "description": "Veď přehled změn a drž sémantické verzování. Použij při vydání verze.",
+      "checklist": [
+        "Drž changelog ve formátu Keep a Changelog",
+        "Dodrž sémantické verzování",
+        "Zvýrazni breaking changes",
+        "Generuj poznámky k vydání z commitů"
+      ]
+    },
+    {
+      "category": "Dokumentace a spolupráce",
+      "slug": "commit-conventions",
+      "title": "Konvence commitů",
+      "description": "Piš malé a popisné commity v konvenčním formátu. Použij při každém commitu.",
+      "checklist": [
+        "Používej Conventional Commits",
+        "Jeden commit řeší jednu věc",
+        "Popisuj dopad, ne jen změněný soubor",
+        "Nikdy necommituj tajemství ani build artefakty"
+      ]
+    },
+    {
+      "category": "Dokumentace a spolupráce",
+      "slug": "code-review-guidelines",
+      "title": "Code review guidelines",
+      "description": "Kontroluj správnost, čitelnost a rizika místo stylu. Použij při review pull requestu.",
+      "checklist": [
+        "Zaměř se na logiku, bezpečnost a hraniční stavy",
+        "Malé pull requesty se reviewují rychleji",
+        "Buď konkrétní a navrhni řešení",
+        "Kritizuj kód, ne autora"
+      ]
+    },
+    {
+      "category": "Dokumentace a spolupráce",
+      "slug": "contributing-workflow",
+      "title": "Workflow příspěvků",
+      "description": "Definuj jasný postup větvení a pull requestu. Použij při nastavení repozitáře.",
+      "checklist": [
+        "Popiš vytvoření větve a pull requestu v CONTRIBUTING.md",
+        "Vyžaduj zelené CI před mergem",
+        "Použij šablonu pull requestu",
+        "Chraň hlavní větev"
+      ]
+    },
+    {
+      "category": "AI integrace",
+      "slug": "llm-integration",
+      "title": "Integrace LLM",
+      "description": "Abstrahuj poskytovatele modelu a řeš chyby i limity. Použij při volání LLM z aplikace.",
+      "checklist": [
+        "Obal poskytovatele vlastním rozhraním",
+        "Ošetři timeout, rate limit a chyby",
+        "Streamuj odpověď směrem k uživateli",
+        "Nikdy nevkládej klíč do klientu"
+      ]
+    },
+    {
+      "category": "AI integrace",
+      "slug": "prompt-engineering",
+      "title": "Prompt engineering",
+      "description": "Piš prompty strukturovaně a verzuj je v repozitáři. Použij při tvorbě promptů.",
+      "checklist": [
+        "Uchovávej prompt v repozitáři a verzuj jej",
+        "Definuj roli, vstup a formát výstupu",
+        "Vyžaduj strukturovaný výstup",
+        "Testuj prompt na sadě případů"
+      ]
+    },
+    {
+      "category": "AI integrace",
+      "slug": "rag-embeddings",
+      "title": "RAG a embeddings",
+      "description": "Doplň model o vlastní znalosti pomocí retrieval. Použij u dotazů nad firemními daty.",
+      "checklist": [
+        "Děl dokumenty na překrývající se chunky",
+        "Ukládej embeddingy ve vektorové databázi",
+        "Vracej citace zdrojů",
+        "Aktualizuj index při změně dat"
+      ]
+    },
+    {
+      "category": "AI integrace",
+      "slug": "ai-agents-tools",
+      "title": "AI agenti a nástroje",
+      "description": "Definuj bezpečné a úzce vymezené nástroje pro agenty. Použij při tvorbě agentů.",
+      "checklist": [
+        "Každý nástroj má jasný účel a validované vstupy",
+        "Omez oprávnění na minimum",
+        "Vyžaduj potvrzení u destruktivních akcí",
+        "Loguj každé volání nástroje"
+      ]
+    },
+    {
+      "category": "AI integrace",
+      "slug": "ai-safety",
+      "title": "Bezpečnost AI",
+      "description": "Braň prompt injection a úniku dat. Použij u funkcí postavených na LLM.",
+      "checklist": [
+        "Neslévej instrukce uživatele se systémovým promptem",
+        "Validuj a filtruj výstup modelu",
+        "Nevkládej citlivá data do promptu",
+        "Omez dopad volaných nástrojů"
+      ]
+    },
+    {
+      "category": "AI integrace",
+      "slug": "ai-cost-management",
+      "title": "Náklady na AI",
+      "description": "Sleduj a omezte náklady na volání modelu. Použij u produkčních AI funkcí.",
+      "checklist": [
+        "Loguj spotřebu tokenů a náklady",
+        "Nastav limity na uživatele a organizaci",
+        "Cacheuj opakované dotazy",
+        "Vol model podle složitosti úlohy"
+      ]
+    },
+    {
+      "category": "Lokalizace a obsah",
+      "slug": "i18n-implementation",
+      "title": "Implementace i18n",
+      "description": "Připrav aplikaci na více jazyků od začátku. Použij při tvorbě UI textů.",
+      "checklist": [
+        "Nepiš texty přímo do komponent",
+        "Používej typované překladové klíče",
+        "Formátuj datum, číslo a měnu podle locale",
+        "Počítej s delšími překlady v layoutu"
+      ]
+    },
+    {
+      "category": "Lokalizace a obsah",
+      "slug": "content-localization",
+      "title": "Lokalizace obsahu",
+      "description": "Překládej obsah včetně kontextu a kulturních rozdílů. Použij při tvorbě obsahu pro více trhů.",
+      "checklist": [
+        "Překládej význam, ne slova",
+        "Odděl text od formátování",
+        "Respektuj regionální formáty a měny",
+        "Udržuj konzistentní terminologii v glosáři"
+      ]
+    },
+    {
+      "category": "Lokalizace a obsah",
+      "slug": "cms-content-management",
+      "title": "Správa obsahu a CMS",
+      "description": "Odděl obsah od kódu a umožni editaci bez nasazení. Použij u dynamického obsahu.",
+      "checklist": [
+        "Ukládej obsah mimo kód (CMS nebo MDX)",
+        "Používej typované schéma obsahu",
+        "Podporuj verzování a náhled",
+        "Sanitizuj HTML z editoru"
+      ]
+    },
+    {
+      "category": "Lokalizace a obsah",
+      "slug": "legal-gdpr",
+      "title": "Právní a GDPR požadavky",
+      "description": "Sbírej jen nezbytné údaje a se souhlasem. Použij při zpracování osobních údajů.",
+      "checklist": [
+        "Souhlas s cookies musí být opt-in",
+        "Umožni výmaz a export dat",
+        "Veď evidenci zpracování údajů",
+        "Nastav retenci a zálohování"
+      ]
+    },
+    {
+      "category": "Lokalizace a obsah",
+      "slug": "accessibility-compliance",
+      "title": "Soulad s přístupností",
+      "description": "Splň standard WCAG 2.2 úrovně AA. Použij u veřejně dostupných aplikací.",
+      "checklist": [
+        "Cíl na úroveň AA",
+        "Automatizuj audit přístupnosti v CI",
+        "Testuj i se čtečkou obrazovky",
+        "Doplň prohlášení o přístupnosti"
+      ]
+    },
+    {
+      "category": "Lokalizace a obsah",
+      "slug": "content-seo-strategy",
+      "title": "Obsahová a SEO strategie",
+      "description": "Propoj obsah, strukturu a technické SEO. Použij při budování organické návštěvnosti.",
+      "checklist": [
+        "Každá stránka má jeden hlavní záměr",
+        "Propojuj stránky interními odkazy",
+        "Udržuj konzistentní strukturu URL",
+        "Měř a vyhodnocuj výsledky"
+      ]
+    }
+  ],
+  "categorySteps": {
+    "Bezpečnost a soukromí": [
+      "Identifikuj vstupní body a citlivá data.",
+      "Aplikuj ochranu na serveru, ne pouze v klientu.",
+      "Ověř výsledek testem zaměřeným na zneužití."
+    ],
+    "Architektura a návrh": [
+      "Sepiš požadavky a hranice řešení.",
+      "Zvol nejjednodušší variantu splňující požadavky.",
+      "Zdokumentuj rozhodnutí a jeho důsledky."
+    ],
+    "Datová vrstva": [
+      "Definuj entitu, vztahy a invarianty.",
+      "Navrhni dotazy a indexy podle reálného přístupu.",
+      "Přidej migraci a test konzistence."
+    ],
+    "API vrstva": [
+      "Definuj kontrakt a stavové kódy.",
+      "Validuj vstup na hranici API.",
+      "Zdokumentuj změnu a otestuj chybové stavy."
+    ],
+    "Frontend a UI": [
+      "Rozlož obrazovku na komponenty podle odpovědnosti.",
+      "Zvol nejmenší dostačující stav.",
+      "Otestuj responzivitu i ovládání klávesnicí."
+    ],
+    "Přístupnost (a11y)": [
+      "Použij nativní sémantiku jako základ.",
+      "Doplň ARIA jen tam, kde sémantika nestačí.",
+      "Ověř klávesnicí a čtečkou obrazovky."
+    ],
+    "Testování a kvalita": [
+      "Rozhodni, jaké riziko test pokrývá.",
+      "Testuj chování, ne implementaci.",
+      "Zajisti determinismus a rychlost testu."
+    ],
+    "DevOps a CI/CD": [
+      "Definuj krok opakovatelně a idempotentně.",
+      "Zajisti rychlou zpětnou vazbu.",
+      "Připrav cestu zpět (rollback)."
+    ],
+    "Výkon a optimalizace": [
+      "Nejprve změř a najdi úzké hrdlo.",
+      "Optimalizuj jednu věc a znovu změř.",
+      "Zaznamenej výchozí a cílové hodnoty."
+    ],
+    "Dokumentace a spolupráce": [
+      "Piš pro člověka, který projekt vidí poprvé.",
+      "Drž dokumentaci blízko kódu.",
+      "Aktualizuj ji při každé změně chování."
+    ],
+    "AI integrace": [
+      "Definuj vstup, výstup a limity.",
+      "Ošetři chyby, náklady a soukromí.",
+      "Vyhodnoť kvalitu na sadě případů."
+    ],
+    "Lokalizace a obsah": [
+      "Odděl obsah od kódu a formátování.",
+      "Připrav strukturu pro více jazyků.",
+      "Ověř délky, formáty a soulad s legislativou."
+    ]
+  }
+}

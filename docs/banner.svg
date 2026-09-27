@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" width="1200" height="300" role="img" aria-label="Copilot Instructions Builder">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#141414"/>
+      <stop offset="1" stop-color="#0a0a0a"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#00e5a0"/>
+      <stop offset="1" stop-color="#00c88a"/>
+    </linearGradient>
+    <pattern id="dots" width="28" height="28" patternUnits="userSpaceOnUse">
+      <circle cx="1.5" cy="1.5" r="1.5" fill="#1f1f1f"/>
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="300" rx="20" fill="url(#bg)"/>
+  <rect width="1200" height="300" rx="20" fill="url(#dots)" opacity="0.55"/>
+  <rect x="0.5" y="0.5" width="1199" height="299" rx="20" fill="none" stroke="#1f1f1f"/>
+
+  <rect x="72" y="82" width="48" height="4" rx="2" fill="url(#accent)"/>
+  <text x="72" y="120" font-family="Segoe UI, system-ui, sans-serif" font-size="12.5" font-weight="600" letter-spacing="3.4" fill="#00e5a0">GITHUB COPILOT</text>
+  <text x="72" y="178" font-family="Segoe UI, system-ui, sans-serif" font-size="45" font-weight="700" fill="#f5f5f5">Instructions Builder</text>
+  <text x="72" y="213" font-family="Segoe UI, system-ui, sans-serif" font-size="16" fill="#a0a0a0">Z voleb sestaví instrukce, agents, skills a prompty pro Copilot.</text>
+
+  <g font-family="Consolas, Menlo, monospace" font-size="12.5">
+    <rect x="72" y="242" width="96" height="30" rx="15" fill="#0f2820" stroke="#00e5a0" stroke-opacity="0.35"/>
+    <text x="88" y="261" fill="#00e5a0">.github/</text>
+
+    <rect x="180" y="242" width="104" height="30" rx="15" fill="#131313" stroke="#1f1f1f"/>
+    <text x="196" y="261" fill="#a0a0a0">AGENTS.md</text>
+
+    <rect x="296" y="242" width="96" height="30" rx="15" fill="#131313" stroke="#1f1f1f"/>
+    <text x="312" y="261" fill="#a0a0a0">SKILL.md</text>
+  </g>
+
+  <g font-family="Segoe UI, system-ui, sans-serif">
+    <rect x="700" y="52" width="204" height="90" rx="12" fill="#131313" stroke="#1f1f1f"/>
+    <text x="716" y="76" font-size="11" fill="#6b7280">Formát výstupu</text>
+    <rect x="716" y="88" width="158" height="28" rx="14" fill="#0f2820" stroke="#00e5a0" stroke-opacity="0.35"/>
+    <text x="730" y="106" font-size="12" fill="#00e5a0">Konsolidovaný</text>
+
+    <rect x="918" y="52" width="208" height="90" rx="12" fill="#131313" stroke="#1f1f1f"/>
+    <text x="934" y="76" font-size="11" fill="#6b7280">Frontend</text>
+    <rect x="934" y="88" width="146" height="28" rx="14" fill="#0f2820" stroke="#00e5a0" stroke-opacity="0.35"/>
+    <text x="948" y="106" font-size="12" fill="#00e5a0">Next.js</text>
+
+    <rect x="700" y="156" width="204" height="92" rx="12" fill="#131313" stroke="#1f1f1f"/>
+    <text x="716" y="180" font-size="11" fill="#6b7280">Knihovna skills</text>
+    <rect x="716" y="192" width="172" height="4" rx="2" fill="#1f1f1f"/>
+    <rect x="716" y="192" width="118" height="4" rx="2" fill="#00e5a0"/>
+
+    <rect x="918" y="156" width="208" height="92" rx="12" fill="#131313" stroke="#1f1f1f"/>
+    <text x="934" y="180" font-size="11" fill="#6b7280">Nasazení</text>
+    <rect x="934" y="192" width="150" height="28" rx="14" fill="#0f2820" stroke="#00e5a0" stroke-opacity="0.35"/>
+    <text x="948" y="210" font-size="12" fill="#00e5a0">Vercel</text>
+  </g>
+</svg>

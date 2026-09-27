@@ -1,0 +1,16 @@
+node_modules
+dist
+*.local
+.DS_Store
+scripts/.parity*
+
+# dočasné a cache soubory
+*.tsbuildinfo
+.vite
+coverage
+
+# editory
+.idea/
+.vscode/
+*.suo
+*.user

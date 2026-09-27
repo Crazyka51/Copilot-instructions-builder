@@ -1,0 +1,252 @@
+[
+  {
+    "name": "instrukceTpl",
+    "lines": 87,
+    "manual": 0,
+    "unresolved": 0
+  },
+  {
+    "name": "personaTpl",
+    "lines": 25,
+    "manual": 0,
+    "unresolved": 0
+  },
+  {
+    "name": "dbDocTpl",
+    "lines": 39,
+    "manual": 0,
+    "unresolved": 0
+  },
+  {
+    "name": "behaviorDocTpl",
+    "lines": 28,
+    "manual": 0,
+    "unresolved": 0
+  },
+  {
+    "name": "specializationDocTpl",
+    "lines": 49,
+    "manual": 0,
+    "unresolved": 0
+  },
+  {
+    "name": "mobileSectionTpl",
+    "lines": 18,
+    "manual": 0,
+    "unresolved": 0
+  },
+  {
+    "name": "neonSectionTpl",
+    "lines": 8,
+    "manual": 0,
+    "unresolved": 0
+  },
+  {
+    "name": "supabaseSectionTpl",
+    "lines": 9,
+    "manual": 0,
+    "unresolved": 0
+  },
+  {
+    "name": "vercelSectionTpl",
+    "lines": 8,
+    "manual": 0,
+    "unresolved": 0
+  },
+  {
+    "name": "tipTapSectionTpl",
+    "lines": 7,
+    "manual": 0,
+    "unresolved": 0
+  },
+  {
+    "name": "legalSectionTpl",
+    "lines": 7,
+    "manual": 0,
+    "unresolved": 0
+  },
+  {
+    "name": "agentTaskSectionTpl",
+    "lines": 23,
+    "manual": 0,
+    "unresolved": 0
+  },
+  {
+    "name": "specializedSectionTpl",
+    "lines": 27,
+    "manual": 0,
+    "unresolved": 0
+  },
+  {
+    "name": "readmeTpl",
+    "lines": 20,
+    "manual": 0,
+    "unresolved": 0
+  },
+  {
+    "name": "contribTpl",
+    "lines": 23,
+    "manual": 0,
+    "unresolved": 0
+  },
+  {
+    "name": "envExampleTpl",
+    "lines": 9,
+    "manual": 0,
+    "unresolved": 0
+  },
+  {
+    "name": "domainPersonaEshop",
+    "lines": 8,
+    "manual": 0,
+    "unresolved": 0
+  },
+  {
+    "name": "domainPersonaBooking",
+    "lines": 7,
+    "manual": 0,
+    "unresolved": 0
+  },
+  {
+    "name": "domainPersonaSaaS",
+    "lines": 7,
+    "manual": 0,
+    "unresolved": 0
+  },
+  {
+    "name": "domainPersonaLMS",
+    "lines": 6,
+    "manual": 0,
+    "unresolved": 0
+  },
+  {
+    "name": "domainPersonaCRM",
+    "lines": 5,
+    "manual": 0,
+    "unresolved": 0
+  },
+  {
+    "name": "repoTreeMonorepo",
+    "lines": 17,
+    "manual": 0,
+    "unresolved": 0
+  },
+  {
+    "name": "repoTreeNext",
+    "lines": 19,
+    "manual": 0,
+    "unresolved": 0
+  },
+  {
+    "name": "repoTreeVue",
+    "lines": 13,
+    "manual": 0,
+    "unresolved": 0
+  },
+  {
+    "name": "repoTreeGeneric",
+    "lines": 13,
+    "manual": 0,
+    "unresolved": 0
+  },
+  {
+    "file": "fn_Get-RepoStructure.ps1",
+    "note": "here-strings=5 names=4"
+  },
+  {
+    "name": "workflowExamplesTpl",
+    "lines": 38,
+    "manual": 1,
+    "unresolved": 0
+  },
+  {
+    "name": "antiPattern1",
+    "lines": 10,
+    "manual": 0,
+    "unresolved": 0
+  },
+  {
+    "name": "antiPattern2",
+    "lines": 10,
+    "manual": 0,
+    "unresolved": 0
+  },
+  {
+    "name": "antiPattern3",
+    "lines": 11,
+    "manual": 0,
+    "unresolved": 0
+  },
+  {
+    "name": "antiPattern4",
+    "lines": 10,
+    "manual": 0,
+    "unresolved": 0
+  },
+  {
+    "name": "antiPattern5",
+    "lines": 10,
+    "manual": 0,
+    "unresolved": 0
+  },
+  {
+    "name": "antiPattern6",
+    "lines": 21,
+    "manual": 0,
+    "unresolved": 0
+  },
+  {
+    "name": "taskPromptTpl",
+    "lines": 51,
+    "manual": 1,
+    "unresolved": 0
+  },
+  {
+    "name": "agentsMdTpl",
+    "lines": 35,
+    "manual": 1,
+    "unresolved": 0
+  },
+  {
+    "name": "agentTaskMdTpl",
+    "lines": 39,
+    "manual": 1,
+    "unresolved": 0
+  },
+  {
+    "name": "setupHeaderTpl",
+    "lines": 21,
+    "manual": 0,
+    "unresolved": 0
+  },
+  {
+    "name": "setupPythonTpl",
+    "lines": 24,
+    "manual": 0,
+    "unresolved": 0
+  },
+  {
+    "name": "setupGoTpl",
+    "lines": 18,
+    "manual": 0,
+    "unresolved": 0
+  },
+  {
+    "name": "setupRustTpl",
+    "lines": 17,
+    "manual": 0,
+    "unresolved": 0
+  },
+  {
+    "name": "setupEdgeTpl",
+    "lines": 18,
+    "manual": 6,
+    "unresolved": 0
+  },
+  {
+    "name": "setupNodeTpl",
+    "lines": 18,
+    "manual": 6,
+    "unresolved": 0
+  }
+]

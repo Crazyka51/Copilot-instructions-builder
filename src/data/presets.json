@@ -1,0 +1,8322 @@
+{
+  "presets": {
+    "E-shop / E-commerce": [
+      {
+        "card": "rArch",
+        "items": [
+          "Standardní (jedna aplikace)"
+        ]
+      },
+      {
+        "card": "rArchType",
+        "items": [
+          "Modulární monolit (moduly s vlastními hranicemi)"
+        ]
+      },
+      {
+        "card": "rRender",
+        "items": [
+          "SSR (Server-Side Rendering)"
+        ]
+      },
+      {
+        "card": "rDesign",
+        "items": [
+          "Moderní & Minimalistický (Shadcn styl)"
+        ]
+      },
+      {
+        "card": "rCss",
+        "items": [
+          "Tailwind CSS + Shadcn/UI"
+        ]
+      },
+      {
+        "card": "rState",
+        "items": [
+          "Zustand / Pinia"
+        ]
+      },
+      {
+        "card": "rForms",
+        "items": [
+          "React Hook Form + Zod"
+        ]
+      },
+      {
+        "card": "rAnimation",
+        "items": [
+          "Framer Motion"
+        ]
+      },
+      {
+        "card": "rI18n",
+        "items": [
+          "Bez i18n (jednojazyčná aplikace)"
+        ]
+      },
+      {
+        "card": "rBe",
+        "items": [
+          "Next.js API Routes / Server Actions"
+        ]
+      },
+      {
+        "card": "rDbStrategy",
+        "items": [
+          "Neon (serverless Postgres, vlastní Auth)"
+        ]
+      },
+      {
+        "card": "rVercelDb",
+        "items": [
+          "Nativní integrace Neon (auto ENV inject)"
+        ]
+      },
+      {
+        "card": "rOrm",
+        "items": [
+          "Prisma"
+        ]
+      },
+      {
+        "card": "rFetch",
+        "items": [
+          "TanStack Query"
+        ]
+      },
+      {
+        "card": "rRealtime",
+        "items": [
+          "Žádná (REST only)"
+        ]
+      },
+      {
+        "card": "rPooling",
+        "items": [
+          "Neon serverless driver (HTTP, žádný pool)"
+        ]
+      },
+      {
+        "card": "rCache",
+        "items": [
+          "Next.js unstable_cache / Data Cache"
+        ]
+      },
+      {
+        "card": "rApiDesign",
+        "items": [
+          "REST + Zod validace"
+        ]
+      },
+      {
+        "card": "rDeploy",
+        "items": [
+          "Vercel (BaaS + Edge)"
+        ]
+      },
+      {
+        "card": "rIac",
+        "items": [
+          "Vercel CLI + vercel.json"
+        ]
+      },
+      {
+        "card": "rAuthType",
+        "items": [
+          "NextAuth v5 / Auth.js"
+        ]
+      },
+      {
+        "card": "rCms",
+        "items": [
+          "Vlastní DB + Administrace"
+        ]
+      },
+      {
+        "card": "rCmsEditor",
+        "items": [
+          "TipTap (headless, vlastní UI)"
+        ]
+      },
+      {
+        "card": "rAdminShell",
+        "items": [
+          "Vlastní admin-kit (custom)"
+        ]
+      },
+      {
+        "card": "rSeo",
+        "items": [
+          "Nativní (Next.js metadata / Nuxt useHead)"
+        ]
+      },
+      {
+        "card": "rAbTesting",
+        "items": [
+          "Žádné"
+        ]
+      },
+      {
+        "card": "rMobileNav",
+        "items": [
+          "Expo Router (file-based)"
+        ]
+      },
+      {
+        "card": "rMobileUi",
+        "items": [
+          "React Native Paper"
+        ]
+      },
+      {
+        "card": "rMobileState",
+        "items": [
+          "Zustand + TanStack Query"
+        ]
+      },
+      {
+        "card": "rMobileAuth",
+        "items": [
+          "Expo AuthSession (OAuth)"
+        ]
+      },
+      {
+        "card": "rMobileDeploy",
+        "items": [
+          "Expo EAS Build (cloud)"
+        ]
+      },
+      {
+        "card": "rRender",
+        "items": [
+          "ISR (Incremental Static Regeneration)"
+        ]
+      },
+      {
+        "card": "rCache",
+        "items": [
+          "Vercel KV / Upstash Redis"
+        ]
+      },
+      {
+        "card": "rApiDesign",
+        "items": [
+          "REST + OpenAPI spec"
+        ]
+      },
+      {
+        "card": "rAdminShell",
+        "items": [
+          "Refine.dev"
+        ]
+      },
+      {
+        "card": "rAbTesting",
+        "items": [
+          "PostHog (feature flags + experiments)"
+        ]
+      },
+      {
+        "card": "cEcommerce",
+        "items": [
+          "Product catalog (varianty, SKU)",
+          "Košík + checkout flow",
+          "Platební brána (Stripe / GoPay)",
+          "Doprava (Packeta / DPD / PPL)",
+          "Skladové hospodářství",
+          "Fakturace (Fakturoid / iDoklad)",
+          "Slevové kódy a akce",
+          "Recenze produktů",
+          "Wishlist / oblíbené",
+          "Porovnání produktů",
+          "Doporučovací engine",
+          "Abandoned cart recovery"
+        ]
+      },
+      {
+        "card": "cCore",
+        "items": [
+          "Upload souborů (S3/Supabase/Blob)",
+          "Platby (Stripe)",
+          "E-maily (Resend / Postmark)",
+          "Notifikace (push/email/SMS)"
+        ]
+      },
+      {
+        "card": "cIntegrations",
+        "items": [
+          "Platby: Stripe",
+          "Platby: GoPay",
+          "Platby: PayPal",
+          "Doprava: Packeta / Zásilkovna",
+          "Doprava: DPD / PPL",
+          "Fakturace: Fakturoid",
+          "Fakturace: iDoklad",
+          "Email: Resend / Postmark",
+          "SMS: Twilio / SMS.cz",
+          "Účetnictví: Pohoda / Money S3",
+          "Marketing: Mailchimp / Klaviyo",
+          "Analytics: GA4 / Meta Pixel"
+        ]
+      },
+      {
+        "card": "cLegal",
+        "items": [
+          "GDPR (souhlasy, výmaz)",
+          "Obchodní podmínky",
+          "Cookies consent (Cookiebot)",
+          "Reklamační systém",
+          "14 dní na vrácení (spotřebitel)",
+          "Ochrana osobních údajů",
+          "Autorská práva a licence",
+          "VAT / DPH kalkulace"
+        ]
+      },
+      {
+        "card": "cAdmin",
+        "items": [
+          "Dashboard (Statistiky, grafy)",
+          "Správa uživatelů (Tabulky)",
+          "Import/Export dat (CSV/Excel)"
+        ]
+      },
+      {
+        "card": "cMarketing",
+        "items": [
+          "Newsletter",
+          "Sitemap + robots.txt",
+          "Referral systém",
+          "Affiliate program",
+          "Structured data (JSON-LD)",
+          "Open Graph optimalizace",
+          "RSS feed",
+          "Push notifikace (web)"
+        ]
+      },
+      {
+        "card": "rOrm",
+        "items": [
+          "Prisma"
+        ]
+      },
+      {
+        "card": "cAuth",
+        "items": [
+          "RBAC (Admin/User/Moderator)",
+          "OAuth (Google, GitHub)",
+          "2FA / TOTP",
+          "Session management",
+          "Refresh tokeny",
+          "Device tracking"
+        ]
+      },
+      {
+        "card": "cSec",
+        "items": [
+          "T3 Env (Validace .env přes Zod)",
+          "Rate Limiting",
+          "Helmet hlavičky",
+          "CORS konfigurace",
+          "CSRF ochrana (SameSite)",
+          "Password hashing (argon2/bcrypt)"
+        ]
+      },
+      {
+        "card": "cCompliance",
+        "items": [
+          "GDPR (cookie consent, RLS)",
+          "Audit trail (kdo co změnil)",
+          "Backup & disaster recovery"
+        ]
+      },
+      {
+        "card": "cCiCd",
+        "items": [
+          "GitHub Actions",
+          "Automatické testy na PR",
+          "Preview deployment (Vercel)",
+          "Databázové migrace v CI",
+          "Semantic Release (auto-versioning)"
+        ]
+      },
+      {
+        "card": "cTest",
+        "items": [
+          "Vitest",
+          "Playwright (E2E)",
+          "Testing Library (React/Vue)",
+          "MSW (Mock Service Worker)"
+        ]
+      },
+      {
+        "card": "cObservability",
+        "items": [
+          "Sentry (chyby)"
+        ]
+      },
+      {
+        "card": "cLog",
+        "items": [
+          "Pino (JSON logy)"
+        ]
+      },
+      {
+        "card": "cBuildValidation",
+        "items": [
+          "Spusťte testovací sadu",
+          "Spusťte linter a formátovač",
+          "Kontrola typů"
+        ]
+      },
+      {
+        "card": "cSecurityBehavior",
+        "items": [
+          "Ověřujte vstupy",
+          "Žádná tvrdá tajemství",
+          "Parametrizované dotazy"
+        ]
+      },
+      {
+        "card": "cAccessibility",
+        "items": [
+          "Sémantické HTML",
+          "Navigace klávesnicí"
+        ]
+      }
+    ],
+    "Rezervační systém (salon, lékař, restaurace)": [
+      {
+        "card": "rArch",
+        "items": [
+          "Standardní (jedna aplikace)"
+        ]
+      },
+      {
+        "card": "rArchType",
+        "items": [
+          "Modulární monolit (moduly s vlastními hranicemi)"
+        ]
+      },
+      {
+        "card": "rRender",
+        "items": [
+          "SSR (Server-Side Rendering)"
+        ]
+      },
+      {
+        "card": "rDesign",
+        "items": [
+          "Moderní & Minimalistický (Shadcn styl)"
+        ]
+      },
+      {
+        "card": "rCss",
+        "items": [
+          "Tailwind CSS + Shadcn/UI"
+        ]
+      },
+      {
+        "card": "rState",
+        "items": [
+          "Zustand / Pinia"
+        ]
+      },
+      {
+        "card": "rForms",
+        "items": [
+          "React Hook Form + Zod"
+        ]
+      },
+      {
+        "card": "rAnimation",
+        "items": [
+          "Framer Motion"
+        ]
+      },
+      {
+        "card": "rI18n",
+        "items": [
+          "Bez i18n (jednojazyčná aplikace)"
+        ]
+      },
+      {
+        "card": "rBe",
+        "items": [
+          "Next.js API Routes / Server Actions"
+        ]
+      },
+      {
+        "card": "rDbStrategy",
+        "items": [
+          "Neon (serverless Postgres, vlastní Auth)"
+        ]
+      },
+      {
+        "card": "rVercelDb",
+        "items": [
+          "Nativní integrace Neon (auto ENV inject)"
+        ]
+      },
+      {
+        "card": "rOrm",
+        "items": [
+          "Prisma"
+        ]
+      },
+      {
+        "card": "rFetch",
+        "items": [
+          "TanStack Query"
+        ]
+      },
+      {
+        "card": "rRealtime",
+        "items": [
+          "Žádná (REST only)"
+        ]
+      },
+      {
+        "card": "rPooling",
+        "items": [
+          "Neon serverless driver (HTTP, žádný pool)"
+        ]
+      },
+      {
+        "card": "rCache",
+        "items": [
+          "Next.js unstable_cache / Data Cache"
+        ]
+      },
+      {
+        "card": "rApiDesign",
+        "items": [
+          "REST + Zod validace"
+        ]
+      },
+      {
+        "card": "rDeploy",
+        "items": [
+          "Vercel (BaaS + Edge)"
+        ]
+      },
+      {
+        "card": "rIac",
+        "items": [
+          "Vercel CLI + vercel.json"
+        ]
+      },
+      {
+        "card": "rAuthType",
+        "items": [
+          "NextAuth v5 / Auth.js"
+        ]
+      },
+      {
+        "card": "rCms",
+        "items": [
+          "Vlastní DB + Administrace"
+        ]
+      },
+      {
+        "card": "rCmsEditor",
+        "items": [
+          "TipTap (headless, vlastní UI)"
+        ]
+      },
+      {
+        "card": "rAdminShell",
+        "items": [
+          "Vlastní admin-kit (custom)"
+        ]
+      },
+      {
+        "card": "rSeo",
+        "items": [
+          "Nativní (Next.js metadata / Nuxt useHead)"
+        ]
+      },
+      {
+        "card": "rAbTesting",
+        "items": [
+          "Žádné"
+        ]
+      },
+      {
+        "card": "rMobileNav",
+        "items": [
+          "Expo Router (file-based)"
+        ]
+      },
+      {
+        "card": "rMobileUi",
+        "items": [
+          "React Native Paper"
+        ]
+      },
+      {
+        "card": "rMobileState",
+        "items": [
+          "Zustand + TanStack Query"
+        ]
+      },
+      {
+        "card": "rMobileAuth",
+        "items": [
+          "Expo AuthSession (OAuth)"
+        ]
+      },
+      {
+        "card": "rMobileDeploy",
+        "items": [
+          "Expo EAS Build (cloud)"
+        ]
+      },
+      {
+        "card": "rApiDesign",
+        "items": [
+          "REST + Zod validace"
+        ]
+      },
+      {
+        "card": "rAdminShell",
+        "items": [
+          "Vlastní admin-kit (custom)"
+        ]
+      },
+      {
+        "card": "rAbTesting",
+        "items": [
+          "Žádné"
+        ]
+      },
+      {
+        "card": "cBooking",
+        "items": [
+          "Kalendář s časovými sloty",
+          "Správa zaměstnanců / specialistů",
+          "Rezervace + platba (deposit)",
+          "Přesuny a storna",
+          "SMS / Email reminder",
+          "Google Calendar sync",
+          "Opakované rezervace",
+          "Waitlist (fronta čekajících)",
+          "Dárkové vouchery",
+          "Věrnostní program"
+        ]
+      },
+      {
+        "card": "cCore",
+        "items": [
+          "E-maily (Resend / Postmark)",
+          "Notifikace (push/email/SMS)",
+          "Platby (Stripe)"
+        ]
+      },
+      {
+        "card": "cIntegrations",
+        "items": [
+          "Platby: Stripe",
+          "Platby: GoPay",
+          "SMS: Twilio / SMS.cz",
+          "Email: Resend / Postmark",
+          "Fakturace: Fakturoid"
+        ]
+      },
+      {
+        "card": "cLegal",
+        "items": [
+          "GDPR (souhlasy, výmaz)",
+          "Obchodní podmínky",
+          "Cookies consent (Cookiebot)"
+        ]
+      },
+      {
+        "card": "cAdmin",
+        "items": [
+          "Dashboard (Statistiky, grafy)",
+          "Správa uživatelů (Tabulky)"
+        ]
+      },
+      {
+        "card": "cAuth",
+        "items": [
+          "RBAC (Admin/User/Moderator)",
+          "Magic Links (bez hesla)",
+          "Session management"
+        ]
+      },
+      {
+        "card": "cSec",
+        "items": [
+          "T3 Env (Validace .env přes Zod)",
+          "Rate Limiting",
+          "CSRF ochrana (SameSite)"
+        ]
+      },
+      {
+        "card": "cCompliance",
+        "items": [
+          "GDPR (cookie consent, RLS)",
+          "Backup & disaster recovery"
+        ]
+      },
+      {
+        "card": "cCiCd",
+        "items": [
+          "GitHub Actions",
+          "Automatické testy na PR",
+          "Preview deployment (Vercel)",
+          "Databázové migrace v CI",
+          "Semantic Release (auto-versioning)"
+        ]
+      },
+      {
+        "card": "cTest",
+        "items": [
+          "Vitest",
+          "Playwright (E2E)",
+          "Testing Library (React/Vue)",
+          "MSW (Mock Service Worker)"
+        ]
+      },
+      {
+        "card": "cObservability",
+        "items": [
+          "Sentry (chyby)"
+        ]
+      },
+      {
+        "card": "cLog",
+        "items": [
+          "Pino (JSON logy)"
+        ]
+      },
+      {
+        "card": "cBuildValidation",
+        "items": [
+          "Spusťte testovací sadu",
+          "Spusťte linter a formátovač",
+          "Kontrola typů"
+        ]
+      },
+      {
+        "card": "cSecurityBehavior",
+        "items": [
+          "Ověřujte vstupy",
+          "Žádná tvrdá tajemství",
+          "Parametrizované dotazy"
+        ]
+      },
+      {
+        "card": "cAccessibility",
+        "items": [
+          "Sémantické HTML",
+          "Přístupné formuláře",
+          "Navigace klávesnicí"
+        ]
+      }
+    ],
+    "SaaS platforma": [
+      {
+        "card": "rArch",
+        "items": [
+          "Standardní (jedna aplikace)"
+        ]
+      },
+      {
+        "card": "rArchType",
+        "items": [
+          "Modulární monolit (moduly s vlastními hranicemi)"
+        ]
+      },
+      {
+        "card": "rRender",
+        "items": [
+          "SSR (Server-Side Rendering)"
+        ]
+      },
+      {
+        "card": "rDesign",
+        "items": [
+          "Moderní & Minimalistický (Shadcn styl)"
+        ]
+      },
+      {
+        "card": "rCss",
+        "items": [
+          "Tailwind CSS + Shadcn/UI"
+        ]
+      },
+      {
+        "card": "rState",
+        "items": [
+          "Zustand / Pinia"
+        ]
+      },
+      {
+        "card": "rForms",
+        "items": [
+          "React Hook Form + Zod"
+        ]
+      },
+      {
+        "card": "rAnimation",
+        "items": [
+          "Framer Motion"
+        ]
+      },
+      {
+        "card": "rI18n",
+        "items": [
+          "Bez i18n (jednojazyčná aplikace)"
+        ]
+      },
+      {
+        "card": "rBe",
+        "items": [
+          "Next.js API Routes / Server Actions"
+        ]
+      },
+      {
+        "card": "rDbStrategy",
+        "items": [
+          "Neon (serverless Postgres, vlastní Auth)"
+        ]
+      },
+      {
+        "card": "rVercelDb",
+        "items": [
+          "Nativní integrace Neon (auto ENV inject)"
+        ]
+      },
+      {
+        "card": "rOrm",
+        "items": [
+          "Prisma"
+        ]
+      },
+      {
+        "card": "rFetch",
+        "items": [
+          "TanStack Query"
+        ]
+      },
+      {
+        "card": "rRealtime",
+        "items": [
+          "Žádná (REST only)"
+        ]
+      },
+      {
+        "card": "rPooling",
+        "items": [
+          "Neon serverless driver (HTTP, žádný pool)"
+        ]
+      },
+      {
+        "card": "rCache",
+        "items": [
+          "Next.js unstable_cache / Data Cache"
+        ]
+      },
+      {
+        "card": "rApiDesign",
+        "items": [
+          "REST + Zod validace"
+        ]
+      },
+      {
+        "card": "rDeploy",
+        "items": [
+          "Vercel (BaaS + Edge)"
+        ]
+      },
+      {
+        "card": "rIac",
+        "items": [
+          "Vercel CLI + vercel.json"
+        ]
+      },
+      {
+        "card": "rAuthType",
+        "items": [
+          "NextAuth v5 / Auth.js"
+        ]
+      },
+      {
+        "card": "rCms",
+        "items": [
+          "Vlastní DB + Administrace"
+        ]
+      },
+      {
+        "card": "rCmsEditor",
+        "items": [
+          "TipTap (headless, vlastní UI)"
+        ]
+      },
+      {
+        "card": "rAdminShell",
+        "items": [
+          "Vlastní admin-kit (custom)"
+        ]
+      },
+      {
+        "card": "rSeo",
+        "items": [
+          "Nativní (Next.js metadata / Nuxt useHead)"
+        ]
+      },
+      {
+        "card": "rAbTesting",
+        "items": [
+          "Žádné"
+        ]
+      },
+      {
+        "card": "rMobileNav",
+        "items": [
+          "Expo Router (file-based)"
+        ]
+      },
+      {
+        "card": "rMobileUi",
+        "items": [
+          "React Native Paper"
+        ]
+      },
+      {
+        "card": "rMobileState",
+        "items": [
+          "Zustand + TanStack Query"
+        ]
+      },
+      {
+        "card": "rMobileAuth",
+        "items": [
+          "Expo AuthSession (OAuth)"
+        ]
+      },
+      {
+        "card": "rMobileDeploy",
+        "items": [
+          "Expo EAS Build (cloud)"
+        ]
+      },
+      {
+        "card": "rDbStrategy",
+        "items": [
+          "Supabase (kompletní backend: DB + Auth + Storage)"
+        ]
+      },
+      {
+        "card": "rVercelDb",
+        "items": [
+          "Supabase Marketplace (one-click)"
+        ]
+      },
+      {
+        "card": "rOrm",
+        "items": [
+          "Drizzle ORM"
+        ]
+      },
+      {
+        "card": "rPooling",
+        "items": [
+          "Supabase Supavisor (transaction mode)"
+        ]
+      },
+      {
+        "card": "rAuthType",
+        "items": [
+          "Supabase Auth"
+        ]
+      },
+      {
+        "card": "rFetch",
+        "items": [
+          "tRPC"
+        ]
+      },
+      {
+        "card": "rApiDesign",
+        "items": [
+          "tRPC (end-to-end typesafe)"
+        ]
+      },
+      {
+        "card": "rCache",
+        "items": [
+          "Vercel KV / Upstash Redis"
+        ]
+      },
+      {
+        "card": "rRealtime",
+        "items": [
+          "Supabase Realtime / Firebase"
+        ]
+      },
+      {
+        "card": "rAdminShell",
+        "items": [
+          "Refine.dev"
+        ]
+      },
+      {
+        "card": "rAbTesting",
+        "items": [
+          "PostHog (feature flags + experiments)"
+        ]
+      },
+      {
+        "card": "cSaas",
+        "items": [
+          "Multi-tenant architektura",
+          "Subscription billing (Stripe Billing)",
+          "Plány + feature gating",
+          "Trial + upgrade/downgrade",
+          "Usage-based billing",
+          "Invoice generování",
+          "Dunning management",
+          "Team / organizace",
+          "Invite systém",
+          "RBAC per tenant",
+          "White-label možnost"
+        ]
+      },
+      {
+        "card": "cCore",
+        "items": [
+          "E-maily (Resend / Postmark)",
+          "Platby (Stripe)",
+          "Notifikace (push/email/SMS)",
+          "PDF generování"
+        ]
+      },
+      {
+        "card": "cIntegrations",
+        "items": [
+          "Platby: Stripe",
+          "Fakturace: Fakturoid",
+          "Email: Resend / Postmark",
+          "Marketing: Mailchimp / Klaviyo"
+        ]
+      },
+      {
+        "card": "cAdmin",
+        "items": [
+          "Dashboard (Statistiky, grafy)",
+          "Správa uživatelů (Tabulky)",
+          "Audit Log (Historie změn)",
+          "Import/Export dat (CSV/Excel)"
+        ]
+      },
+      {
+        "card": "cAuth",
+        "items": [
+          "RBAC (Admin/User/Moderator)",
+          "OAuth (Google, GitHub)",
+          "2FA / TOTP",
+          "Session management",
+          "Refresh tokeny"
+        ]
+      },
+      {
+        "card": "cLegal",
+        "items": [
+          "GDPR (souhlasy, výmaz)",
+          "Obchodní podmínky",
+          "Cookies consent (Cookiebot)"
+        ]
+      },
+      {
+        "card": "cSec",
+        "items": [
+          "T3 Env (Validace .env přes Zod)",
+          "Rate Limiting",
+          "CORS konfigurace",
+          "CSRF ochrana (SameSite)",
+          "Content Security Policy (CSP)"
+        ]
+      },
+      {
+        "card": "cCompliance",
+        "items": [
+          "GDPR (cookie consent, RLS)",
+          "Audit trail (kdo co změnil)",
+          "Data retention policy",
+          "Backup & disaster recovery",
+          "SOC2 ready"
+        ]
+      },
+      {
+        "card": "cObservability",
+        "items": [
+          "Sentry (chyby)",
+          "OpenTelemetry (tracing)"
+        ]
+      },
+      {
+        "card": "cLog",
+        "items": [
+          "Pino (JSON logy)"
+        ]
+      },
+      {
+        "card": "cCiCd",
+        "items": [
+          "GitHub Actions",
+          "Automatické testy na PR",
+          "Databázové migrace v CI",
+          "Semantic Release (auto-versioning)"
+        ]
+      },
+      {
+        "card": "cTest",
+        "items": [
+          "Vitest",
+          "Playwright (E2E)",
+          "k6 / Artillery (load testing)"
+        ]
+      },
+      {
+        "card": "cBuildValidation",
+        "items": [
+          "Spusťte testovací sadu",
+          "Spusťte linter a formátovač",
+          "Kontrola typů",
+          "Replikujte CI kontroly lokálně"
+        ]
+      },
+      {
+        "card": "cSecurityBehavior",
+        "items": [
+          "Ověřujte vstupy",
+          "Žádná tvrdá tajemství",
+          "Parametrizované dotazy"
+        ]
+      },
+      {
+        "card": "cAccessibility",
+        "items": [
+          "Sémantické HTML",
+          "Navigace klávesnicí",
+          "Štítky ARIA"
+        ]
+      },
+      {
+        "card": "cDocsBehavior",
+        "items": [
+          "Dokumentace API",
+          "Aktualizace README"
+        ]
+      }
+    ],
+    "LMS (Learning Management System)": [
+      {
+        "card": "rArch",
+        "items": [
+          "Standardní (jedna aplikace)"
+        ]
+      },
+      {
+        "card": "rArchType",
+        "items": [
+          "Modulární monolit (moduly s vlastními hranicemi)"
+        ]
+      },
+      {
+        "card": "rRender",
+        "items": [
+          "SSR (Server-Side Rendering)"
+        ]
+      },
+      {
+        "card": "rDesign",
+        "items": [
+          "Moderní & Minimalistický (Shadcn styl)"
+        ]
+      },
+      {
+        "card": "rCss",
+        "items": [
+          "Tailwind CSS + Shadcn/UI"
+        ]
+      },
+      {
+        "card": "rState",
+        "items": [
+          "Zustand / Pinia"
+        ]
+      },
+      {
+        "card": "rForms",
+        "items": [
+          "React Hook Form + Zod"
+        ]
+      },
+      {
+        "card": "rAnimation",
+        "items": [
+          "Framer Motion"
+        ]
+      },
+      {
+        "card": "rI18n",
+        "items": [
+          "Bez i18n (jednojazyčná aplikace)"
+        ]
+      },
+      {
+        "card": "rBe",
+        "items": [
+          "Next.js API Routes / Server Actions"
+        ]
+      },
+      {
+        "card": "rDbStrategy",
+        "items": [
+          "Neon (serverless Postgres, vlastní Auth)"
+        ]
+      },
+      {
+        "card": "rVercelDb",
+        "items": [
+          "Nativní integrace Neon (auto ENV inject)"
+        ]
+      },
+      {
+        "card": "rOrm",
+        "items": [
+          "Prisma"
+        ]
+      },
+      {
+        "card": "rFetch",
+        "items": [
+          "TanStack Query"
+        ]
+      },
+      {
+        "card": "rRealtime",
+        "items": [
+          "Žádná (REST only)"
+        ]
+      },
+      {
+        "card": "rPooling",
+        "items": [
+          "Neon serverless driver (HTTP, žádný pool)"
+        ]
+      },
+      {
+        "card": "rCache",
+        "items": [
+          "Next.js unstable_cache / Data Cache"
+        ]
+      },
+      {
+        "card": "rApiDesign",
+        "items": [
+          "REST + Zod validace"
+        ]
+      },
+      {
+        "card": "rDeploy",
+        "items": [
+          "Vercel (BaaS + Edge)"
+        ]
+      },
+      {
+        "card": "rIac",
+        "items": [
+          "Vercel CLI + vercel.json"
+        ]
+      },
+      {
+        "card": "rAuthType",
+        "items": [
+          "NextAuth v5 / Auth.js"
+        ]
+      },
+      {
+        "card": "rCms",
+        "items": [
+          "Vlastní DB + Administrace"
+        ]
+      },
+      {
+        "card": "rCmsEditor",
+        "items": [
+          "TipTap (headless, vlastní UI)"
+        ]
+      },
+      {
+        "card": "rAdminShell",
+        "items": [
+          "Vlastní admin-kit (custom)"
+        ]
+      },
+      {
+        "card": "rSeo",
+        "items": [
+          "Nativní (Next.js metadata / Nuxt useHead)"
+        ]
+      },
+      {
+        "card": "rAbTesting",
+        "items": [
+          "Žádné"
+        ]
+      },
+      {
+        "card": "rMobileNav",
+        "items": [
+          "Expo Router (file-based)"
+        ]
+      },
+      {
+        "card": "rMobileUi",
+        "items": [
+          "React Native Paper"
+        ]
+      },
+      {
+        "card": "rMobileState",
+        "items": [
+          "Zustand + TanStack Query"
+        ]
+      },
+      {
+        "card": "rMobileAuth",
+        "items": [
+          "Expo AuthSession (OAuth)"
+        ]
+      },
+      {
+        "card": "rMobileDeploy",
+        "items": [
+          "Expo EAS Build (cloud)"
+        ]
+      },
+      {
+        "card": "rRender",
+        "items": [
+          "ISR (Incremental Static Regeneration)"
+        ]
+      },
+      {
+        "card": "rDbStrategy",
+        "items": [
+          "Supabase (kompletní backend: DB + Auth + Storage)"
+        ]
+      },
+      {
+        "card": "rVercelDb",
+        "items": [
+          "Supabase Marketplace (one-click)"
+        ]
+      },
+      {
+        "card": "rPooling",
+        "items": [
+          "Supabase Supavisor (transaction mode)"
+        ]
+      },
+      {
+        "card": "rAuthType",
+        "items": [
+          "Supabase Auth"
+        ]
+      },
+      {
+        "card": "rCms",
+        "items": [
+          "Headless CMS (Sanity / Strapi / Payload)"
+        ]
+      },
+      {
+        "card": "rAdminShell",
+        "items": [
+          "Payload CMS (admin v ceně)"
+        ]
+      },
+      {
+        "card": "rAbTesting",
+        "items": [
+          "Žádné"
+        ]
+      },
+      {
+        "card": "cLms",
+        "items": [
+          "Kurzy + lekce",
+          "Video streaming (Mux / Cloudflare)",
+          "Kvízy a testy",
+          "Certifikáty (PDF generování)",
+          "Progress tracking",
+          "Diskusní fórum",
+          "Live sessions (Zoom / Daily.co)",
+          "Předplatné kurzu",
+          "Drip content"
+        ]
+      },
+      {
+        "card": "cCore",
+        "items": [
+          "Upload souborů (S3/Supabase/Blob)",
+          "Platby (Stripe)",
+          "E-maily (Resend / Postmark)",
+          "PDF generování",
+          "Notifikace (push/email/SMS)"
+        ]
+      },
+      {
+        "card": "cIntegrations",
+        "items": [
+          "Platby: Stripe",
+          "Email: Resend / Postmark",
+          "Marketing: Mailchimp / Klaviyo"
+        ]
+      },
+      {
+        "card": "cCrm",
+        "items": [
+          "Email sekvence",
+          "Lead scoring"
+        ]
+      },
+      {
+        "card": "cVercelFeatures",
+        "items": [
+          "Vercel Blob (soubory)"
+        ]
+      },
+      {
+        "card": "cAdmin",
+        "items": [
+          "Dashboard (Statistiky, grafy)",
+          "Správa uživatelů (Tabulky)"
+        ]
+      },
+      {
+        "card": "cAuth",
+        "items": [
+          "RBAC (Admin/User/Moderator)",
+          "OAuth (Google, GitHub)",
+          "Session management"
+        ]
+      },
+      {
+        "card": "cLegal",
+        "items": [
+          "GDPR (souhlasy, výmaz)",
+          "Obchodní podmínky",
+          "Cookies consent (Cookiebot)"
+        ]
+      },
+      {
+        "card": "cSec",
+        "items": [
+          "T3 Env (Validace .env přes Zod)",
+          "Rate Limiting",
+          "CSRF ochrana (SameSite)"
+        ]
+      },
+      {
+        "card": "cCompliance",
+        "items": [
+          "GDPR (cookie consent, RLS)",
+          "Backup & disaster recovery"
+        ]
+      },
+      {
+        "card": "cCiCd",
+        "items": [
+          "GitHub Actions",
+          "Automatické testy na PR",
+          "Preview deployment (Vercel)",
+          "Databázové migrace v CI",
+          "Semantic Release (auto-versioning)"
+        ]
+      },
+      {
+        "card": "cTest",
+        "items": [
+          "Vitest",
+          "Playwright (E2E)",
+          "Testing Library (React/Vue)",
+          "MSW (Mock Service Worker)"
+        ]
+      },
+      {
+        "card": "cObservability",
+        "items": [
+          "Sentry (chyby)"
+        ]
+      },
+      {
+        "card": "cBuildValidation",
+        "items": [
+          "Spusťte testovací sadu",
+          "Spusťte linter a formátovač",
+          "Kontrola typů"
+        ]
+      },
+      {
+        "card": "cSecurityBehavior",
+        "items": [
+          "Ověřujte vstupy",
+          "Žádná tvrdá tajemství",
+          "Parametrizované dotazy"
+        ]
+      },
+      {
+        "card": "cAccessibility",
+        "items": [
+          "Sémantické HTML",
+          "Přístupná média a alt texty",
+          "Navigace klávesnicí"
+        ]
+      }
+    ],
+    "CRM / Interní nástroj": [
+      {
+        "card": "rArch",
+        "items": [
+          "Standardní (jedna aplikace)"
+        ]
+      },
+      {
+        "card": "rArchType",
+        "items": [
+          "Modulární monolit (moduly s vlastními hranicemi)"
+        ]
+      },
+      {
+        "card": "rRender",
+        "items": [
+          "SSR (Server-Side Rendering)"
+        ]
+      },
+      {
+        "card": "rDesign",
+        "items": [
+          "Moderní & Minimalistický (Shadcn styl)"
+        ]
+      },
+      {
+        "card": "rCss",
+        "items": [
+          "Tailwind CSS + Shadcn/UI"
+        ]
+      },
+      {
+        "card": "rState",
+        "items": [
+          "Zustand / Pinia"
+        ]
+      },
+      {
+        "card": "rForms",
+        "items": [
+          "React Hook Form + Zod"
+        ]
+      },
+      {
+        "card": "rAnimation",
+        "items": [
+          "Framer Motion"
+        ]
+      },
+      {
+        "card": "rI18n",
+        "items": [
+          "Bez i18n (jednojazyčná aplikace)"
+        ]
+      },
+      {
+        "card": "rBe",
+        "items": [
+          "Next.js API Routes / Server Actions"
+        ]
+      },
+      {
+        "card": "rDbStrategy",
+        "items": [
+          "Neon (serverless Postgres, vlastní Auth)"
+        ]
+      },
+      {
+        "card": "rVercelDb",
+        "items": [
+          "Nativní integrace Neon (auto ENV inject)"
+        ]
+      },
+      {
+        "card": "rOrm",
+        "items": [
+          "Prisma"
+        ]
+      },
+      {
+        "card": "rFetch",
+        "items": [
+          "TanStack Query"
+        ]
+      },
+      {
+        "card": "rRealtime",
+        "items": [
+          "Žádná (REST only)"
+        ]
+      },
+      {
+        "card": "rPooling",
+        "items": [
+          "Neon serverless driver (HTTP, žádný pool)"
+        ]
+      },
+      {
+        "card": "rCache",
+        "items": [
+          "Next.js unstable_cache / Data Cache"
+        ]
+      },
+      {
+        "card": "rApiDesign",
+        "items": [
+          "REST + Zod validace"
+        ]
+      },
+      {
+        "card": "rDeploy",
+        "items": [
+          "Vercel (BaaS + Edge)"
+        ]
+      },
+      {
+        "card": "rIac",
+        "items": [
+          "Vercel CLI + vercel.json"
+        ]
+      },
+      {
+        "card": "rAuthType",
+        "items": [
+          "NextAuth v5 / Auth.js"
+        ]
+      },
+      {
+        "card": "rCms",
+        "items": [
+          "Vlastní DB + Administrace"
+        ]
+      },
+      {
+        "card": "rCmsEditor",
+        "items": [
+          "TipTap (headless, vlastní UI)"
+        ]
+      },
+      {
+        "card": "rAdminShell",
+        "items": [
+          "Vlastní admin-kit (custom)"
+        ]
+      },
+      {
+        "card": "rSeo",
+        "items": [
+          "Nativní (Next.js metadata / Nuxt useHead)"
+        ]
+      },
+      {
+        "card": "rAbTesting",
+        "items": [
+          "Žádné"
+        ]
+      },
+      {
+        "card": "rMobileNav",
+        "items": [
+          "Expo Router (file-based)"
+        ]
+      },
+      {
+        "card": "rMobileUi",
+        "items": [
+          "React Native Paper"
+        ]
+      },
+      {
+        "card": "rMobileState",
+        "items": [
+          "Zustand + TanStack Query"
+        ]
+      },
+      {
+        "card": "rMobileAuth",
+        "items": [
+          "Expo AuthSession (OAuth)"
+        ]
+      },
+      {
+        "card": "rMobileDeploy",
+        "items": [
+          "Expo EAS Build (cloud)"
+        ]
+      },
+      {
+        "card": "rRender",
+        "items": [
+          "SPA (Single Page App)"
+        ]
+      },
+      {
+        "card": "rDesign",
+        "items": [
+          "Enterprise (Korporátní data)"
+        ]
+      },
+      {
+        "card": "rCss",
+        "items": [
+          "MUI"
+        ]
+      },
+      {
+        "card": "rAdminShell",
+        "items": [
+          "React Admin"
+        ]
+      },
+      {
+        "card": "rAbTesting",
+        "items": [
+          "Žádné"
+        ]
+      },
+      {
+        "card": "cCrm",
+        "items": [
+          "Kontakty + firmy",
+          "Pipeline / deals",
+          "Úkoly a aktivity",
+          "Reporty a dashboardy",
+          "Import/Export dat",
+          "Email sekvence",
+          "Lead scoring",
+          "Ticket systém"
+        ]
+      },
+      {
+        "card": "cAdmin",
+        "items": [
+          "Dashboard (Statistiky, grafy)",
+          "Správa uživatelů (Tabulky)",
+          "Audit Log (Historie změn)",
+          "Import/Export dat (CSV/Excel)"
+        ]
+      },
+      {
+        "card": "cCore",
+        "items": [
+          "E-maily (Resend / Postmark)",
+          "PDF generování",
+          "Upload souborů (S3/Supabase/Blob)"
+        ]
+      },
+      {
+        "card": "cIntegrations",
+        "items": [
+          "Email: Resend / Postmark",
+          "Fakturace: Fakturoid"
+        ]
+      },
+      {
+        "card": "cAuth",
+        "items": [
+          "RBAC (Admin/User/Moderator)",
+          "OAuth (Google, GitHub)",
+          "2FA / TOTP",
+          "Session management",
+          "Device tracking"
+        ]
+      },
+      {
+        "card": "cSec",
+        "items": [
+          "T3 Env (Validace .env přes Zod)",
+          "Rate Limiting",
+          "CSRF ochrana (SameSite)",
+          "Content Security Policy (CSP)"
+        ]
+      },
+      {
+        "card": "cCompliance",
+        "items": [
+          "GDPR (cookie consent, RLS)",
+          "Audit trail (kdo co změnil)",
+          "Data retention policy",
+          "Backup & disaster recovery"
+        ]
+      },
+      {
+        "card": "cLegal",
+        "items": [
+          "GDPR (souhlasy, výmaz)",
+          "Ochrana osobních údajů"
+        ]
+      },
+      {
+        "card": "cObservability",
+        "items": [
+          "Sentry (chyby)"
+        ]
+      },
+      {
+        "card": "cLog",
+        "items": [
+          "Pino (JSON logy)"
+        ]
+      },
+      {
+        "card": "cCiCd",
+        "items": [
+          "GitHub Actions",
+          "Automatické testy na PR"
+        ]
+      },
+      {
+        "card": "cTest",
+        "items": [
+          "Vitest",
+          "Playwright (E2E)",
+          "Testing Library (React/Vue)",
+          "MSW (Mock Service Worker)"
+        ]
+      },
+      {
+        "card": "cBuildValidation",
+        "items": [
+          "Spusťte testovací sadu",
+          "Spusťte linter a formátovač",
+          "Kontrola typů"
+        ]
+      },
+      {
+        "card": "cSecurityBehavior",
+        "items": [
+          "Ověřujte vstupy",
+          "Žádná tvrdá tajemství",
+          "Parametrizované dotazy"
+        ]
+      },
+      {
+        "card": "cAccessibility",
+        "items": [
+          "Sémantické HTML",
+          "Navigace klávesnicí",
+          "Štítky ARIA"
+        ]
+      },
+      {
+        "card": "cDocsBehavior",
+        "items": [
+          "Aktualizace README",
+          "Dokumentace API"
+        ]
+      }
+    ],
+    "Blog / Magazín / Média": [
+      {
+        "card": "rArch",
+        "items": [
+          "Standardní (jedna aplikace)"
+        ]
+      },
+      {
+        "card": "rArchType",
+        "items": [
+          "Modulární monolit (moduly s vlastními hranicemi)"
+        ]
+      },
+      {
+        "card": "rRender",
+        "items": [
+          "SSR (Server-Side Rendering)"
+        ]
+      },
+      {
+        "card": "rDesign",
+        "items": [
+          "Moderní & Minimalistický (Shadcn styl)"
+        ]
+      },
+      {
+        "card": "rCss",
+        "items": [
+          "Tailwind CSS + Shadcn/UI"
+        ]
+      },
+      {
+        "card": "rState",
+        "items": [
+          "Zustand / Pinia"
+        ]
+      },
+      {
+        "card": "rForms",
+        "items": [
+          "React Hook Form + Zod"
+        ]
+      },
+      {
+        "card": "rAnimation",
+        "items": [
+          "Framer Motion"
+        ]
+      },
+      {
+        "card": "rI18n",
+        "items": [
+          "Bez i18n (jednojazyčná aplikace)"
+        ]
+      },
+      {
+        "card": "rBe",
+        "items": [
+          "Next.js API Routes / Server Actions"
+        ]
+      },
+      {
+        "card": "rDbStrategy",
+        "items": [
+          "Neon (serverless Postgres, vlastní Auth)"
+        ]
+      },
+      {
+        "card": "rVercelDb",
+        "items": [
+          "Nativní integrace Neon (auto ENV inject)"
+        ]
+      },
+      {
+        "card": "rOrm",
+        "items": [
+          "Prisma"
+        ]
+      },
+      {
+        "card": "rFetch",
+        "items": [
+          "TanStack Query"
+        ]
+      },
+      {
+        "card": "rRealtime",
+        "items": [
+          "Žádná (REST only)"
+        ]
+      },
+      {
+        "card": "rPooling",
+        "items": [
+          "Neon serverless driver (HTTP, žádný pool)"
+        ]
+      },
+      {
+        "card": "rCache",
+        "items": [
+          "Next.js unstable_cache / Data Cache"
+        ]
+      },
+      {
+        "card": "rApiDesign",
+        "items": [
+          "REST + Zod validace"
+        ]
+      },
+      {
+        "card": "rDeploy",
+        "items": [
+          "Vercel (BaaS + Edge)"
+        ]
+      },
+      {
+        "card": "rIac",
+        "items": [
+          "Vercel CLI + vercel.json"
+        ]
+      },
+      {
+        "card": "rAuthType",
+        "items": [
+          "NextAuth v5 / Auth.js"
+        ]
+      },
+      {
+        "card": "rCms",
+        "items": [
+          "Vlastní DB + Administrace"
+        ]
+      },
+      {
+        "card": "rCmsEditor",
+        "items": [
+          "TipTap (headless, vlastní UI)"
+        ]
+      },
+      {
+        "card": "rAdminShell",
+        "items": [
+          "Vlastní admin-kit (custom)"
+        ]
+      },
+      {
+        "card": "rSeo",
+        "items": [
+          "Nativní (Next.js metadata / Nuxt useHead)"
+        ]
+      },
+      {
+        "card": "rAbTesting",
+        "items": [
+          "Žádné"
+        ]
+      },
+      {
+        "card": "rMobileNav",
+        "items": [
+          "Expo Router (file-based)"
+        ]
+      },
+      {
+        "card": "rMobileUi",
+        "items": [
+          "React Native Paper"
+        ]
+      },
+      {
+        "card": "rMobileState",
+        "items": [
+          "Zustand + TanStack Query"
+        ]
+      },
+      {
+        "card": "rMobileAuth",
+        "items": [
+          "Expo AuthSession (OAuth)"
+        ]
+      },
+      {
+        "card": "rMobileDeploy",
+        "items": [
+          "Expo EAS Build (cloud)"
+        ]
+      },
+      {
+        "card": "rRender",
+        "items": [
+          "SSG (Static Site Generation)"
+        ]
+      },
+      {
+        "card": "rArchType",
+        "items": [
+          "Monolit (jedna aplikace)"
+        ]
+      },
+      {
+        "card": "rState",
+        "items": [
+          "Bez globálního stavu"
+        ]
+      },
+      {
+        "card": "rAnimation",
+        "items": [
+          "CSS Animations (nativní)"
+        ]
+      },
+      {
+        "card": "rCms",
+        "items": [
+          "Headless CMS (Sanity / Strapi / Payload)"
+        ]
+      },
+      {
+        "card": "rCmsEditor",
+        "items": [
+          "Žádný (pouze MDX)"
+        ]
+      },
+      {
+        "card": "rAbTesting",
+        "items": [
+          "Žádné"
+        ]
+      },
+      {
+        "card": "cMarketing",
+        "items": [
+          "Newsletter",
+          "Blog s MDX",
+          "Landing pages builder",
+          "Structured data (JSON-LD)",
+          "Open Graph optimalizace",
+          "Sitemap + robots.txt",
+          "RSS feed",
+          "Affiliate program"
+        ]
+      },
+      {
+        "card": "rCms",
+        "items": [
+          "Headless CMS (Sanity / Strapi / Payload)"
+        ]
+      },
+      {
+        "card": "rSeo",
+        "items": [
+          "Nativní (Next.js metadata / Nuxt useHead)"
+        ]
+      },
+      {
+        "card": "cLegal",
+        "items": [
+          "GDPR (souhlasy, výmaz)",
+          "Cookies consent (Cookiebot)",
+          "Autorská práva a licence"
+        ]
+      },
+      {
+        "card": "cCompliance",
+        "items": [
+          "GDPR (cookie consent, RLS)",
+          "Backup & disaster recovery"
+        ]
+      },
+      {
+        "card": "cObservability",
+        "items": [
+          "Vercel Analytics",
+          "Google Analytics 4",
+          "Vercel Speed Insights"
+        ]
+      },
+      {
+        "card": "cCiCd",
+        "items": [
+          "GitHub Actions",
+          "Preview deployment (Vercel)"
+        ]
+      },
+      {
+        "card": "cTest",
+        "items": [
+          "Vitest",
+          "Playwright (E2E)",
+          "Testing Library (React/Vue)",
+          "MSW (Mock Service Worker)"
+        ]
+      },
+      {
+        "card": "cVercelFeatures",
+        "items": [
+          "Preview Deployment na PR",
+          "Vercel Blob (soubory)"
+        ]
+      },
+      {
+        "card": "cBuildValidation",
+        "items": [
+          "Spusťte linter a formátovač",
+          "Kontrola typů"
+        ]
+      },
+      {
+        "card": "cSecurityBehavior",
+        "items": [
+          "Prevence XSS",
+          "Žádná tvrdá tajemství"
+        ]
+      },
+      {
+        "card": "cAccessibility",
+        "items": [
+          "Sémantické HTML",
+          "Alternativní text u obrázků",
+          "Kontrast a vizuální přístupnost"
+        ]
+      },
+      {
+        "card": "cPerformance",
+        "items": [
+          "Velikost svazku",
+          "Memoizace"
+        ]
+      },
+      {
+        "card": "cDocsBehavior",
+        "items": [
+          "Aktualizace README"
+        ]
+      }
+    ],
+    "Portfolio / Prezentační web": [
+      {
+        "card": "rArch",
+        "items": [
+          "Standardní (jedna aplikace)"
+        ]
+      },
+      {
+        "card": "rArchType",
+        "items": [
+          "Modulární monolit (moduly s vlastními hranicemi)"
+        ]
+      },
+      {
+        "card": "rRender",
+        "items": [
+          "SSR (Server-Side Rendering)"
+        ]
+      },
+      {
+        "card": "rDesign",
+        "items": [
+          "Moderní & Minimalistický (Shadcn styl)"
+        ]
+      },
+      {
+        "card": "rCss",
+        "items": [
+          "Tailwind CSS + Shadcn/UI"
+        ]
+      },
+      {
+        "card": "rState",
+        "items": [
+          "Zustand / Pinia"
+        ]
+      },
+      {
+        "card": "rForms",
+        "items": [
+          "React Hook Form + Zod"
+        ]
+      },
+      {
+        "card": "rAnimation",
+        "items": [
+          "Framer Motion"
+        ]
+      },
+      {
+        "card": "rI18n",
+        "items": [
+          "Bez i18n (jednojazyčná aplikace)"
+        ]
+      },
+      {
+        "card": "rBe",
+        "items": [
+          "Next.js API Routes / Server Actions"
+        ]
+      },
+      {
+        "card": "rDbStrategy",
+        "items": [
+          "Neon (serverless Postgres, vlastní Auth)"
+        ]
+      },
+      {
+        "card": "rVercelDb",
+        "items": [
+          "Nativní integrace Neon (auto ENV inject)"
+        ]
+      },
+      {
+        "card": "rOrm",
+        "items": [
+          "Prisma"
+        ]
+      },
+      {
+        "card": "rFetch",
+        "items": [
+          "TanStack Query"
+        ]
+      },
+      {
+        "card": "rRealtime",
+        "items": [
+          "Žádná (REST only)"
+        ]
+      },
+      {
+        "card": "rPooling",
+        "items": [
+          "Neon serverless driver (HTTP, žádný pool)"
+        ]
+      },
+      {
+        "card": "rCache",
+        "items": [
+          "Next.js unstable_cache / Data Cache"
+        ]
+      },
+      {
+        "card": "rApiDesign",
+        "items": [
+          "REST + Zod validace"
+        ]
+      },
+      {
+        "card": "rDeploy",
+        "items": [
+          "Vercel (BaaS + Edge)"
+        ]
+      },
+      {
+        "card": "rIac",
+        "items": [
+          "Vercel CLI + vercel.json"
+        ]
+      },
+      {
+        "card": "rAuthType",
+        "items": [
+          "NextAuth v5 / Auth.js"
+        ]
+      },
+      {
+        "card": "rCms",
+        "items": [
+          "Vlastní DB + Administrace"
+        ]
+      },
+      {
+        "card": "rCmsEditor",
+        "items": [
+          "TipTap (headless, vlastní UI)"
+        ]
+      },
+      {
+        "card": "rAdminShell",
+        "items": [
+          "Vlastní admin-kit (custom)"
+        ]
+      },
+      {
+        "card": "rSeo",
+        "items": [
+          "Nativní (Next.js metadata / Nuxt useHead)"
+        ]
+      },
+      {
+        "card": "rAbTesting",
+        "items": [
+          "Žádné"
+        ]
+      },
+      {
+        "card": "rMobileNav",
+        "items": [
+          "Expo Router (file-based)"
+        ]
+      },
+      {
+        "card": "rMobileUi",
+        "items": [
+          "React Native Paper"
+        ]
+      },
+      {
+        "card": "rMobileState",
+        "items": [
+          "Zustand + TanStack Query"
+        ]
+      },
+      {
+        "card": "rMobileAuth",
+        "items": [
+          "Expo AuthSession (OAuth)"
+        ]
+      },
+      {
+        "card": "rMobileDeploy",
+        "items": [
+          "Expo EAS Build (cloud)"
+        ]
+      },
+      {
+        "card": "rRender",
+        "items": [
+          "SSG (Static Site Generation)"
+        ]
+      },
+      {
+        "card": "rArchType",
+        "items": [
+          "Monolit (jedna aplikace)"
+        ]
+      },
+      {
+        "card": "rCms",
+        "items": [
+          "Lokální soubory (MDX / Markdown)"
+        ]
+      },
+      {
+        "card": "rCmsEditor",
+        "items": [
+          "Žádný (pouze MDX)"
+        ]
+      },
+      {
+        "card": "rState",
+        "items": [
+          "Bez globálního stavu"
+        ]
+      },
+      {
+        "card": "rForms",
+        "items": [
+          "Čistý state"
+        ]
+      },
+      {
+        "card": "rAnimation",
+        "items": [
+          "Framer Motion"
+        ]
+      },
+      {
+        "card": "rAbTesting",
+        "items": [
+          "Žádné"
+        ]
+      },
+      {
+        "card": "cMarketing",
+        "items": [
+          "Sitemap + robots.txt",
+          "Structured data (JSON-LD)",
+          "Open Graph optimalizace",
+          "RSS feed"
+        ]
+      },
+      {
+        "card": "rSeo",
+        "items": [
+          "Nativní (Next.js metadata / Nuxt useHead)"
+        ]
+      },
+      {
+        "card": "cLegal",
+        "items": [
+          "GDPR (souhlasy, výmaz)",
+          "Cookies consent (Cookiebot)",
+          "Obchodní podmínky",
+          "Autorská práva a licence"
+        ]
+      },
+      {
+        "card": "cObservability",
+        "items": [
+          "Vercel Analytics",
+          "Vercel Speed Insights"
+        ]
+      },
+      {
+        "card": "cCiCd",
+        "items": [
+          "GitHub Actions",
+          "Preview deployment (Vercel)"
+        ]
+      },
+      {
+        "card": "cBuildValidation",
+        "items": [
+          "Spusťte linter a formátovač"
+        ]
+      },
+      {
+        "card": "cSecurityBehavior",
+        "items": [
+          "Žádná tvrdá tajemství",
+          "Prevence XSS"
+        ]
+      },
+      {
+        "card": "cAccessibility",
+        "items": [
+          "Sémantické HTML",
+          "Alternativní text u obrázků",
+          "Kontrast a vizuální přístupnost"
+        ]
+      },
+      {
+        "card": "cPerformance",
+        "items": [
+          "Velikost svazku"
+        ]
+      }
+    ],
+    "Sociální síť / Komunita": [
+      {
+        "card": "rArch",
+        "items": [
+          "Standardní (jedna aplikace)"
+        ]
+      },
+      {
+        "card": "rArchType",
+        "items": [
+          "Modulární monolit (moduly s vlastními hranicemi)"
+        ]
+      },
+      {
+        "card": "rRender",
+        "items": [
+          "SSR (Server-Side Rendering)"
+        ]
+      },
+      {
+        "card": "rDesign",
+        "items": [
+          "Moderní & Minimalistický (Shadcn styl)"
+        ]
+      },
+      {
+        "card": "rCss",
+        "items": [
+          "Tailwind CSS + Shadcn/UI"
+        ]
+      },
+      {
+        "card": "rState",
+        "items": [
+          "Zustand / Pinia"
+        ]
+      },
+      {
+        "card": "rForms",
+        "items": [
+          "React Hook Form + Zod"
+        ]
+      },
+      {
+        "card": "rAnimation",
+        "items": [
+          "Framer Motion"
+        ]
+      },
+      {
+        "card": "rI18n",
+        "items": [
+          "Bez i18n (jednojazyčná aplikace)"
+        ]
+      },
+      {
+        "card": "rBe",
+        "items": [
+          "Next.js API Routes / Server Actions"
+        ]
+      },
+      {
+        "card": "rDbStrategy",
+        "items": [
+          "Neon (serverless Postgres, vlastní Auth)"
+        ]
+      },
+      {
+        "card": "rVercelDb",
+        "items": [
+          "Nativní integrace Neon (auto ENV inject)"
+        ]
+      },
+      {
+        "card": "rOrm",
+        "items": [
+          "Prisma"
+        ]
+      },
+      {
+        "card": "rFetch",
+        "items": [
+          "TanStack Query"
+        ]
+      },
+      {
+        "card": "rRealtime",
+        "items": [
+          "Žádná (REST only)"
+        ]
+      },
+      {
+        "card": "rPooling",
+        "items": [
+          "Neon serverless driver (HTTP, žádný pool)"
+        ]
+      },
+      {
+        "card": "rCache",
+        "items": [
+          "Next.js unstable_cache / Data Cache"
+        ]
+      },
+      {
+        "card": "rApiDesign",
+        "items": [
+          "REST + Zod validace"
+        ]
+      },
+      {
+        "card": "rDeploy",
+        "items": [
+          "Vercel (BaaS + Edge)"
+        ]
+      },
+      {
+        "card": "rIac",
+        "items": [
+          "Vercel CLI + vercel.json"
+        ]
+      },
+      {
+        "card": "rAuthType",
+        "items": [
+          "NextAuth v5 / Auth.js"
+        ]
+      },
+      {
+        "card": "rCms",
+        "items": [
+          "Vlastní DB + Administrace"
+        ]
+      },
+      {
+        "card": "rCmsEditor",
+        "items": [
+          "TipTap (headless, vlastní UI)"
+        ]
+      },
+      {
+        "card": "rAdminShell",
+        "items": [
+          "Vlastní admin-kit (custom)"
+        ]
+      },
+      {
+        "card": "rSeo",
+        "items": [
+          "Nativní (Next.js metadata / Nuxt useHead)"
+        ]
+      },
+      {
+        "card": "rAbTesting",
+        "items": [
+          "Žádné"
+        ]
+      },
+      {
+        "card": "rMobileNav",
+        "items": [
+          "Expo Router (file-based)"
+        ]
+      },
+      {
+        "card": "rMobileUi",
+        "items": [
+          "React Native Paper"
+        ]
+      },
+      {
+        "card": "rMobileState",
+        "items": [
+          "Zustand + TanStack Query"
+        ]
+      },
+      {
+        "card": "rMobileAuth",
+        "items": [
+          "Expo AuthSession (OAuth)"
+        ]
+      },
+      {
+        "card": "rMobileDeploy",
+        "items": [
+          "Expo EAS Build (cloud)"
+        ]
+      },
+      {
+        "card": "rBe",
+        "items": [
+          "Oddělený Node.js (Express / NestJS)"
+        ]
+      },
+      {
+        "card": "rDeploy",
+        "items": [
+          "Docker Container (VPS/AWS)"
+        ]
+      },
+      {
+        "card": "rDbStrategy",
+        "items": [
+          "Vlastní PostgreSQL (VPS)"
+        ]
+      },
+      {
+        "card": "rVercelDb",
+        "items": [
+          "Nepoužívám Vercel"
+        ]
+      },
+      {
+        "card": "rPooling",
+        "items": [
+          "Vlastní konfigurace poolu"
+        ]
+      },
+      {
+        "card": "rRealtime",
+        "items": [
+          "WebSockets (Socket.io / nativní)"
+        ]
+      },
+      {
+        "card": "rCache",
+        "items": [
+          "Vercel KV / Upstash Redis"
+        ]
+      },
+      {
+        "card": "rApiDesign",
+        "items": [
+          "REST + OpenAPI spec"
+        ]
+      },
+      {
+        "card": "rIac",
+        "items": [
+          "Terraform"
+        ]
+      },
+      {
+        "card": "rAdminShell",
+        "items": [
+          "Vlastní admin-kit (custom)"
+        ]
+      },
+      {
+        "card": "rAbTesting",
+        "items": [
+          "Žádné"
+        ]
+      },
+      {
+        "card": "cCore",
+        "items": [
+          "Upload souborů (S3/Supabase/Blob)",
+          "Notifikace (push/email/SMS)",
+          "E-maily (Resend / Postmark)",
+          "Full-text vyhledávání (Meilisearch)"
+        ]
+      },
+      {
+        "card": "rRealtime",
+        "items": [
+          "WebSockets (Socket.io / nativní)",
+          "Supabase Realtime / Firebase"
+        ]
+      },
+      {
+        "card": "cAdmin",
+        "items": [
+          "Dashboard (Statistiky, grafy)",
+          "Správa uživatelů (Tabulky)",
+          "Audit Log (Historie změn)"
+        ]
+      },
+      {
+        "card": "cAuth",
+        "items": [
+          "RBAC (Admin/User/Moderator)",
+          "OAuth (Google, GitHub)",
+          "2FA / TOTP",
+          "Session management",
+          "Device tracking"
+        ]
+      },
+      {
+        "card": "cLegal",
+        "items": [
+          "GDPR (souhlasy, výmaz)",
+          "Obchodní podmínky",
+          "Cookies consent (Cookiebot)",
+          "Ochrana osobních údajů"
+        ]
+      },
+      {
+        "card": "cSec",
+        "items": [
+          "T3 Env (Validace .env přes Zod)",
+          "Rate Limiting",
+          "CORS konfigurace",
+          "CSRF ochrana (SameSite)",
+          "Content Security Policy (CSP)"
+        ]
+      },
+      {
+        "card": "cCompliance",
+        "items": [
+          "GDPR (cookie consent, RLS)",
+          "Audit trail (kdo co změnil)",
+          "Data retention policy",
+          "Backup & disaster recovery"
+        ]
+      },
+      {
+        "card": "cAi",
+        "items": [
+          "OpenAI API"
+        ]
+      },
+      {
+        "card": "cObservability",
+        "items": [
+          "Sentry (chyby)"
+        ]
+      },
+      {
+        "card": "cLog",
+        "items": [
+          "Pino (JSON logy)"
+        ]
+      },
+      {
+        "card": "cCiCd",
+        "items": [
+          "GitHub Actions",
+          "Automatické testy na PR",
+          "Preview deployment (Vercel)",
+          "Databázové migrace v CI",
+          "Semantic Release (auto-versioning)"
+        ]
+      },
+      {
+        "card": "cTest",
+        "items": [
+          "Vitest",
+          "Playwright (E2E)",
+          "k6 / Artillery (load testing)"
+        ]
+      },
+      {
+        "card": "cBuildValidation",
+        "items": [
+          "Spusťte testovací sadu",
+          "Spusťte linter a formátovač",
+          "Kontrola typů"
+        ]
+      },
+      {
+        "card": "cSecurityBehavior",
+        "items": [
+          "Ověřujte vstupy",
+          "Žádná tvrdá tajemství",
+          "Parametrizované dotazy",
+          "Prevence XSS"
+        ]
+      },
+      {
+        "card": "cAccessibility",
+        "items": [
+          "Sémantické HTML",
+          "Alternativní text u obrázků",
+          "Navigace klávesnicí",
+          "Štítky ARIA"
+        ]
+      }
+    ],
+    "Marketplace (více prodejců)": [
+      {
+        "card": "rArch",
+        "items": [
+          "Standardní (jedna aplikace)"
+        ]
+      },
+      {
+        "card": "rArchType",
+        "items": [
+          "Modulární monolit (moduly s vlastními hranicemi)"
+        ]
+      },
+      {
+        "card": "rRender",
+        "items": [
+          "SSR (Server-Side Rendering)"
+        ]
+      },
+      {
+        "card": "rDesign",
+        "items": [
+          "Moderní & Minimalistický (Shadcn styl)"
+        ]
+      },
+      {
+        "card": "rCss",
+        "items": [
+          "Tailwind CSS + Shadcn/UI"
+        ]
+      },
+      {
+        "card": "rState",
+        "items": [
+          "Zustand / Pinia"
+        ]
+      },
+      {
+        "card": "rForms",
+        "items": [
+          "React Hook Form + Zod"
+        ]
+      },
+      {
+        "card": "rAnimation",
+        "items": [
+          "Framer Motion"
+        ]
+      },
+      {
+        "card": "rI18n",
+        "items": [
+          "Bez i18n (jednojazyčná aplikace)"
+        ]
+      },
+      {
+        "card": "rBe",
+        "items": [
+          "Next.js API Routes / Server Actions"
+        ]
+      },
+      {
+        "card": "rDbStrategy",
+        "items": [
+          "Neon (serverless Postgres, vlastní Auth)"
+        ]
+      },
+      {
+        "card": "rVercelDb",
+        "items": [
+          "Nativní integrace Neon (auto ENV inject)"
+        ]
+      },
+      {
+        "card": "rOrm",
+        "items": [
+          "Prisma"
+        ]
+      },
+      {
+        "card": "rFetch",
+        "items": [
+          "TanStack Query"
+        ]
+      },
+      {
+        "card": "rRealtime",
+        "items": [
+          "Žádná (REST only)"
+        ]
+      },
+      {
+        "card": "rPooling",
+        "items": [
+          "Neon serverless driver (HTTP, žádný pool)"
+        ]
+      },
+      {
+        "card": "rCache",
+        "items": [
+          "Next.js unstable_cache / Data Cache"
+        ]
+      },
+      {
+        "card": "rApiDesign",
+        "items": [
+          "REST + Zod validace"
+        ]
+      },
+      {
+        "card": "rDeploy",
+        "items": [
+          "Vercel (BaaS + Edge)"
+        ]
+      },
+      {
+        "card": "rIac",
+        "items": [
+          "Vercel CLI + vercel.json"
+        ]
+      },
+      {
+        "card": "rAuthType",
+        "items": [
+          "NextAuth v5 / Auth.js"
+        ]
+      },
+      {
+        "card": "rCms",
+        "items": [
+          "Vlastní DB + Administrace"
+        ]
+      },
+      {
+        "card": "rCmsEditor",
+        "items": [
+          "TipTap (headless, vlastní UI)"
+        ]
+      },
+      {
+        "card": "rAdminShell",
+        "items": [
+          "Vlastní admin-kit (custom)"
+        ]
+      },
+      {
+        "card": "rSeo",
+        "items": [
+          "Nativní (Next.js metadata / Nuxt useHead)"
+        ]
+      },
+      {
+        "card": "rAbTesting",
+        "items": [
+          "Žádné"
+        ]
+      },
+      {
+        "card": "rMobileNav",
+        "items": [
+          "Expo Router (file-based)"
+        ]
+      },
+      {
+        "card": "rMobileUi",
+        "items": [
+          "React Native Paper"
+        ]
+      },
+      {
+        "card": "rMobileState",
+        "items": [
+          "Zustand + TanStack Query"
+        ]
+      },
+      {
+        "card": "rMobileAuth",
+        "items": [
+          "Expo AuthSession (OAuth)"
+        ]
+      },
+      {
+        "card": "rMobileDeploy",
+        "items": [
+          "Expo EAS Build (cloud)"
+        ]
+      },
+      {
+        "card": "rRender",
+        "items": [
+          "ISR (Incremental Static Regeneration)"
+        ]
+      },
+      {
+        "card": "rDbStrategy",
+        "items": [
+          "Supabase (kompletní backend: DB + Auth + Storage)"
+        ]
+      },
+      {
+        "card": "rVercelDb",
+        "items": [
+          "Supabase Marketplace (one-click)"
+        ]
+      },
+      {
+        "card": "rOrm",
+        "items": [
+          "Drizzle ORM"
+        ]
+      },
+      {
+        "card": "rPooling",
+        "items": [
+          "Supabase Supavisor (transaction mode)"
+        ]
+      },
+      {
+        "card": "rAuthType",
+        "items": [
+          "Supabase Auth"
+        ]
+      },
+      {
+        "card": "rCache",
+        "items": [
+          "Vercel KV / Upstash Redis"
+        ]
+      },
+      {
+        "card": "rApiDesign",
+        "items": [
+          "REST + OpenAPI spec"
+        ]
+      },
+      {
+        "card": "rAdminShell",
+        "items": [
+          "Refine.dev"
+        ]
+      },
+      {
+        "card": "rAbTesting",
+        "items": [
+          "PostHog (feature flags + experiments)"
+        ]
+      },
+      {
+        "card": "cEcommerce",
+        "items": [
+          "Product catalog (varianty, SKU)",
+          "Košík + checkout flow",
+          "Platební brána (Stripe / GoPay)",
+          "Doprava (Packeta / DPD / PPL)",
+          "Skladové hospodářství",
+          "Fakturace (Fakturoid / iDoklad)",
+          "Slevové kódy a akce",
+          "Recenze produktů",
+          "Wishlist / oblíbené",
+          "Porovnání produktů",
+          "Doporučovací engine",
+          "Abandoned cart recovery"
+        ]
+      },
+      {
+        "card": "cSaas",
+        "items": [
+          "Multi-tenant architektura",
+          "Subscription billing (Stripe Billing)",
+          "Plány + feature gating",
+          "Trial + upgrade/downgrade",
+          "Usage-based billing",
+          "Invoice generování",
+          "Dunning management",
+          "Team / organizace",
+          "Invite systém",
+          "RBAC per tenant",
+          "White-label možnost"
+        ]
+      },
+      {
+        "card": "cCore",
+        "items": [
+          "Upload souborů (S3/Supabase/Blob)",
+          "Platby (Stripe)",
+          "E-maily (Resend / Postmark)",
+          "PDF generování",
+          "Notifikace (push/email/SMS)",
+          "Full-text vyhledávání (Meilisearch)"
+        ]
+      },
+      {
+        "card": "cIntegrations",
+        "items": [
+          "Platby: Stripe",
+          "Doprava: Packeta / Zásilkovna",
+          "Fakturace: Fakturoid",
+          "Email: Resend / Postmark",
+          "Účetnictví: Pohoda / Money S3"
+        ]
+      },
+      {
+        "card": "cAdmin",
+        "items": [
+          "Dashboard (Statistiky, grafy)",
+          "Správa uživatelů (Tabulky)",
+          "Audit Log (Historie změn)",
+          "Import/Export dat (CSV/Excel)"
+        ]
+      },
+      {
+        "card": "cAuth",
+        "items": [
+          "RBAC (Admin/User/Moderator)",
+          "OAuth (Google, GitHub)",
+          "2FA / TOTP",
+          "Session management"
+        ]
+      },
+      {
+        "card": "cLegal",
+        "items": [
+          "GDPR (souhlasy, výmaz)",
+          "Obchodní podmínky",
+          "Cookies consent (Cookiebot)",
+          "Reklamační systém",
+          "14 dní na vrácení (spotřebitel)",
+          "Ochrana osobních údajů",
+          "Autorská práva a licence",
+          "VAT / DPH kalkulace"
+        ]
+      },
+      {
+        "card": "cSec",
+        "items": [
+          "T3 Env (Validace .env přes Zod)",
+          "Rate Limiting",
+          "CORS konfigurace",
+          "CSRF ochrana (SameSite)",
+          "Content Security Policy (CSP)"
+        ]
+      },
+      {
+        "card": "cCompliance",
+        "items": [
+          "GDPR (cookie consent, RLS)",
+          "Audit trail (kdo co změnil)",
+          "Data retention policy",
+          "Backup & disaster recovery"
+        ]
+      },
+      {
+        "card": "cObservability",
+        "items": [
+          "Sentry (chyby)"
+        ]
+      },
+      {
+        "card": "cLog",
+        "items": [
+          "Pino (JSON logy)"
+        ]
+      },
+      {
+        "card": "cCiCd",
+        "items": [
+          "GitHub Actions",
+          "Automatické testy na PR",
+          "Preview deployment (Vercel)",
+          "Databázové migrace v CI",
+          "Semantic Release (auto-versioning)"
+        ]
+      },
+      {
+        "card": "cTest",
+        "items": [
+          "Vitest",
+          "Playwright (E2E)",
+          "Testing Library (React/Vue)",
+          "MSW (Mock Service Worker)"
+        ]
+      },
+      {
+        "card": "cBuildValidation",
+        "items": [
+          "Spusťte testovací sadu",
+          "Spusťte linter a formátovač",
+          "Kontrola typů"
+        ]
+      },
+      {
+        "card": "cSecurityBehavior",
+        "items": [
+          "Ověřujte vstupy",
+          "Žádná tvrdá tajemství",
+          "Parametrizované dotazy"
+        ]
+      },
+      {
+        "card": "cAccessibility",
+        "items": [
+          "Sémantické HTML",
+          "Navigace klávesnicí"
+        ]
+      }
+    ],
+    "Booking + platby (kombinace)": [
+      {
+        "card": "rArch",
+        "items": [
+          "Standardní (jedna aplikace)"
+        ]
+      },
+      {
+        "card": "rArchType",
+        "items": [
+          "Modulární monolit (moduly s vlastními hranicemi)"
+        ]
+      },
+      {
+        "card": "rRender",
+        "items": [
+          "SSR (Server-Side Rendering)"
+        ]
+      },
+      {
+        "card": "rDesign",
+        "items": [
+          "Moderní & Minimalistický (Shadcn styl)"
+        ]
+      },
+      {
+        "card": "rCss",
+        "items": [
+          "Tailwind CSS + Shadcn/UI"
+        ]
+      },
+      {
+        "card": "rState",
+        "items": [
+          "Zustand / Pinia"
+        ]
+      },
+      {
+        "card": "rForms",
+        "items": [
+          "React Hook Form + Zod"
+        ]
+      },
+      {
+        "card": "rAnimation",
+        "items": [
+          "Framer Motion"
+        ]
+      },
+      {
+        "card": "rI18n",
+        "items": [
+          "Bez i18n (jednojazyčná aplikace)"
+        ]
+      },
+      {
+        "card": "rBe",
+        "items": [
+          "Next.js API Routes / Server Actions"
+        ]
+      },
+      {
+        "card": "rDbStrategy",
+        "items": [
+          "Neon (serverless Postgres, vlastní Auth)"
+        ]
+      },
+      {
+        "card": "rVercelDb",
+        "items": [
+          "Nativní integrace Neon (auto ENV inject)"
+        ]
+      },
+      {
+        "card": "rOrm",
+        "items": [
+          "Prisma"
+        ]
+      },
+      {
+        "card": "rFetch",
+        "items": [
+          "TanStack Query"
+        ]
+      },
+      {
+        "card": "rRealtime",
+        "items": [
+          "Žádná (REST only)"
+        ]
+      },
+      {
+        "card": "rPooling",
+        "items": [
+          "Neon serverless driver (HTTP, žádný pool)"
+        ]
+      },
+      {
+        "card": "rCache",
+        "items": [
+          "Next.js unstable_cache / Data Cache"
+        ]
+      },
+      {
+        "card": "rApiDesign",
+        "items": [
+          "REST + Zod validace"
+        ]
+      },
+      {
+        "card": "rDeploy",
+        "items": [
+          "Vercel (BaaS + Edge)"
+        ]
+      },
+      {
+        "card": "rIac",
+        "items": [
+          "Vercel CLI + vercel.json"
+        ]
+      },
+      {
+        "card": "rAuthType",
+        "items": [
+          "NextAuth v5 / Auth.js"
+        ]
+      },
+      {
+        "card": "rCms",
+        "items": [
+          "Vlastní DB + Administrace"
+        ]
+      },
+      {
+        "card": "rCmsEditor",
+        "items": [
+          "TipTap (headless, vlastní UI)"
+        ]
+      },
+      {
+        "card": "rAdminShell",
+        "items": [
+          "Vlastní admin-kit (custom)"
+        ]
+      },
+      {
+        "card": "rSeo",
+        "items": [
+          "Nativní (Next.js metadata / Nuxt useHead)"
+        ]
+      },
+      {
+        "card": "rAbTesting",
+        "items": [
+          "Žádné"
+        ]
+      },
+      {
+        "card": "rMobileNav",
+        "items": [
+          "Expo Router (file-based)"
+        ]
+      },
+      {
+        "card": "rMobileUi",
+        "items": [
+          "React Native Paper"
+        ]
+      },
+      {
+        "card": "rMobileState",
+        "items": [
+          "Zustand + TanStack Query"
+        ]
+      },
+      {
+        "card": "rMobileAuth",
+        "items": [
+          "Expo AuthSession (OAuth)"
+        ]
+      },
+      {
+        "card": "rMobileDeploy",
+        "items": [
+          "Expo EAS Build (cloud)"
+        ]
+      },
+      {
+        "card": "rApiDesign",
+        "items": [
+          "REST + Zod validace"
+        ]
+      },
+      {
+        "card": "rAdminShell",
+        "items": [
+          "Vlastní admin-kit (custom)"
+        ]
+      },
+      {
+        "card": "rAbTesting",
+        "items": [
+          "Žádné"
+        ]
+      },
+      {
+        "card": "cBooking",
+        "items": [
+          "Kalendář s časovými sloty",
+          "Rezervace + platba (deposit)",
+          "Přesuny a storna",
+          "SMS / Email reminder",
+          "Google Calendar sync",
+          "Opakované rezervace",
+          "Waitlist (fronta čekajících)",
+          "Dárkové vouchery",
+          "Věrnostní program"
+        ]
+      },
+      {
+        "card": "cCore",
+        "items": [
+          "Platby (Stripe)",
+          "E-maily (Resend / Postmark)",
+          "Notifikace (push/email/SMS)",
+          "PDF generování"
+        ]
+      },
+      {
+        "card": "cIntegrations",
+        "items": [
+          "Platby: Stripe",
+          "Platby: GoPay",
+          "SMS: Twilio / SMS.cz",
+          "Email: Resend / Postmark",
+          "Fakturace: Fakturoid"
+        ]
+      },
+      {
+        "card": "cAdmin",
+        "items": [
+          "Dashboard (Statistiky, grafy)",
+          "Správa uživatelů (Tabulky)",
+          "Import/Export dat (CSV/Excel)"
+        ]
+      },
+      {
+        "card": "cAuth",
+        "items": [
+          "RBAC (Admin/User/Moderator)",
+          "Magic Links (bez hesla)",
+          "Session management"
+        ]
+      },
+      {
+        "card": "cLegal",
+        "items": [
+          "GDPR (souhlasy, výmaz)",
+          "Obchodní podmínky",
+          "Cookies consent (Cookiebot)"
+        ]
+      },
+      {
+        "card": "cSec",
+        "items": [
+          "T3 Env (Validace .env přes Zod)",
+          "Rate Limiting",
+          "CSRF ochrana (SameSite)"
+        ]
+      },
+      {
+        "card": "cCompliance",
+        "items": [
+          "GDPR (cookie consent, RLS)",
+          "Backup & disaster recovery"
+        ]
+      },
+      {
+        "card": "cCiCd",
+        "items": [
+          "GitHub Actions",
+          "Automatické testy na PR",
+          "Preview deployment (Vercel)",
+          "Databázové migrace v CI",
+          "Semantic Release (auto-versioning)"
+        ]
+      },
+      {
+        "card": "cTest",
+        "items": [
+          "Vitest",
+          "Playwright (E2E)",
+          "Testing Library (React/Vue)",
+          "MSW (Mock Service Worker)"
+        ]
+      },
+      {
+        "card": "cObservability",
+        "items": [
+          "Sentry (chyby)"
+        ]
+      },
+      {
+        "card": "cBuildValidation",
+        "items": [
+          "Spusťte testovací sadu",
+          "Spusťte linter a formátovač",
+          "Kontrola typů"
+        ]
+      },
+      {
+        "card": "cSecurityBehavior",
+        "items": [
+          "Ověřujte vstupy",
+          "Žádná tvrdá tajemství",
+          "Parametrizované dotazy"
+        ]
+      },
+      {
+        "card": "cAccessibility",
+        "items": [
+          "Sémantické HTML",
+          "Přístupné formuláře",
+          "Navigace klávesnicí"
+        ]
+      }
+    ],
+    "React Native + Expo (SDK 57+)": [
+      {
+        "card": "rArch",
+        "items": [
+          "Standardní (jedna aplikace)"
+        ]
+      },
+      {
+        "card": "rArchType",
+        "items": [
+          "Modulární monolit (moduly s vlastními hranicemi)"
+        ]
+      },
+      {
+        "card": "rRender",
+        "items": [
+          "SSR (Server-Side Rendering)"
+        ]
+      },
+      {
+        "card": "rDesign",
+        "items": [
+          "Moderní & Minimalistický (Shadcn styl)"
+        ]
+      },
+      {
+        "card": "rCss",
+        "items": [
+          "Tailwind CSS + Shadcn/UI"
+        ]
+      },
+      {
+        "card": "rState",
+        "items": [
+          "Zustand / Pinia"
+        ]
+      },
+      {
+        "card": "rForms",
+        "items": [
+          "React Hook Form + Zod"
+        ]
+      },
+      {
+        "card": "rAnimation",
+        "items": [
+          "Framer Motion"
+        ]
+      },
+      {
+        "card": "rI18n",
+        "items": [
+          "Bez i18n (jednojazyčná aplikace)"
+        ]
+      },
+      {
+        "card": "rBe",
+        "items": [
+          "Next.js API Routes / Server Actions"
+        ]
+      },
+      {
+        "card": "rDbStrategy",
+        "items": [
+          "Neon (serverless Postgres, vlastní Auth)"
+        ]
+      },
+      {
+        "card": "rVercelDb",
+        "items": [
+          "Nativní integrace Neon (auto ENV inject)"
+        ]
+      },
+      {
+        "card": "rOrm",
+        "items": [
+          "Prisma"
+        ]
+      },
+      {
+        "card": "rFetch",
+        "items": [
+          "TanStack Query"
+        ]
+      },
+      {
+        "card": "rRealtime",
+        "items": [
+          "Žádná (REST only)"
+        ]
+      },
+      {
+        "card": "rPooling",
+        "items": [
+          "Neon serverless driver (HTTP, žádný pool)"
+        ]
+      },
+      {
+        "card": "rCache",
+        "items": [
+          "Next.js unstable_cache / Data Cache"
+        ]
+      },
+      {
+        "card": "rApiDesign",
+        "items": [
+          "REST + Zod validace"
+        ]
+      },
+      {
+        "card": "rDeploy",
+        "items": [
+          "Vercel (BaaS + Edge)"
+        ]
+      },
+      {
+        "card": "rIac",
+        "items": [
+          "Vercel CLI + vercel.json"
+        ]
+      },
+      {
+        "card": "rAuthType",
+        "items": [
+          "NextAuth v5 / Auth.js"
+        ]
+      },
+      {
+        "card": "rCms",
+        "items": [
+          "Vlastní DB + Administrace"
+        ]
+      },
+      {
+        "card": "rCmsEditor",
+        "items": [
+          "TipTap (headless, vlastní UI)"
+        ]
+      },
+      {
+        "card": "rAdminShell",
+        "items": [
+          "Vlastní admin-kit (custom)"
+        ]
+      },
+      {
+        "card": "rSeo",
+        "items": [
+          "Nativní (Next.js metadata / Nuxt useHead)"
+        ]
+      },
+      {
+        "card": "rAbTesting",
+        "items": [
+          "Žádné"
+        ]
+      },
+      {
+        "card": "rMobileNav",
+        "items": [
+          "Expo Router (file-based)"
+        ]
+      },
+      {
+        "card": "rMobileUi",
+        "items": [
+          "React Native Paper"
+        ]
+      },
+      {
+        "card": "rMobileState",
+        "items": [
+          "Zustand + TanStack Query"
+        ]
+      },
+      {
+        "card": "rMobileAuth",
+        "items": [
+          "Expo AuthSession (OAuth)"
+        ]
+      },
+      {
+        "card": "rMobileDeploy",
+        "items": [
+          "Expo EAS Build (cloud)"
+        ]
+      },
+      {
+        "card": "rMobileNav",
+        "items": [
+          "Expo Router (file-based)"
+        ]
+      },
+      {
+        "card": "rMobileUi",
+        "items": [
+          "React Native Paper"
+        ]
+      },
+      {
+        "card": "rMobileState",
+        "items": [
+          "Zustand + TanStack Query"
+        ]
+      },
+      {
+        "card": "rMobileAuth",
+        "items": [
+          "Expo AuthSession (OAuth)"
+        ]
+      },
+      {
+        "card": "rMobileDeploy",
+        "items": [
+          "Expo EAS Build (cloud)"
+        ]
+      },
+      {
+        "card": "cMobileFeatures",
+        "items": [
+          "Offline drafty (AsyncStorage)",
+          "SecureStore pro tokeny",
+          "Push notifikace (Expo Notifications)",
+          "Sdílené API s webem",
+          "Biometrické přihlášení"
+        ]
+      },
+      {
+        "card": "rMobileNav",
+        "items": [
+          "Expo Router (file-based)"
+        ]
+      },
+      {
+        "card": "rMobileUi",
+        "items": [
+          "React Native Paper"
+        ]
+      },
+      {
+        "card": "rMobileState",
+        "items": [
+          "Zustand + TanStack Query"
+        ]
+      },
+      {
+        "card": "rMobileAuth",
+        "items": [
+          "Expo AuthSession (OAuth)"
+        ]
+      },
+      {
+        "card": "rMobileDeploy",
+        "items": [
+          "Expo EAS Build (cloud)"
+        ]
+      }
+    ],
+    "React Native (bare, bez Expo)": [
+      {
+        "card": "rArch",
+        "items": [
+          "Standardní (jedna aplikace)"
+        ]
+      },
+      {
+        "card": "rArchType",
+        "items": [
+          "Modulární monolit (moduly s vlastními hranicemi)"
+        ]
+      },
+      {
+        "card": "rRender",
+        "items": [
+          "SSR (Server-Side Rendering)"
+        ]
+      },
+      {
+        "card": "rDesign",
+        "items": [
+          "Moderní & Minimalistický (Shadcn styl)"
+        ]
+      },
+      {
+        "card": "rCss",
+        "items": [
+          "Tailwind CSS + Shadcn/UI"
+        ]
+      },
+      {
+        "card": "rState",
+        "items": [
+          "Zustand / Pinia"
+        ]
+      },
+      {
+        "card": "rForms",
+        "items": [
+          "React Hook Form + Zod"
+        ]
+      },
+      {
+        "card": "rAnimation",
+        "items": [
+          "Framer Motion"
+        ]
+      },
+      {
+        "card": "rI18n",
+        "items": [
+          "Bez i18n (jednojazyčná aplikace)"
+        ]
+      },
+      {
+        "card": "rBe",
+        "items": [
+          "Next.js API Routes / Server Actions"
+        ]
+      },
+      {
+        "card": "rDbStrategy",
+        "items": [
+          "Neon (serverless Postgres, vlastní Auth)"
+        ]
+      },
+      {
+        "card": "rVercelDb",
+        "items": [
+          "Nativní integrace Neon (auto ENV inject)"
+        ]
+      },
+      {
+        "card": "rOrm",
+        "items": [
+          "Prisma"
+        ]
+      },
+      {
+        "card": "rFetch",
+        "items": [
+          "TanStack Query"
+        ]
+      },
+      {
+        "card": "rRealtime",
+        "items": [
+          "Žádná (REST only)"
+        ]
+      },
+      {
+        "card": "rPooling",
+        "items": [
+          "Neon serverless driver (HTTP, žádný pool)"
+        ]
+      },
+      {
+        "card": "rCache",
+        "items": [
+          "Next.js unstable_cache / Data Cache"
+        ]
+      },
+      {
+        "card": "rApiDesign",
+        "items": [
+          "REST + Zod validace"
+        ]
+      },
+      {
+        "card": "rDeploy",
+        "items": [
+          "Vercel (BaaS + Edge)"
+        ]
+      },
+      {
+        "card": "rIac",
+        "items": [
+          "Vercel CLI + vercel.json"
+        ]
+      },
+      {
+        "card": "rAuthType",
+        "items": [
+          "NextAuth v5 / Auth.js"
+        ]
+      },
+      {
+        "card": "rCms",
+        "items": [
+          "Vlastní DB + Administrace"
+        ]
+      },
+      {
+        "card": "rCmsEditor",
+        "items": [
+          "TipTap (headless, vlastní UI)"
+        ]
+      },
+      {
+        "card": "rAdminShell",
+        "items": [
+          "Vlastní admin-kit (custom)"
+        ]
+      },
+      {
+        "card": "rSeo",
+        "items": [
+          "Nativní (Next.js metadata / Nuxt useHead)"
+        ]
+      },
+      {
+        "card": "rAbTesting",
+        "items": [
+          "Žádné"
+        ]
+      },
+      {
+        "card": "rMobileNav",
+        "items": [
+          "Expo Router (file-based)"
+        ]
+      },
+      {
+        "card": "rMobileUi",
+        "items": [
+          "React Native Paper"
+        ]
+      },
+      {
+        "card": "rMobileState",
+        "items": [
+          "Zustand + TanStack Query"
+        ]
+      },
+      {
+        "card": "rMobileAuth",
+        "items": [
+          "Expo AuthSession (OAuth)"
+        ]
+      },
+      {
+        "card": "rMobileDeploy",
+        "items": [
+          "Expo EAS Build (cloud)"
+        ]
+      },
+      {
+        "card": "rMobileNav",
+        "items": [
+          "React Navigation"
+        ]
+      },
+      {
+        "card": "rMobileUi",
+        "items": [
+          "React Native Paper"
+        ]
+      },
+      {
+        "card": "rMobileState",
+        "items": [
+          "Zustand + TanStack Query"
+        ]
+      },
+      {
+        "card": "rMobileAuth",
+        "items": [
+          "Bearer tokeny (vlastní JWT)"
+        ]
+      },
+      {
+        "card": "rMobileDeploy",
+        "items": [
+          "App Store / Google Play"
+        ]
+      },
+      {
+        "card": "cMobileFeatures",
+        "items": [
+          "SecureStore pro tokeny",
+          "Sdílené API s webem",
+          "Push notifikace (Expo Notifications)"
+        ]
+      },
+      {
+        "card": "rMobileNav",
+        "items": [
+          "React Navigation"
+        ]
+      },
+      {
+        "card": "rMobileState",
+        "items": [
+          "Zustand + TanStack Query"
+        ]
+      },
+      {
+        "card": "rMobileAuth",
+        "items": [
+          "Bearer tokeny (vlastní JWT)"
+        ]
+      }
+    ],
+    "Flutter": [
+      {
+        "card": "rArch",
+        "items": [
+          "Standardní (jedna aplikace)"
+        ]
+      },
+      {
+        "card": "rArchType",
+        "items": [
+          "Modulární monolit (moduly s vlastními hranicemi)"
+        ]
+      },
+      {
+        "card": "rRender",
+        "items": [
+          "SSR (Server-Side Rendering)"
+        ]
+      },
+      {
+        "card": "rDesign",
+        "items": [
+          "Moderní & Minimalistický (Shadcn styl)"
+        ]
+      },
+      {
+        "card": "rCss",
+        "items": [
+          "Tailwind CSS + Shadcn/UI"
+        ]
+      },
+      {
+        "card": "rState",
+        "items": [
+          "Zustand / Pinia"
+        ]
+      },
+      {
+        "card": "rForms",
+        "items": [
+          "React Hook Form + Zod"
+        ]
+      },
+      {
+        "card": "rAnimation",
+        "items": [
+          "Framer Motion"
+        ]
+      },
+      {
+        "card": "rI18n",
+        "items": [
+          "Bez i18n (jednojazyčná aplikace)"
+        ]
+      },
+      {
+        "card": "rBe",
+        "items": [
+          "Next.js API Routes / Server Actions"
+        ]
+      },
+      {
+        "card": "rDbStrategy",
+        "items": [
+          "Neon (serverless Postgres, vlastní Auth)"
+        ]
+      },
+      {
+        "card": "rVercelDb",
+        "items": [
+          "Nativní integrace Neon (auto ENV inject)"
+        ]
+      },
+      {
+        "card": "rOrm",
+        "items": [
+          "Prisma"
+        ]
+      },
+      {
+        "card": "rFetch",
+        "items": [
+          "TanStack Query"
+        ]
+      },
+      {
+        "card": "rRealtime",
+        "items": [
+          "Žádná (REST only)"
+        ]
+      },
+      {
+        "card": "rPooling",
+        "items": [
+          "Neon serverless driver (HTTP, žádný pool)"
+        ]
+      },
+      {
+        "card": "rCache",
+        "items": [
+          "Next.js unstable_cache / Data Cache"
+        ]
+      },
+      {
+        "card": "rApiDesign",
+        "items": [
+          "REST + Zod validace"
+        ]
+      },
+      {
+        "card": "rDeploy",
+        "items": [
+          "Vercel (BaaS + Edge)"
+        ]
+      },
+      {
+        "card": "rIac",
+        "items": [
+          "Vercel CLI + vercel.json"
+        ]
+      },
+      {
+        "card": "rAuthType",
+        "items": [
+          "NextAuth v5 / Auth.js"
+        ]
+      },
+      {
+        "card": "rCms",
+        "items": [
+          "Vlastní DB + Administrace"
+        ]
+      },
+      {
+        "card": "rCmsEditor",
+        "items": [
+          "TipTap (headless, vlastní UI)"
+        ]
+      },
+      {
+        "card": "rAdminShell",
+        "items": [
+          "Vlastní admin-kit (custom)"
+        ]
+      },
+      {
+        "card": "rSeo",
+        "items": [
+          "Nativní (Next.js metadata / Nuxt useHead)"
+        ]
+      },
+      {
+        "card": "rAbTesting",
+        "items": [
+          "Žádné"
+        ]
+      },
+      {
+        "card": "rMobileNav",
+        "items": [
+          "Expo Router (file-based)"
+        ]
+      },
+      {
+        "card": "rMobileUi",
+        "items": [
+          "React Native Paper"
+        ]
+      },
+      {
+        "card": "rMobileState",
+        "items": [
+          "Zustand + TanStack Query"
+        ]
+      },
+      {
+        "card": "rMobileAuth",
+        "items": [
+          "Expo AuthSession (OAuth)"
+        ]
+      },
+      {
+        "card": "rMobileDeploy",
+        "items": [
+          "Expo EAS Build (cloud)"
+        ]
+      },
+      {
+        "card": "rMobileDeploy",
+        "items": [
+          "App Store / Google Play"
+        ]
+      },
+      {
+        "card": "cMobileFeatures",
+        "items": [
+          "SecureStore pro tokeny",
+          "Sdílené API s webem",
+          "Push notifikace (Expo Notifications)",
+          "Dark/Light/System téma"
+        ]
+      },
+      {
+        "card": "rMobileDeploy",
+        "items": [
+          "App Store / Google Play"
+        ]
+      }
+    ],
+    "Capacitor (web → nativní)": [
+      {
+        "card": "rArch",
+        "items": [
+          "Standardní (jedna aplikace)"
+        ]
+      },
+      {
+        "card": "rArchType",
+        "items": [
+          "Modulární monolit (moduly s vlastními hranicemi)"
+        ]
+      },
+      {
+        "card": "rRender",
+        "items": [
+          "SSR (Server-Side Rendering)"
+        ]
+      },
+      {
+        "card": "rDesign",
+        "items": [
+          "Moderní & Minimalistický (Shadcn styl)"
+        ]
+      },
+      {
+        "card": "rCss",
+        "items": [
+          "Tailwind CSS + Shadcn/UI"
+        ]
+      },
+      {
+        "card": "rState",
+        "items": [
+          "Zustand / Pinia"
+        ]
+      },
+      {
+        "card": "rForms",
+        "items": [
+          "React Hook Form + Zod"
+        ]
+      },
+      {
+        "card": "rAnimation",
+        "items": [
+          "Framer Motion"
+        ]
+      },
+      {
+        "card": "rI18n",
+        "items": [
+          "Bez i18n (jednojazyčná aplikace)"
+        ]
+      },
+      {
+        "card": "rBe",
+        "items": [
+          "Next.js API Routes / Server Actions"
+        ]
+      },
+      {
+        "card": "rDbStrategy",
+        "items": [
+          "Neon (serverless Postgres, vlastní Auth)"
+        ]
+      },
+      {
+        "card": "rVercelDb",
+        "items": [
+          "Nativní integrace Neon (auto ENV inject)"
+        ]
+      },
+      {
+        "card": "rOrm",
+        "items": [
+          "Prisma"
+        ]
+      },
+      {
+        "card": "rFetch",
+        "items": [
+          "TanStack Query"
+        ]
+      },
+      {
+        "card": "rRealtime",
+        "items": [
+          "Žádná (REST only)"
+        ]
+      },
+      {
+        "card": "rPooling",
+        "items": [
+          "Neon serverless driver (HTTP, žádný pool)"
+        ]
+      },
+      {
+        "card": "rCache",
+        "items": [
+          "Next.js unstable_cache / Data Cache"
+        ]
+      },
+      {
+        "card": "rApiDesign",
+        "items": [
+          "REST + Zod validace"
+        ]
+      },
+      {
+        "card": "rDeploy",
+        "items": [
+          "Vercel (BaaS + Edge)"
+        ]
+      },
+      {
+        "card": "rIac",
+        "items": [
+          "Vercel CLI + vercel.json"
+        ]
+      },
+      {
+        "card": "rAuthType",
+        "items": [
+          "NextAuth v5 / Auth.js"
+        ]
+      },
+      {
+        "card": "rCms",
+        "items": [
+          "Vlastní DB + Administrace"
+        ]
+      },
+      {
+        "card": "rCmsEditor",
+        "items": [
+          "TipTap (headless, vlastní UI)"
+        ]
+      },
+      {
+        "card": "rAdminShell",
+        "items": [
+          "Vlastní admin-kit (custom)"
+        ]
+      },
+      {
+        "card": "rSeo",
+        "items": [
+          "Nativní (Next.js metadata / Nuxt useHead)"
+        ]
+      },
+      {
+        "card": "rAbTesting",
+        "items": [
+          "Žádné"
+        ]
+      },
+      {
+        "card": "rMobileNav",
+        "items": [
+          "Expo Router (file-based)"
+        ]
+      },
+      {
+        "card": "rMobileUi",
+        "items": [
+          "React Native Paper"
+        ]
+      },
+      {
+        "card": "rMobileState",
+        "items": [
+          "Zustand + TanStack Query"
+        ]
+      },
+      {
+        "card": "rMobileAuth",
+        "items": [
+          "Expo AuthSession (OAuth)"
+        ]
+      },
+      {
+        "card": "rMobileDeploy",
+        "items": [
+          "Expo EAS Build (cloud)"
+        ]
+      },
+      {
+        "card": "rMobileDeploy",
+        "items": [
+          "Interní distribuce (Firebase App Distribution)"
+        ]
+      },
+      {
+        "card": "cMobileFeatures",
+        "items": [
+          "SecureStore pro tokeny",
+          "Sdílené API s webem",
+          "Offline drafty (AsyncStorage)"
+        ]
+      },
+      {
+        "card": "rMobileDeploy",
+        "items": [
+          "Interní distribuce (Firebase App Distribution)"
+        ]
+      }
+    ],
+    "PWA (Progressive Web App)": [
+      {
+        "card": "rArch",
+        "items": [
+          "Standardní (jedna aplikace)"
+        ]
+      },
+      {
+        "card": "rArchType",
+        "items": [
+          "Modulární monolit (moduly s vlastními hranicemi)"
+        ]
+      },
+      {
+        "card": "rRender",
+        "items": [
+          "SSR (Server-Side Rendering)"
+        ]
+      },
+      {
+        "card": "rDesign",
+        "items": [
+          "Moderní & Minimalistický (Shadcn styl)"
+        ]
+      },
+      {
+        "card": "rCss",
+        "items": [
+          "Tailwind CSS + Shadcn/UI"
+        ]
+      },
+      {
+        "card": "rState",
+        "items": [
+          "Zustand / Pinia"
+        ]
+      },
+      {
+        "card": "rForms",
+        "items": [
+          "React Hook Form + Zod"
+        ]
+      },
+      {
+        "card": "rAnimation",
+        "items": [
+          "Framer Motion"
+        ]
+      },
+      {
+        "card": "rI18n",
+        "items": [
+          "Bez i18n (jednojazyčná aplikace)"
+        ]
+      },
+      {
+        "card": "rBe",
+        "items": [
+          "Next.js API Routes / Server Actions"
+        ]
+      },
+      {
+        "card": "rDbStrategy",
+        "items": [
+          "Neon (serverless Postgres, vlastní Auth)"
+        ]
+      },
+      {
+        "card": "rVercelDb",
+        "items": [
+          "Nativní integrace Neon (auto ENV inject)"
+        ]
+      },
+      {
+        "card": "rOrm",
+        "items": [
+          "Prisma"
+        ]
+      },
+      {
+        "card": "rFetch",
+        "items": [
+          "TanStack Query"
+        ]
+      },
+      {
+        "card": "rRealtime",
+        "items": [
+          "Žádná (REST only)"
+        ]
+      },
+      {
+        "card": "rPooling",
+        "items": [
+          "Neon serverless driver (HTTP, žádný pool)"
+        ]
+      },
+      {
+        "card": "rCache",
+        "items": [
+          "Next.js unstable_cache / Data Cache"
+        ]
+      },
+      {
+        "card": "rApiDesign",
+        "items": [
+          "REST + Zod validace"
+        ]
+      },
+      {
+        "card": "rDeploy",
+        "items": [
+          "Vercel (BaaS + Edge)"
+        ]
+      },
+      {
+        "card": "rIac",
+        "items": [
+          "Vercel CLI + vercel.json"
+        ]
+      },
+      {
+        "card": "rAuthType",
+        "items": [
+          "NextAuth v5 / Auth.js"
+        ]
+      },
+      {
+        "card": "rCms",
+        "items": [
+          "Vlastní DB + Administrace"
+        ]
+      },
+      {
+        "card": "rCmsEditor",
+        "items": [
+          "TipTap (headless, vlastní UI)"
+        ]
+      },
+      {
+        "card": "rAdminShell",
+        "items": [
+          "Vlastní admin-kit (custom)"
+        ]
+      },
+      {
+        "card": "rSeo",
+        "items": [
+          "Nativní (Next.js metadata / Nuxt useHead)"
+        ]
+      },
+      {
+        "card": "rAbTesting",
+        "items": [
+          "Žádné"
+        ]
+      },
+      {
+        "card": "rMobileNav",
+        "items": [
+          "Expo Router (file-based)"
+        ]
+      },
+      {
+        "card": "rMobileUi",
+        "items": [
+          "React Native Paper"
+        ]
+      },
+      {
+        "card": "rMobileState",
+        "items": [
+          "Zustand + TanStack Query"
+        ]
+      },
+      {
+        "card": "rMobileAuth",
+        "items": [
+          "Expo AuthSession (OAuth)"
+        ]
+      },
+      {
+        "card": "rMobileDeploy",
+        "items": [
+          "Expo EAS Build (cloud)"
+        ]
+      },
+      {
+        "card": "cMobileFeatures",
+        "items": [
+          "Offline drafty (AsyncStorage)",
+          "Sdílené API s webem",
+          "Dark/Light/System téma",
+          "Deep linking",
+          "Photo picker / Camera"
+        ]
+      },
+      {
+        "card": "cMarketing",
+        "items": [
+          "Push notifikace (web)"
+        ]
+      },
+      {
+        "card": "cAccessibility",
+        "items": [
+          "Sémantické HTML",
+          "Navigace klávesnicí",
+          "Kontrast a vizuální přístupnost"
+        ]
+      }
+    ],
+    "Next.js (App Router)": [
+      {
+        "card": "rArch",
+        "items": [
+          "Standardní (jedna aplikace)"
+        ]
+      },
+      {
+        "card": "rArchType",
+        "items": [
+          "Modulární monolit (moduly s vlastními hranicemi)"
+        ]
+      },
+      {
+        "card": "rRender",
+        "items": [
+          "SSR (Server-Side Rendering)"
+        ]
+      },
+      {
+        "card": "rDesign",
+        "items": [
+          "Moderní & Minimalistický (Shadcn styl)"
+        ]
+      },
+      {
+        "card": "rCss",
+        "items": [
+          "Tailwind CSS + Shadcn/UI"
+        ]
+      },
+      {
+        "card": "rState",
+        "items": [
+          "Zustand / Pinia"
+        ]
+      },
+      {
+        "card": "rForms",
+        "items": [
+          "React Hook Form + Zod"
+        ]
+      },
+      {
+        "card": "rAnimation",
+        "items": [
+          "Framer Motion"
+        ]
+      },
+      {
+        "card": "rI18n",
+        "items": [
+          "Bez i18n (jednojazyčná aplikace)"
+        ]
+      },
+      {
+        "card": "rBe",
+        "items": [
+          "Next.js API Routes / Server Actions"
+        ]
+      },
+      {
+        "card": "rDbStrategy",
+        "items": [
+          "Neon (serverless Postgres, vlastní Auth)"
+        ]
+      },
+      {
+        "card": "rVercelDb",
+        "items": [
+          "Nativní integrace Neon (auto ENV inject)"
+        ]
+      },
+      {
+        "card": "rOrm",
+        "items": [
+          "Prisma"
+        ]
+      },
+      {
+        "card": "rFetch",
+        "items": [
+          "TanStack Query"
+        ]
+      },
+      {
+        "card": "rRealtime",
+        "items": [
+          "Žádná (REST only)"
+        ]
+      },
+      {
+        "card": "rPooling",
+        "items": [
+          "Neon serverless driver (HTTP, žádný pool)"
+        ]
+      },
+      {
+        "card": "rCache",
+        "items": [
+          "Next.js unstable_cache / Data Cache"
+        ]
+      },
+      {
+        "card": "rApiDesign",
+        "items": [
+          "REST + Zod validace"
+        ]
+      },
+      {
+        "card": "rDeploy",
+        "items": [
+          "Vercel (BaaS + Edge)"
+        ]
+      },
+      {
+        "card": "rIac",
+        "items": [
+          "Vercel CLI + vercel.json"
+        ]
+      },
+      {
+        "card": "rAuthType",
+        "items": [
+          "NextAuth v5 / Auth.js"
+        ]
+      },
+      {
+        "card": "rCms",
+        "items": [
+          "Vlastní DB + Administrace"
+        ]
+      },
+      {
+        "card": "rCmsEditor",
+        "items": [
+          "TipTap (headless, vlastní UI)"
+        ]
+      },
+      {
+        "card": "rAdminShell",
+        "items": [
+          "Vlastní admin-kit (custom)"
+        ]
+      },
+      {
+        "card": "rSeo",
+        "items": [
+          "Nativní (Next.js metadata / Nuxt useHead)"
+        ]
+      },
+      {
+        "card": "rAbTesting",
+        "items": [
+          "Žádné"
+        ]
+      },
+      {
+        "card": "rMobileNav",
+        "items": [
+          "Expo Router (file-based)"
+        ]
+      },
+      {
+        "card": "rMobileUi",
+        "items": [
+          "React Native Paper"
+        ]
+      },
+      {
+        "card": "rMobileState",
+        "items": [
+          "Zustand + TanStack Query"
+        ]
+      },
+      {
+        "card": "rMobileAuth",
+        "items": [
+          "Expo AuthSession (OAuth)"
+        ]
+      },
+      {
+        "card": "rMobileDeploy",
+        "items": [
+          "Expo EAS Build (cloud)"
+        ]
+      },
+      {
+        "card": "rCss",
+        "items": [
+          "Tailwind CSS + Shadcn/UI"
+        ]
+      },
+      {
+        "card": "rI18n",
+        "items": [
+          "next-intl (Next.js App Router)"
+        ]
+      },
+      {
+        "card": "rForms",
+        "items": [
+          "React Hook Form + Zod"
+        ]
+      },
+      {
+        "card": "rState",
+        "items": [
+          "Zustand / Pinia"
+        ]
+      },
+      {
+        "card": "rRender",
+        "items": [
+          "SSR (Server-Side Rendering)"
+        ]
+      },
+      {
+        "card": "rSeo",
+        "items": [
+          "Nativní (Next.js metadata / Nuxt useHead)"
+        ]
+      },
+      {
+        "card": "rBe",
+        "items": [
+          "Next.js API Routes / Server Actions"
+        ]
+      },
+      {
+        "card": "cLint",
+        "items": [
+          "ESLint",
+          "Prettier",
+          "Striktní TS (no implicit any)",
+          "Husky",
+          "Commitlint"
+        ]
+      },
+      {
+        "card": "cFeUi",
+        "items": [
+          "Lucide Icons",
+          "Sonner (toast notifikace)",
+          "next-themes (dark mode)"
+        ]
+      },
+      {
+        "card": "cTest",
+        "items": [
+          "Vitest",
+          "Playwright (E2E)",
+          "Testing Library (React/Vue)"
+        ]
+      },
+      {
+        "card": "cCiCd",
+        "items": [
+          "GitHub Actions",
+          "Automatické testy na PR",
+          "Preview deployment (Vercel)"
+        ]
+      }
+    ],
+    "React + Vite": [
+      {
+        "card": "rArch",
+        "items": [
+          "Standardní (jedna aplikace)"
+        ]
+      },
+      {
+        "card": "rArchType",
+        "items": [
+          "Modulární monolit (moduly s vlastními hranicemi)"
+        ]
+      },
+      {
+        "card": "rRender",
+        "items": [
+          "SSR (Server-Side Rendering)"
+        ]
+      },
+      {
+        "card": "rDesign",
+        "items": [
+          "Moderní & Minimalistický (Shadcn styl)"
+        ]
+      },
+      {
+        "card": "rCss",
+        "items": [
+          "Tailwind CSS + Shadcn/UI"
+        ]
+      },
+      {
+        "card": "rState",
+        "items": [
+          "Zustand / Pinia"
+        ]
+      },
+      {
+        "card": "rForms",
+        "items": [
+          "React Hook Form + Zod"
+        ]
+      },
+      {
+        "card": "rAnimation",
+        "items": [
+          "Framer Motion"
+        ]
+      },
+      {
+        "card": "rI18n",
+        "items": [
+          "Bez i18n (jednojazyčná aplikace)"
+        ]
+      },
+      {
+        "card": "rBe",
+        "items": [
+          "Next.js API Routes / Server Actions"
+        ]
+      },
+      {
+        "card": "rDbStrategy",
+        "items": [
+          "Neon (serverless Postgres, vlastní Auth)"
+        ]
+      },
+      {
+        "card": "rVercelDb",
+        "items": [
+          "Nativní integrace Neon (auto ENV inject)"
+        ]
+      },
+      {
+        "card": "rOrm",
+        "items": [
+          "Prisma"
+        ]
+      },
+      {
+        "card": "rFetch",
+        "items": [
+          "TanStack Query"
+        ]
+      },
+      {
+        "card": "rRealtime",
+        "items": [
+          "Žádná (REST only)"
+        ]
+      },
+      {
+        "card": "rPooling",
+        "items": [
+          "Neon serverless driver (HTTP, žádný pool)"
+        ]
+      },
+      {
+        "card": "rCache",
+        "items": [
+          "Next.js unstable_cache / Data Cache"
+        ]
+      },
+      {
+        "card": "rApiDesign",
+        "items": [
+          "REST + Zod validace"
+        ]
+      },
+      {
+        "card": "rDeploy",
+        "items": [
+          "Vercel (BaaS + Edge)"
+        ]
+      },
+      {
+        "card": "rIac",
+        "items": [
+          "Vercel CLI + vercel.json"
+        ]
+      },
+      {
+        "card": "rAuthType",
+        "items": [
+          "NextAuth v5 / Auth.js"
+        ]
+      },
+      {
+        "card": "rCms",
+        "items": [
+          "Vlastní DB + Administrace"
+        ]
+      },
+      {
+        "card": "rCmsEditor",
+        "items": [
+          "TipTap (headless, vlastní UI)"
+        ]
+      },
+      {
+        "card": "rAdminShell",
+        "items": [
+          "Vlastní admin-kit (custom)"
+        ]
+      },
+      {
+        "card": "rSeo",
+        "items": [
+          "Nativní (Next.js metadata / Nuxt useHead)"
+        ]
+      },
+      {
+        "card": "rAbTesting",
+        "items": [
+          "Žádné"
+        ]
+      },
+      {
+        "card": "rMobileNav",
+        "items": [
+          "Expo Router (file-based)"
+        ]
+      },
+      {
+        "card": "rMobileUi",
+        "items": [
+          "React Native Paper"
+        ]
+      },
+      {
+        "card": "rMobileState",
+        "items": [
+          "Zustand + TanStack Query"
+        ]
+      },
+      {
+        "card": "rMobileAuth",
+        "items": [
+          "Expo AuthSession (OAuth)"
+        ]
+      },
+      {
+        "card": "rMobileDeploy",
+        "items": [
+          "Expo EAS Build (cloud)"
+        ]
+      },
+      {
+        "card": "rCss",
+        "items": [
+          "Tailwind CSS + Shadcn/UI"
+        ]
+      },
+      {
+        "card": "rForms",
+        "items": [
+          "React Hook Form + Zod"
+        ]
+      },
+      {
+        "card": "rState",
+        "items": [
+          "Zustand / Pinia"
+        ]
+      },
+      {
+        "card": "rRender",
+        "items": [
+          "SPA (Single Page App)"
+        ]
+      },
+      {
+        "card": "rSeo",
+        "items": [
+          "Ruční správa (vlastní komponenta)"
+        ]
+      },
+      {
+        "card": "cLint",
+        "items": [
+          "ESLint",
+          "Prettier",
+          "Striktní TS (no implicit any)",
+          "Husky"
+        ]
+      },
+      {
+        "card": "cFeUi",
+        "items": [
+          "Lucide Icons",
+          "Sonner (toast notifikace)",
+          "next-themes (dark mode)"
+        ]
+      },
+      {
+        "card": "cTest",
+        "items": [
+          "Vitest",
+          "Testing Library (React/Vue)"
+        ]
+      },
+      {
+        "card": "cCiCd",
+        "items": [
+          "GitHub Actions",
+          "Automatické testy na PR"
+        ]
+      }
+    ],
+    "Vue 3 + Vite": [
+      {
+        "card": "rArch",
+        "items": [
+          "Standardní (jedna aplikace)"
+        ]
+      },
+      {
+        "card": "rArchType",
+        "items": [
+          "Modulární monolit (moduly s vlastními hranicemi)"
+        ]
+      },
+      {
+        "card": "rRender",
+        "items": [
+          "SSR (Server-Side Rendering)"
+        ]
+      },
+      {
+        "card": "rDesign",
+        "items": [
+          "Moderní & Minimalistický (Shadcn styl)"
+        ]
+      },
+      {
+        "card": "rCss",
+        "items": [
+          "Tailwind CSS + Shadcn/UI"
+        ]
+      },
+      {
+        "card": "rState",
+        "items": [
+          "Zustand / Pinia"
+        ]
+      },
+      {
+        "card": "rForms",
+        "items": [
+          "React Hook Form + Zod"
+        ]
+      },
+      {
+        "card": "rAnimation",
+        "items": [
+          "Framer Motion"
+        ]
+      },
+      {
+        "card": "rI18n",
+        "items": [
+          "Bez i18n (jednojazyčná aplikace)"
+        ]
+      },
+      {
+        "card": "rBe",
+        "items": [
+          "Next.js API Routes / Server Actions"
+        ]
+      },
+      {
+        "card": "rDbStrategy",
+        "items": [
+          "Neon (serverless Postgres, vlastní Auth)"
+        ]
+      },
+      {
+        "card": "rVercelDb",
+        "items": [
+          "Nativní integrace Neon (auto ENV inject)"
+        ]
+      },
+      {
+        "card": "rOrm",
+        "items": [
+          "Prisma"
+        ]
+      },
+      {
+        "card": "rFetch",
+        "items": [
+          "TanStack Query"
+        ]
+      },
+      {
+        "card": "rRealtime",
+        "items": [
+          "Žádná (REST only)"
+        ]
+      },
+      {
+        "card": "rPooling",
+        "items": [
+          "Neon serverless driver (HTTP, žádný pool)"
+        ]
+      },
+      {
+        "card": "rCache",
+        "items": [
+          "Next.js unstable_cache / Data Cache"
+        ]
+      },
+      {
+        "card": "rApiDesign",
+        "items": [
+          "REST + Zod validace"
+        ]
+      },
+      {
+        "card": "rDeploy",
+        "items": [
+          "Vercel (BaaS + Edge)"
+        ]
+      },
+      {
+        "card": "rIac",
+        "items": [
+          "Vercel CLI + vercel.json"
+        ]
+      },
+      {
+        "card": "rAuthType",
+        "items": [
+          "NextAuth v5 / Auth.js"
+        ]
+      },
+      {
+        "card": "rCms",
+        "items": [
+          "Vlastní DB + Administrace"
+        ]
+      },
+      {
+        "card": "rCmsEditor",
+        "items": [
+          "TipTap (headless, vlastní UI)"
+        ]
+      },
+      {
+        "card": "rAdminShell",
+        "items": [
+          "Vlastní admin-kit (custom)"
+        ]
+      },
+      {
+        "card": "rSeo",
+        "items": [
+          "Nativní (Next.js metadata / Nuxt useHead)"
+        ]
+      },
+      {
+        "card": "rAbTesting",
+        "items": [
+          "Žádné"
+        ]
+      },
+      {
+        "card": "rMobileNav",
+        "items": [
+          "Expo Router (file-based)"
+        ]
+      },
+      {
+        "card": "rMobileUi",
+        "items": [
+          "React Native Paper"
+        ]
+      },
+      {
+        "card": "rMobileState",
+        "items": [
+          "Zustand + TanStack Query"
+        ]
+      },
+      {
+        "card": "rMobileAuth",
+        "items": [
+          "Expo AuthSession (OAuth)"
+        ]
+      },
+      {
+        "card": "rMobileDeploy",
+        "items": [
+          "Expo EAS Build (cloud)"
+        ]
+      },
+      {
+        "card": "rCss",
+        "items": [
+          "Tailwind CSS + Shadcn/UI"
+        ]
+      },
+      {
+        "card": "rForms",
+        "items": [
+          "VeeValidate + Zod"
+        ]
+      },
+      {
+        "card": "rState",
+        "items": [
+          "Zustand / Pinia"
+        ]
+      },
+      {
+        "card": "rI18n",
+        "items": [
+          "Vue I18n / SvelteKit i18n"
+        ]
+      },
+      {
+        "card": "rRender",
+        "items": [
+          "SPA (Single Page App)"
+        ]
+      },
+      {
+        "card": "cLint",
+        "items": [
+          "ESLint",
+          "Prettier",
+          "Striktní TS (no implicit any)",
+          "Husky"
+        ]
+      },
+      {
+        "card": "cFeUi",
+        "items": [
+          "Lucide Icons",
+          "Sonner (toast notifikace)"
+        ]
+      },
+      {
+        "card": "cTest",
+        "items": [
+          "Vitest",
+          "Testing Library (React/Vue)"
+        ]
+      },
+      {
+        "card": "cCiCd",
+        "items": [
+          "GitHub Actions",
+          "Automatické testy na PR"
+        ]
+      }
+    ],
+    "Nuxt 3/4": [
+      {
+        "card": "rArch",
+        "items": [
+          "Standardní (jedna aplikace)"
+        ]
+      },
+      {
+        "card": "rArchType",
+        "items": [
+          "Modulární monolit (moduly s vlastními hranicemi)"
+        ]
+      },
+      {
+        "card": "rRender",
+        "items": [
+          "SSR (Server-Side Rendering)"
+        ]
+      },
+      {
+        "card": "rDesign",
+        "items": [
+          "Moderní & Minimalistický (Shadcn styl)"
+        ]
+      },
+      {
+        "card": "rCss",
+        "items": [
+          "Tailwind CSS + Shadcn/UI"
+        ]
+      },
+      {
+        "card": "rState",
+        "items": [
+          "Zustand / Pinia"
+        ]
+      },
+      {
+        "card": "rForms",
+        "items": [
+          "React Hook Form + Zod"
+        ]
+      },
+      {
+        "card": "rAnimation",
+        "items": [
+          "Framer Motion"
+        ]
+      },
+      {
+        "card": "rI18n",
+        "items": [
+          "Bez i18n (jednojazyčná aplikace)"
+        ]
+      },
+      {
+        "card": "rBe",
+        "items": [
+          "Next.js API Routes / Server Actions"
+        ]
+      },
+      {
+        "card": "rDbStrategy",
+        "items": [
+          "Neon (serverless Postgres, vlastní Auth)"
+        ]
+      },
+      {
+        "card": "rVercelDb",
+        "items": [
+          "Nativní integrace Neon (auto ENV inject)"
+        ]
+      },
+      {
+        "card": "rOrm",
+        "items": [
+          "Prisma"
+        ]
+      },
+      {
+        "card": "rFetch",
+        "items": [
+          "TanStack Query"
+        ]
+      },
+      {
+        "card": "rRealtime",
+        "items": [
+          "Žádná (REST only)"
+        ]
+      },
+      {
+        "card": "rPooling",
+        "items": [
+          "Neon serverless driver (HTTP, žádný pool)"
+        ]
+      },
+      {
+        "card": "rCache",
+        "items": [
+          "Next.js unstable_cache / Data Cache"
+        ]
+      },
+      {
+        "card": "rApiDesign",
+        "items": [
+          "REST + Zod validace"
+        ]
+      },
+      {
+        "card": "rDeploy",
+        "items": [
+          "Vercel (BaaS + Edge)"
+        ]
+      },
+      {
+        "card": "rIac",
+        "items": [
+          "Vercel CLI + vercel.json"
+        ]
+      },
+      {
+        "card": "rAuthType",
+        "items": [
+          "NextAuth v5 / Auth.js"
+        ]
+      },
+      {
+        "card": "rCms",
+        "items": [
+          "Vlastní DB + Administrace"
+        ]
+      },
+      {
+        "card": "rCmsEditor",
+        "items": [
+          "TipTap (headless, vlastní UI)"
+        ]
+      },
+      {
+        "card": "rAdminShell",
+        "items": [
+          "Vlastní admin-kit (custom)"
+        ]
+      },
+      {
+        "card": "rSeo",
+        "items": [
+          "Nativní (Next.js metadata / Nuxt useHead)"
+        ]
+      },
+      {
+        "card": "rAbTesting",
+        "items": [
+          "Žádné"
+        ]
+      },
+      {
+        "card": "rMobileNav",
+        "items": [
+          "Expo Router (file-based)"
+        ]
+      },
+      {
+        "card": "rMobileUi",
+        "items": [
+          "React Native Paper"
+        ]
+      },
+      {
+        "card": "rMobileState",
+        "items": [
+          "Zustand + TanStack Query"
+        ]
+      },
+      {
+        "card": "rMobileAuth",
+        "items": [
+          "Expo AuthSession (OAuth)"
+        ]
+      },
+      {
+        "card": "rMobileDeploy",
+        "items": [
+          "Expo EAS Build (cloud)"
+        ]
+      },
+      {
+        "card": "rCss",
+        "items": [
+          "Tailwind CSS + Shadcn/UI"
+        ]
+      },
+      {
+        "card": "rForms",
+        "items": [
+          "VeeValidate + Zod"
+        ]
+      },
+      {
+        "card": "rState",
+        "items": [
+          "Zustand / Pinia"
+        ]
+      },
+      {
+        "card": "rI18n",
+        "items": [
+          "Vue I18n / SvelteKit i18n"
+        ]
+      },
+      {
+        "card": "rRender",
+        "items": [
+          "SSR (Server-Side Rendering)"
+        ]
+      },
+      {
+        "card": "rSeo",
+        "items": [
+          "Nativní (Next.js metadata / Nuxt useHead)"
+        ]
+      },
+      {
+        "card": "cLint",
+        "items": [
+          "ESLint",
+          "Prettier",
+          "Striktní TS (no implicit any)",
+          "Husky"
+        ]
+      },
+      {
+        "card": "cFeUi",
+        "items": [
+          "Lucide Icons",
+          "Sonner (toast notifikace)"
+        ]
+      },
+      {
+        "card": "cTest",
+        "items": [
+          "Vitest",
+          "Playwright (E2E)",
+          "Testing Library (React/Vue)",
+          "MSW (Mock Service Worker)"
+        ]
+      },
+      {
+        "card": "cCiCd",
+        "items": [
+          "GitHub Actions",
+          "Automatické testy na PR"
+        ]
+      }
+    ],
+    "SvelteKit": [
+      {
+        "card": "rArch",
+        "items": [
+          "Standardní (jedna aplikace)"
+        ]
+      },
+      {
+        "card": "rArchType",
+        "items": [
+          "Modulární monolit (moduly s vlastními hranicemi)"
+        ]
+      },
+      {
+        "card": "rRender",
+        "items": [
+          "SSR (Server-Side Rendering)"
+        ]
+      },
+      {
+        "card": "rDesign",
+        "items": [
+          "Moderní & Minimalistický (Shadcn styl)"
+        ]
+      },
+      {
+        "card": "rCss",
+        "items": [
+          "Tailwind CSS + Shadcn/UI"
+        ]
+      },
+      {
+        "card": "rState",
+        "items": [
+          "Zustand / Pinia"
+        ]
+      },
+      {
+        "card": "rForms",
+        "items": [
+          "React Hook Form + Zod"
+        ]
+      },
+      {
+        "card": "rAnimation",
+        "items": [
+          "Framer Motion"
+        ]
+      },
+      {
+        "card": "rI18n",
+        "items": [
+          "Bez i18n (jednojazyčná aplikace)"
+        ]
+      },
+      {
+        "card": "rBe",
+        "items": [
+          "Next.js API Routes / Server Actions"
+        ]
+      },
+      {
+        "card": "rDbStrategy",
+        "items": [
+          "Neon (serverless Postgres, vlastní Auth)"
+        ]
+      },
+      {
+        "card": "rVercelDb",
+        "items": [
+          "Nativní integrace Neon (auto ENV inject)"
+        ]
+      },
+      {
+        "card": "rOrm",
+        "items": [
+          "Prisma"
+        ]
+      },
+      {
+        "card": "rFetch",
+        "items": [
+          "TanStack Query"
+        ]
+      },
+      {
+        "card": "rRealtime",
+        "items": [
+          "Žádná (REST only)"
+        ]
+      },
+      {
+        "card": "rPooling",
+        "items": [
+          "Neon serverless driver (HTTP, žádný pool)"
+        ]
+      },
+      {
+        "card": "rCache",
+        "items": [
+          "Next.js unstable_cache / Data Cache"
+        ]
+      },
+      {
+        "card": "rApiDesign",
+        "items": [
+          "REST + Zod validace"
+        ]
+      },
+      {
+        "card": "rDeploy",
+        "items": [
+          "Vercel (BaaS + Edge)"
+        ]
+      },
+      {
+        "card": "rIac",
+        "items": [
+          "Vercel CLI + vercel.json"
+        ]
+      },
+      {
+        "card": "rAuthType",
+        "items": [
+          "NextAuth v5 / Auth.js"
+        ]
+      },
+      {
+        "card": "rCms",
+        "items": [
+          "Vlastní DB + Administrace"
+        ]
+      },
+      {
+        "card": "rCmsEditor",
+        "items": [
+          "TipTap (headless, vlastní UI)"
+        ]
+      },
+      {
+        "card": "rAdminShell",
+        "items": [
+          "Vlastní admin-kit (custom)"
+        ]
+      },
+      {
+        "card": "rSeo",
+        "items": [
+          "Nativní (Next.js metadata / Nuxt useHead)"
+        ]
+      },
+      {
+        "card": "rAbTesting",
+        "items": [
+          "Žádné"
+        ]
+      },
+      {
+        "card": "rMobileNav",
+        "items": [
+          "Expo Router (file-based)"
+        ]
+      },
+      {
+        "card": "rMobileUi",
+        "items": [
+          "React Native Paper"
+        ]
+      },
+      {
+        "card": "rMobileState",
+        "items": [
+          "Zustand + TanStack Query"
+        ]
+      },
+      {
+        "card": "rMobileAuth",
+        "items": [
+          "Expo AuthSession (OAuth)"
+        ]
+      },
+      {
+        "card": "rMobileDeploy",
+        "items": [
+          "Expo EAS Build (cloud)"
+        ]
+      },
+      {
+        "card": "rCss",
+        "items": [
+          "Tailwind CSS (čistý)"
+        ]
+      },
+      {
+        "card": "rForms",
+        "items": [
+          "Čistý state"
+        ]
+      },
+      {
+        "card": "rState",
+        "items": [
+          "Zustand / Pinia"
+        ]
+      },
+      {
+        "card": "rI18n",
+        "items": [
+          "Vue I18n / SvelteKit i18n"
+        ]
+      },
+      {
+        "card": "rRender",
+        "items": [
+          "SSR (Server-Side Rendering)"
+        ]
+      },
+      {
+        "card": "cLint",
+        "items": [
+          "ESLint",
+          "Prettier",
+          "Striktní TS (no implicit any)",
+          "Husky"
+        ]
+      },
+      {
+        "card": "cTest",
+        "items": [
+          "Vitest",
+          "Playwright (E2E)",
+          "Testing Library (React/Vue)",
+          "MSW (Mock Service Worker)"
+        ]
+      },
+      {
+        "card": "cCiCd",
+        "items": [
+          "GitHub Actions",
+          "Automatické testy na PR"
+        ]
+      }
+    ],
+    "Astro (Islands Architecture)": [
+      {
+        "card": "rArch",
+        "items": [
+          "Standardní (jedna aplikace)"
+        ]
+      },
+      {
+        "card": "rArchType",
+        "items": [
+          "Modulární monolit (moduly s vlastními hranicemi)"
+        ]
+      },
+      {
+        "card": "rRender",
+        "items": [
+          "SSR (Server-Side Rendering)"
+        ]
+      },
+      {
+        "card": "rDesign",
+        "items": [
+          "Moderní & Minimalistický (Shadcn styl)"
+        ]
+      },
+      {
+        "card": "rCss",
+        "items": [
+          "Tailwind CSS + Shadcn/UI"
+        ]
+      },
+      {
+        "card": "rState",
+        "items": [
+          "Zustand / Pinia"
+        ]
+      },
+      {
+        "card": "rForms",
+        "items": [
+          "React Hook Form + Zod"
+        ]
+      },
+      {
+        "card": "rAnimation",
+        "items": [
+          "Framer Motion"
+        ]
+      },
+      {
+        "card": "rI18n",
+        "items": [
+          "Bez i18n (jednojazyčná aplikace)"
+        ]
+      },
+      {
+        "card": "rBe",
+        "items": [
+          "Next.js API Routes / Server Actions"
+        ]
+      },
+      {
+        "card": "rDbStrategy",
+        "items": [
+          "Neon (serverless Postgres, vlastní Auth)"
+        ]
+      },
+      {
+        "card": "rVercelDb",
+        "items": [
+          "Nativní integrace Neon (auto ENV inject)"
+        ]
+      },
+      {
+        "card": "rOrm",
+        "items": [
+          "Prisma"
+        ]
+      },
+      {
+        "card": "rFetch",
+        "items": [
+          "TanStack Query"
+        ]
+      },
+      {
+        "card": "rRealtime",
+        "items": [
+          "Žádná (REST only)"
+        ]
+      },
+      {
+        "card": "rPooling",
+        "items": [
+          "Neon serverless driver (HTTP, žádný pool)"
+        ]
+      },
+      {
+        "card": "rCache",
+        "items": [
+          "Next.js unstable_cache / Data Cache"
+        ]
+      },
+      {
+        "card": "rApiDesign",
+        "items": [
+          "REST + Zod validace"
+        ]
+      },
+      {
+        "card": "rDeploy",
+        "items": [
+          "Vercel (BaaS + Edge)"
+        ]
+      },
+      {
+        "card": "rIac",
+        "items": [
+          "Vercel CLI + vercel.json"
+        ]
+      },
+      {
+        "card": "rAuthType",
+        "items": [
+          "NextAuth v5 / Auth.js"
+        ]
+      },
+      {
+        "card": "rCms",
+        "items": [
+          "Vlastní DB + Administrace"
+        ]
+      },
+      {
+        "card": "rCmsEditor",
+        "items": [
+          "TipTap (headless, vlastní UI)"
+        ]
+      },
+      {
+        "card": "rAdminShell",
+        "items": [
+          "Vlastní admin-kit (custom)"
+        ]
+      },
+      {
+        "card": "rSeo",
+        "items": [
+          "Nativní (Next.js metadata / Nuxt useHead)"
+        ]
+      },
+      {
+        "card": "rAbTesting",
+        "items": [
+          "Žádné"
+        ]
+      },
+      {
+        "card": "rMobileNav",
+        "items": [
+          "Expo Router (file-based)"
+        ]
+      },
+      {
+        "card": "rMobileUi",
+        "items": [
+          "React Native Paper"
+        ]
+      },
+      {
+        "card": "rMobileState",
+        "items": [
+          "Zustand + TanStack Query"
+        ]
+      },
+      {
+        "card": "rMobileAuth",
+        "items": [
+          "Expo AuthSession (OAuth)"
+        ]
+      },
+      {
+        "card": "rMobileDeploy",
+        "items": [
+          "Expo EAS Build (cloud)"
+        ]
+      },
+      {
+        "card": "rCss",
+        "items": [
+          "Tailwind CSS (čistý)"
+        ]
+      },
+      {
+        "card": "rRender",
+        "items": [
+          "SSG (Static Site Generation)"
+        ]
+      },
+      {
+        "card": "rState",
+        "items": [
+          "Bez globálního stavu"
+        ]
+      },
+      {
+        "card": "rForms",
+        "items": [
+          "Čistý state"
+        ]
+      },
+      {
+        "card": "rAnimation",
+        "items": [
+          "Žádná (minimalistické)"
+        ]
+      },
+      {
+        "card": "rCms",
+        "items": [
+          "Lokální soubory (MDX / Markdown)"
+        ]
+      },
+      {
+        "card": "cLint",
+        "items": [
+          "ESLint",
+          "Prettier",
+          "Striktní TS (no implicit any)"
+        ]
+      },
+      {
+        "card": "cTest",
+        "items": [
+          "Vitest",
+          "Playwright (E2E)",
+          "Testing Library (React/Vue)",
+          "MSW (Mock Service Worker)"
+        ]
+      },
+      {
+        "card": "cCiCd",
+        "items": [
+          "GitHub Actions",
+          "Preview deployment (Vercel)"
+        ]
+      }
+    ],
+    "Angular 22": [
+      {
+        "card": "rArch",
+        "items": [
+          "Standardní (jedna aplikace)"
+        ]
+      },
+      {
+        "card": "rArchType",
+        "items": [
+          "Modulární monolit (moduly s vlastními hranicemi)"
+        ]
+      },
+      {
+        "card": "rRender",
+        "items": [
+          "SSR (Server-Side Rendering)"
+        ]
+      },
+      {
+        "card": "rDesign",
+        "items": [
+          "Moderní & Minimalistický (Shadcn styl)"
+        ]
+      },
+      {
+        "card": "rCss",
+        "items": [
+          "Tailwind CSS + Shadcn/UI"
+        ]
+      },
+      {
+        "card": "rState",
+        "items": [
+          "Zustand / Pinia"
+        ]
+      },
+      {
+        "card": "rForms",
+        "items": [
+          "React Hook Form + Zod"
+        ]
+      },
+      {
+        "card": "rAnimation",
+        "items": [
+          "Framer Motion"
+        ]
+      },
+      {
+        "card": "rI18n",
+        "items": [
+          "Bez i18n (jednojazyčná aplikace)"
+        ]
+      },
+      {
+        "card": "rBe",
+        "items": [
+          "Next.js API Routes / Server Actions"
+        ]
+      },
+      {
+        "card": "rDbStrategy",
+        "items": [
+          "Neon (serverless Postgres, vlastní Auth)"
+        ]
+      },
+      {
+        "card": "rVercelDb",
+        "items": [
+          "Nativní integrace Neon (auto ENV inject)"
+        ]
+      },
+      {
+        "card": "rOrm",
+        "items": [
+          "Prisma"
+        ]
+      },
+      {
+        "card": "rFetch",
+        "items": [
+          "TanStack Query"
+        ]
+      },
+      {
+        "card": "rRealtime",
+        "items": [
+          "Žádná (REST only)"
+        ]
+      },
+      {
+        "card": "rPooling",
+        "items": [
+          "Neon serverless driver (HTTP, žádný pool)"
+        ]
+      },
+      {
+        "card": "rCache",
+        "items": [
+          "Next.js unstable_cache / Data Cache"
+        ]
+      },
+      {
+        "card": "rApiDesign",
+        "items": [
+          "REST + Zod validace"
+        ]
+      },
+      {
+        "card": "rDeploy",
+        "items": [
+          "Vercel (BaaS + Edge)"
+        ]
+      },
+      {
+        "card": "rIac",
+        "items": [
+          "Vercel CLI + vercel.json"
+        ]
+      },
+      {
+        "card": "rAuthType",
+        "items": [
+          "NextAuth v5 / Auth.js"
+        ]
+      },
+      {
+        "card": "rCms",
+        "items": [
+          "Vlastní DB + Administrace"
+        ]
+      },
+      {
+        "card": "rCmsEditor",
+        "items": [
+          "TipTap (headless, vlastní UI)"
+        ]
+      },
+      {
+        "card": "rAdminShell",
+        "items": [
+          "Vlastní admin-kit (custom)"
+        ]
+      },
+      {
+        "card": "rSeo",
+        "items": [
+          "Nativní (Next.js metadata / Nuxt useHead)"
+        ]
+      },
+      {
+        "card": "rAbTesting",
+        "items": [
+          "Žádné"
+        ]
+      },
+      {
+        "card": "rMobileNav",
+        "items": [
+          "Expo Router (file-based)"
+        ]
+      },
+      {
+        "card": "rMobileUi",
+        "items": [
+          "React Native Paper"
+        ]
+      },
+      {
+        "card": "rMobileState",
+        "items": [
+          "Zustand + TanStack Query"
+        ]
+      },
+      {
+        "card": "rMobileAuth",
+        "items": [
+          "Expo AuthSession (OAuth)"
+        ]
+      },
+      {
+        "card": "rMobileDeploy",
+        "items": [
+          "Expo EAS Build (cloud)"
+        ]
+      },
+      {
+        "card": "rCss",
+        "items": [
+          "CSS Modules + Vanilla Extract"
+        ]
+      },
+      {
+        "card": "rForms",
+        "items": [
+          "Čistý state"
+        ]
+      },
+      {
+        "card": "rState",
+        "items": [
+          "Bez globálního stavu"
+        ]
+      },
+      {
+        "card": "rRender",
+        "items": [
+          "SPA (Single Page App)"
+        ]
+      },
+      {
+        "card": "rDesign",
+        "items": [
+          "Enterprise (Korporátní data)"
+        ]
+      },
+      {
+        "card": "cLint",
+        "items": [
+          "ESLint",
+          "Prettier",
+          "Striktní TS (no implicit any)",
+          "Husky",
+          "Commitlint"
+        ]
+      },
+      {
+        "card": "cTest",
+        "items": [
+          "Jest",
+          "Playwright (E2E)"
+        ]
+      },
+      {
+        "card": "cCiCd",
+        "items": [
+          "GitHub Actions",
+          "Automatické testy na PR"
+        ]
+      }
+    ],
+    "React Router v8 (framework mode)": [
+      {
+        "card": "rArch",
+        "items": [
+          "Standardní (jedna aplikace)"
+        ]
+      },
+      {
+        "card": "rArchType",
+        "items": [
+          "Modulární monolit (moduly s vlastními hranicemi)"
+        ]
+      },
+      {
+        "card": "rRender",
+        "items": [
+          "SSR (Server-Side Rendering)"
+        ]
+      },
+      {
+        "card": "rDesign",
+        "items": [
+          "Moderní & Minimalistický (Shadcn styl)"
+        ]
+      },
+      {
+        "card": "rCss",
+        "items": [
+          "Tailwind CSS + Shadcn/UI"
+        ]
+      },
+      {
+        "card": "rState",
+        "items": [
+          "Zustand / Pinia"
+        ]
+      },
+      {
+        "card": "rForms",
+        "items": [
+          "React Hook Form + Zod"
+        ]
+      },
+      {
+        "card": "rAnimation",
+        "items": [
+          "Framer Motion"
+        ]
+      },
+      {
+        "card": "rI18n",
+        "items": [
+          "Bez i18n (jednojazyčná aplikace)"
+        ]
+      },
+      {
+        "card": "rBe",
+        "items": [
+          "Next.js API Routes / Server Actions"
+        ]
+      },
+      {
+        "card": "rDbStrategy",
+        "items": [
+          "Neon (serverless Postgres, vlastní Auth)"
+        ]
+      },
+      {
+        "card": "rVercelDb",
+        "items": [
+          "Nativní integrace Neon (auto ENV inject)"
+        ]
+      },
+      {
+        "card": "rOrm",
+        "items": [
+          "Prisma"
+        ]
+      },
+      {
+        "card": "rFetch",
+        "items": [
+          "TanStack Query"
+        ]
+      },
+      {
+        "card": "rRealtime",
+        "items": [
+          "Žádná (REST only)"
+        ]
+      },
+      {
+        "card": "rPooling",
+        "items": [
+          "Neon serverless driver (HTTP, žádný pool)"
+        ]
+      },
+      {
+        "card": "rCache",
+        "items": [
+          "Next.js unstable_cache / Data Cache"
+        ]
+      },
+      {
+        "card": "rApiDesign",
+        "items": [
+          "REST + Zod validace"
+        ]
+      },
+      {
+        "card": "rDeploy",
+        "items": [
+          "Vercel (BaaS + Edge)"
+        ]
+      },
+      {
+        "card": "rIac",
+        "items": [
+          "Vercel CLI + vercel.json"
+        ]
+      },
+      {
+        "card": "rAuthType",
+        "items": [
+          "NextAuth v5 / Auth.js"
+        ]
+      },
+      {
+        "card": "rCms",
+        "items": [
+          "Vlastní DB + Administrace"
+        ]
+      },
+      {
+        "card": "rCmsEditor",
+        "items": [
+          "TipTap (headless, vlastní UI)"
+        ]
+      },
+      {
+        "card": "rAdminShell",
+        "items": [
+          "Vlastní admin-kit (custom)"
+        ]
+      },
+      {
+        "card": "rSeo",
+        "items": [
+          "Nativní (Next.js metadata / Nuxt useHead)"
+        ]
+      },
+      {
+        "card": "rAbTesting",
+        "items": [
+          "Žádné"
+        ]
+      },
+      {
+        "card": "rMobileNav",
+        "items": [
+          "Expo Router (file-based)"
+        ]
+      },
+      {
+        "card": "rMobileUi",
+        "items": [
+          "React Native Paper"
+        ]
+      },
+      {
+        "card": "rMobileState",
+        "items": [
+          "Zustand + TanStack Query"
+        ]
+      },
+      {
+        "card": "rMobileAuth",
+        "items": [
+          "Expo AuthSession (OAuth)"
+        ]
+      },
+      {
+        "card": "rMobileDeploy",
+        "items": [
+          "Expo EAS Build (cloud)"
+        ]
+      },
+      {
+        "card": "rCss",
+        "items": [
+          "Tailwind CSS + Shadcn/UI"
+        ]
+      },
+      {
+        "card": "rForms",
+        "items": [
+          "React Hook Form + Zod"
+        ]
+      },
+      {
+        "card": "rState",
+        "items": [
+          "Zustand / Pinia"
+        ]
+      },
+      {
+        "card": "rRender",
+        "items": [
+          "SSR (Server-Side Rendering)"
+        ]
+      },
+      {
+        "card": "cLint",
+        "items": [
+          "ESLint",
+          "Prettier",
+          "Striktní TS (no implicit any)",
+          "Husky"
+        ]
+      },
+      {
+        "card": "cTest",
+        "items": [
+          "Vitest",
+          "Playwright (E2E)",
+          "Testing Library (React/Vue)",
+          "MSW (Mock Service Worker)"
+        ]
+      },
+      {
+        "card": "cCiCd",
+        "items": [
+          "GitHub Actions",
+          "Automatické testy na PR"
+        ]
+      }
+    ],
+    "Web + Administrace": [
+      {
+        "card": "rArch",
+        "items": [
+          "Standardní (jedna aplikace)"
+        ]
+      },
+      {
+        "card": "rArchType",
+        "items": [
+          "Modulární monolit (moduly s vlastními hranicemi)"
+        ]
+      },
+      {
+        "card": "rRender",
+        "items": [
+          "SSR (Server-Side Rendering)"
+        ]
+      },
+      {
+        "card": "rDesign",
+        "items": [
+          "Moderní & Minimalistický (Shadcn styl)"
+        ]
+      },
+      {
+        "card": "rCss",
+        "items": [
+          "Tailwind CSS + Shadcn/UI"
+        ]
+      },
+      {
+        "card": "rState",
+        "items": [
+          "Zustand / Pinia"
+        ]
+      },
+      {
+        "card": "rForms",
+        "items": [
+          "React Hook Form + Zod"
+        ]
+      },
+      {
+        "card": "rAnimation",
+        "items": [
+          "Framer Motion"
+        ]
+      },
+      {
+        "card": "rI18n",
+        "items": [
+          "Bez i18n (jednojazyčná aplikace)"
+        ]
+      },
+      {
+        "card": "rBe",
+        "items": [
+          "Next.js API Routes / Server Actions"
+        ]
+      },
+      {
+        "card": "rDbStrategy",
+        "items": [
+          "Neon (serverless Postgres, vlastní Auth)"
+        ]
+      },
+      {
+        "card": "rVercelDb",
+        "items": [
+          "Nativní integrace Neon (auto ENV inject)"
+        ]
+      },
+      {
+        "card": "rOrm",
+        "items": [
+          "Prisma"
+        ]
+      },
+      {
+        "card": "rFetch",
+        "items": [
+          "TanStack Query"
+        ]
+      },
+      {
+        "card": "rRealtime",
+        "items": [
+          "Žádná (REST only)"
+        ]
+      },
+      {
+        "card": "rPooling",
+        "items": [
+          "Neon serverless driver (HTTP, žádný pool)"
+        ]
+      },
+      {
+        "card": "rCache",
+        "items": [
+          "Next.js unstable_cache / Data Cache"
+        ]
+      },
+      {
+        "card": "rApiDesign",
+        "items": [
+          "REST + Zod validace"
+        ]
+      },
+      {
+        "card": "rDeploy",
+        "items": [
+          "Vercel (BaaS + Edge)"
+        ]
+      },
+      {
+        "card": "rIac",
+        "items": [
+          "Vercel CLI + vercel.json"
+        ]
+      },
+      {
+        "card": "rAuthType",
+        "items": [
+          "NextAuth v5 / Auth.js"
+        ]
+      },
+      {
+        "card": "rCms",
+        "items": [
+          "Vlastní DB + Administrace"
+        ]
+      },
+      {
+        "card": "rCmsEditor",
+        "items": [
+          "TipTap (headless, vlastní UI)"
+        ]
+      },
+      {
+        "card": "rAdminShell",
+        "items": [
+          "Vlastní admin-kit (custom)"
+        ]
+      },
+      {
+        "card": "rSeo",
+        "items": [
+          "Nativní (Next.js metadata / Nuxt useHead)"
+        ]
+      },
+      {
+        "card": "rAbTesting",
+        "items": [
+          "Žádné"
+        ]
+      },
+      {
+        "card": "rMobileNav",
+        "items": [
+          "Expo Router (file-based)"
+        ]
+      },
+      {
+        "card": "rMobileUi",
+        "items": [
+          "React Native Paper"
+        ]
+      },
+      {
+        "card": "rMobileState",
+        "items": [
+          "Zustand + TanStack Query"
+        ]
+      },
+      {
+        "card": "rMobileAuth",
+        "items": [
+          "Expo AuthSession (OAuth)"
+        ]
+      },
+      {
+        "card": "rMobileDeploy",
+        "items": [
+          "Expo EAS Build (cloud)"
+        ]
+      },
+      {
+        "card": "cAdmin",
+        "items": [
+          "Dashboard (Statistiky, grafy)",
+          "Správa uživatelů (Tabulky)",
+          "Audit Log (Historie změn)"
+        ]
+      },
+      {
+        "card": "cAuth",
+        "items": [
+          "RBAC (Admin/User/Moderator)",
+          "OAuth (Google, GitHub)",
+          "2FA / TOTP",
+          "Session management",
+          "Refresh tokeny",
+          "Device tracking"
+        ]
+      },
+      {
+        "card": "cSec",
+        "items": [
+          "T3 Env (Validace .env přes Zod)",
+          "CSRF ochrana (SameSite)"
+        ]
+      },
+      {
+        "card": "cCompliance",
+        "items": [
+          "Audit trail (kdo co změnil)"
+        ]
+      }
+    ],
+    "Web + Administrace + Mobilní aplikace": [
+      {
+        "card": "rArch",
+        "items": [
+          "Standardní (jedna aplikace)"
+        ]
+      },
+      {
+        "card": "rArchType",
+        "items": [
+          "Modulární monolit (moduly s vlastními hranicemi)"
+        ]
+      },
+      {
+        "card": "rRender",
+        "items": [
+          "SSR (Server-Side Rendering)"
+        ]
+      },
+      {
+        "card": "rDesign",
+        "items": [
+          "Moderní & Minimalistický (Shadcn styl)"
+        ]
+      },
+      {
+        "card": "rCss",
+        "items": [
+          "Tailwind CSS + Shadcn/UI"
+        ]
+      },
+      {
+        "card": "rState",
+        "items": [
+          "Zustand / Pinia"
+        ]
+      },
+      {
+        "card": "rForms",
+        "items": [
+          "React Hook Form + Zod"
+        ]
+      },
+      {
+        "card": "rAnimation",
+        "items": [
+          "Framer Motion"
+        ]
+      },
+      {
+        "card": "rI18n",
+        "items": [
+          "Bez i18n (jednojazyčná aplikace)"
+        ]
+      },
+      {
+        "card": "rBe",
+        "items": [
+          "Next.js API Routes / Server Actions"
+        ]
+      },
+      {
+        "card": "rDbStrategy",
+        "items": [
+          "Neon (serverless Postgres, vlastní Auth)"
+        ]
+      },
+      {
+        "card": "rVercelDb",
+        "items": [
+          "Nativní integrace Neon (auto ENV inject)"
+        ]
+      },
+      {
+        "card": "rOrm",
+        "items": [
+          "Prisma"
+        ]
+      },
+      {
+        "card": "rFetch",
+        "items": [
+          "TanStack Query"
+        ]
+      },
+      {
+        "card": "rRealtime",
+        "items": [
+          "Žádná (REST only)"
+        ]
+      },
+      {
+        "card": "rPooling",
+        "items": [
+          "Neon serverless driver (HTTP, žádný pool)"
+        ]
+      },
+      {
+        "card": "rCache",
+        "items": [
+          "Next.js unstable_cache / Data Cache"
+        ]
+      },
+      {
+        "card": "rApiDesign",
+        "items": [
+          "REST + Zod validace"
+        ]
+      },
+      {
+        "card": "rDeploy",
+        "items": [
+          "Vercel (BaaS + Edge)"
+        ]
+      },
+      {
+        "card": "rIac",
+        "items": [
+          "Vercel CLI + vercel.json"
+        ]
+      },
+      {
+        "card": "rAuthType",
+        "items": [
+          "NextAuth v5 / Auth.js"
+        ]
+      },
+      {
+        "card": "rCms",
+        "items": [
+          "Vlastní DB + Administrace"
+        ]
+      },
+      {
+        "card": "rCmsEditor",
+        "items": [
+          "TipTap (headless, vlastní UI)"
+        ]
+      },
+      {
+        "card": "rAdminShell",
+        "items": [
+          "Vlastní admin-kit (custom)"
+        ]
+      },
+      {
+        "card": "rSeo",
+        "items": [
+          "Nativní (Next.js metadata / Nuxt useHead)"
+        ]
+      },
+      {
+        "card": "rAbTesting",
+        "items": [
+          "Žádné"
+        ]
+      },
+      {
+        "card": "rMobileNav",
+        "items": [
+          "Expo Router (file-based)"
+        ]
+      },
+      {
+        "card": "rMobileUi",
+        "items": [
+          "React Native Paper"
+        ]
+      },
+      {
+        "card": "rMobileState",
+        "items": [
+          "Zustand + TanStack Query"
+        ]
+      },
+      {
+        "card": "rMobileAuth",
+        "items": [
+          "Expo AuthSession (OAuth)"
+        ]
+      },
+      {
+        "card": "rMobileDeploy",
+        "items": [
+          "Expo EAS Build (cloud)"
+        ]
+      },
+      {
+        "card": "rMobile",
+        "items": [
+          "React Native + Expo (SDK 57+)"
+        ]
+      },
+      {
+        "card": "rMobileNav",
+        "items": [
+          "Expo Router (file-based)"
+        ]
+      },
+      {
+        "card": "rMobileDeploy",
+        "items": [
+          "Expo EAS Build (cloud)"
+        ]
+      },
+      {
+        "card": "cAdmin",
+        "items": [
+          "Dashboard (Statistiky, grafy)",
+          "Správa uživatelů (Tabulky)",
+          "Audit Log (Historie změn)"
+        ]
+      },
+      {
+        "card": "cMobileFeatures",
+        "items": [
+          "SecureStore pro tokeny",
+          "Sdílené API s webem",
+          "Push notifikace (Expo Notifications)",
+          "Dark/Light/System téma"
+        ]
+      },
+      {
+        "card": "rMobile",
+        "items": [
+          "React Native + Expo (SDK 57+)"
+        ]
+      },
+      {
+        "card": "rMobileNav",
+        "items": [
+          "Expo Router (file-based)"
+        ]
+      },
+      {
+        "card": "rMobileDeploy",
+        "items": [
+          "Expo EAS Build (cloud)"
+        ]
+      },
+      {
+        "card": "cAuth",
+        "items": [
+          "RBAC (Admin/User/Moderator)",
+          "Refresh tokeny",
+          "Session management"
+        ]
+      }
+    ],
+    "Web + Mobilní aplikace (bez adminu)": [
+      {
+        "card": "rArch",
+        "items": [
+          "Standardní (jedna aplikace)"
+        ]
+      },
+      {
+        "card": "rArchType",
+        "items": [
+          "Modulární monolit (moduly s vlastními hranicemi)"
+        ]
+      },
+      {
+        "card": "rRender",
+        "items": [
+          "SSR (Server-Side Rendering)"
+        ]
+      },
+      {
+        "card": "rDesign",
+        "items": [
+          "Moderní & Minimalistický (Shadcn styl)"
+        ]
+      },
+      {
+        "card": "rCss",
+        "items": [
+          "Tailwind CSS + Shadcn/UI"
+        ]
+      },
+      {
+        "card": "rState",
+        "items": [
+          "Zustand / Pinia"
+        ]
+      },
+      {
+        "card": "rForms",
+        "items": [
+          "React Hook Form + Zod"
+        ]
+      },
+      {
+        "card": "rAnimation",
+        "items": [
+          "Framer Motion"
+        ]
+      },
+      {
+        "card": "rI18n",
+        "items": [
+          "Bez i18n (jednojazyčná aplikace)"
+        ]
+      },
+      {
+        "card": "rBe",
+        "items": [
+          "Next.js API Routes / Server Actions"
+        ]
+      },
+      {
+        "card": "rDbStrategy",
+        "items": [
+          "Neon (serverless Postgres, vlastní Auth)"
+        ]
+      },
+      {
+        "card": "rVercelDb",
+        "items": [
+          "Nativní integrace Neon (auto ENV inject)"
+        ]
+      },
+      {
+        "card": "rOrm",
+        "items": [
+          "Prisma"
+        ]
+      },
+      {
+        "card": "rFetch",
+        "items": [
+          "TanStack Query"
+        ]
+      },
+      {
+        "card": "rRealtime",
+        "items": [
+          "Žádná (REST only)"
+        ]
+      },
+      {
+        "card": "rPooling",
+        "items": [
+          "Neon serverless driver (HTTP, žádný pool)"
+        ]
+      },
+      {
+        "card": "rCache",
+        "items": [
+          "Next.js unstable_cache / Data Cache"
+        ]
+      },
+      {
+        "card": "rApiDesign",
+        "items": [
+          "REST + Zod validace"
+        ]
+      },
+      {
+        "card": "rDeploy",
+        "items": [
+          "Vercel (BaaS + Edge)"
+        ]
+      },
+      {
+        "card": "rIac",
+        "items": [
+          "Vercel CLI + vercel.json"
+        ]
+      },
+      {
+        "card": "rAuthType",
+        "items": [
+          "NextAuth v5 / Auth.js"
+        ]
+      },
+      {
+        "card": "rCms",
+        "items": [
+          "Vlastní DB + Administrace"
+        ]
+      },
+      {
+        "card": "rCmsEditor",
+        "items": [
+          "TipTap (headless, vlastní UI)"
+        ]
+      },
+      {
+        "card": "rAdminShell",
+        "items": [
+          "Vlastní admin-kit (custom)"
+        ]
+      },
+      {
+        "card": "rSeo",
+        "items": [
+          "Nativní (Next.js metadata / Nuxt useHead)"
+        ]
+      },
+      {
+        "card": "rAbTesting",
+        "items": [
+          "Žádné"
+        ]
+      },
+      {
+        "card": "rMobileNav",
+        "items": [
+          "Expo Router (file-based)"
+        ]
+      },
+      {
+        "card": "rMobileUi",
+        "items": [
+          "React Native Paper"
+        ]
+      },
+      {
+        "card": "rMobileState",
+        "items": [
+          "Zustand + TanStack Query"
+        ]
+      },
+      {
+        "card": "rMobileAuth",
+        "items": [
+          "Expo AuthSession (OAuth)"
+        ]
+      },
+      {
+        "card": "rMobileDeploy",
+        "items": [
+          "Expo EAS Build (cloud)"
+        ]
+      },
+      {
+        "card": "rMobile",
+        "items": [
+          "React Native + Expo (SDK 57+)"
+        ]
+      },
+      {
+        "card": "rMobileNav",
+        "items": [
+          "Expo Router (file-based)"
+        ]
+      },
+      {
+        "card": "rMobileDeploy",
+        "items": [
+          "Expo EAS Build (cloud)"
+        ]
+      },
+      {
+        "card": "cMobileFeatures",
+        "items": [
+          "SecureStore pro tokeny",
+          "Sdílené API s webem",
+          "Push notifikace (Expo Notifications)",
+          "Dark/Light/System téma"
+        ]
+      },
+      {
+        "card": "rMobile",
+        "items": [
+          "React Native + Expo (SDK 57+)"
+        ]
+      },
+      {
+        "card": "rMobileNav",
+        "items": [
+          "Expo Router (file-based)"
+        ]
+      },
+      {
+        "card": "rMobileDeploy",
+        "items": [
+          "Expo EAS Build (cloud)"
+        ]
+      },
+      {
+        "card": "cAuth",
+        "items": [
+          "Refresh tokeny",
+          "Session management"
+        ]
+      }
+    ],
+    "Pouze web (desktop + mobil)": [
+      {
+        "card": "rArch",
+        "items": [
+          "Standardní (jedna aplikace)"
+        ]
+      },
+      {
+        "card": "rArchType",
+        "items": [
+          "Modulární monolit (moduly s vlastními hranicemi)"
+        ]
+      },
+      {
+        "card": "rRender",
+        "items": [
+          "SSR (Server-Side Rendering)"
+        ]
+      },
+      {
+        "card": "rDesign",
+        "items": [
+          "Moderní & Minimalistický (Shadcn styl)"
+        ]
+      },
+      {
+        "card": "rCss",
+        "items": [
+          "Tailwind CSS + Shadcn/UI"
+        ]
+      },
+      {
+        "card": "rState",
+        "items": [
+          "Zustand / Pinia"
+        ]
+      },
+      {
+        "card": "rForms",
+        "items": [
+          "React Hook Form + Zod"
+        ]
+      },
+      {
+        "card": "rAnimation",
+        "items": [
+          "Framer Motion"
+        ]
+      },
+      {
+        "card": "rI18n",
+        "items": [
+          "Bez i18n (jednojazyčná aplikace)"
+        ]
+      },
+      {
+        "card": "rBe",
+        "items": [
+          "Next.js API Routes / Server Actions"
+        ]
+      },
+      {
+        "card": "rDbStrategy",
+        "items": [
+          "Neon (serverless Postgres, vlastní Auth)"
+        ]
+      },
+      {
+        "card": "rVercelDb",
+        "items": [
+          "Nativní integrace Neon (auto ENV inject)"
+        ]
+      },
+      {
+        "card": "rOrm",
+        "items": [
+          "Prisma"
+        ]
+      },
+      {
+        "card": "rFetch",
+        "items": [
+          "TanStack Query"
+        ]
+      },
+      {
+        "card": "rRealtime",
+        "items": [
+          "Žádná (REST only)"
+        ]
+      },
+      {
+        "card": "rPooling",
+        "items": [
+          "Neon serverless driver (HTTP, žádný pool)"
+        ]
+      },
+      {
+        "card": "rCache",
+        "items": [
+          "Next.js unstable_cache / Data Cache"
+        ]
+      },
+      {
+        "card": "rApiDesign",
+        "items": [
+          "REST + Zod validace"
+        ]
+      },
+      {
+        "card": "rDeploy",
+        "items": [
+          "Vercel (BaaS + Edge)"
+        ]
+      },
+      {
+        "card": "rIac",
+        "items": [
+          "Vercel CLI + vercel.json"
+        ]
+      },
+      {
+        "card": "rAuthType",
+        "items": [
+          "NextAuth v5 / Auth.js"
+        ]
+      },
+      {
+        "card": "rCms",
+        "items": [
+          "Vlastní DB + Administrace"
+        ]
+      },
+      {
+        "card": "rCmsEditor",
+        "items": [
+          "TipTap (headless, vlastní UI)"
+        ]
+      },
+      {
+        "card": "rAdminShell",
+        "items": [
+          "Vlastní admin-kit (custom)"
+        ]
+      },
+      {
+        "card": "rSeo",
+        "items": [
+          "Nativní (Next.js metadata / Nuxt useHead)"
+        ]
+      },
+      {
+        "card": "rAbTesting",
+        "items": [
+          "Žádné"
+        ]
+      },
+      {
+        "card": "rMobileNav",
+        "items": [
+          "Expo Router (file-based)"
+        ]
+      },
+      {
+        "card": "rMobileUi",
+        "items": [
+          "React Native Paper"
+        ]
+      },
+      {
+        "card": "rMobileState",
+        "items": [
+          "Zustand + TanStack Query"
+        ]
+      },
+      {
+        "card": "rMobileAuth",
+        "items": [
+          "Expo AuthSession (OAuth)"
+        ]
+      },
+      {
+        "card": "rMobileDeploy",
+        "items": [
+          "Expo EAS Build (cloud)"
+        ]
+      },
+      {
+        "card": "cFeUi",
+        "items": [
+          "Lucide Icons",
+          "Sonner (toast notifikace)",
+          "next-themes (dark mode)"
+        ]
+      },
+      {
+        "card": "cAccessibility",
+        "items": [
+          "Sémantické HTML",
+          "Alternativní text u obrázků",
+          "Navigace klávesnicí"
+        ]
+      },
+      {
+        "card": "cPerformance",
+        "items": [
+          "Velikost svazku"
+        ]
+      }
+    ],
+    "Obecná / Univerzální": [
+      {
+        "card": "rArch",
+        "items": [
+          "Standardní (jedna aplikace)"
+        ]
+      },
+      {
+        "card": "rArchType",
+        "items": [
+          "Modulární monolit (moduly s vlastními hranicemi)"
+        ]
+      },
+      {
+        "card": "rRender",
+        "items": [
+          "SSR (Server-Side Rendering)"
+        ]
+      },
+      {
+        "card": "rDesign",
+        "items": [
+          "Moderní & Minimalistický (Shadcn styl)"
+        ]
+      },
+      {
+        "card": "rCss",
+        "items": [
+          "Tailwind CSS + Shadcn/UI"
+        ]
+      },
+      {
+        "card": "rState",
+        "items": [
+          "Zustand / Pinia"
+        ]
+      },
+      {
+        "card": "rForms",
+        "items": [
+          "React Hook Form + Zod"
+        ]
+      },
+      {
+        "card": "rAnimation",
+        "items": [
+          "Framer Motion"
+        ]
+      },
+      {
+        "card": "rI18n",
+        "items": [
+          "Bez i18n (jednojazyčná aplikace)"
+        ]
+      },
+      {
+        "card": "rBe",
+        "items": [
+          "Next.js API Routes / Server Actions"
+        ]
+      },
+      {
+        "card": "rDbStrategy",
+        "items": [
+          "Neon (serverless Postgres, vlastní Auth)"
+        ]
+      },
+      {
+        "card": "rVercelDb",
+        "items": [
+          "Nativní integrace Neon (auto ENV inject)"
+        ]
+      },
+      {
+        "card": "rOrm",
+        "items": [
+          "Prisma"
+        ]
+      },
+      {
+        "card": "rFetch",
+        "items": [
+          "TanStack Query"
+        ]
+      },
+      {
+        "card": "rRealtime",
+        "items": [
+          "Žádná (REST only)"
+        ]
+      },
+      {
+        "card": "rPooling",
+        "items": [
+          "Neon serverless driver (HTTP, žádný pool)"
+        ]
+      },
+      {
+        "card": "rCache",
+        "items": [
+          "Next.js unstable_cache / Data Cache"
+        ]
+      },
+      {
+        "card": "rApiDesign",
+        "items": [
+          "REST + Zod validace"
+        ]
+      },
+      {
+        "card": "rDeploy",
+        "items": [
+          "Vercel (BaaS + Edge)"
+        ]
+      },
+      {
+        "card": "rIac",
+        "items": [
+          "Vercel CLI + vercel.json"
+        ]
+      },
+      {
+        "card": "rAuthType",
+        "items": [
+          "NextAuth v5 / Auth.js"
+        ]
+      },
+      {
+        "card": "rCms",
+        "items": [
+          "Vlastní DB + Administrace"
+        ]
+      },
+      {
+        "card": "rCmsEditor",
+        "items": [
+          "TipTap (headless, vlastní UI)"
+        ]
+      },
+      {
+        "card": "rAdminShell",
+        "items": [
+          "Vlastní admin-kit (custom)"
+        ]
+      },
+      {
+        "card": "rSeo",
+        "items": [
+          "Nativní (Next.js metadata / Nuxt useHead)"
+        ]
+      },
+      {
+        "card": "rAbTesting",
+        "items": [
+          "Žádné"
+        ]
+      },
+      {
+        "card": "rMobileNav",
+        "items": [
+          "Expo Router (file-based)"
+        ]
+      },
+      {
+        "card": "rMobileUi",
+        "items": [
+          "React Native Paper"
+        ]
+      },
+      {
+        "card": "rMobileState",
+        "items": [
+          "Zustand + TanStack Query"
+        ]
+      },
+      {
+        "card": "rMobileAuth",
+        "items": [
+          "Expo AuthSession (OAuth)"
+        ]
+      },
+      {
+        "card": "rMobileDeploy",
+        "items": [
+          "Expo EAS Build (cloud)"
+        ]
+      },
+      {
+        "card": "rArch",
+        "items": [
+          "Standardní (jedna aplikace)"
+        ]
+      },
+      {
+        "card": "rArchType",
+        "items": [
+          "Modulární monolit (moduly s vlastními hranicemi)"
+        ]
+      },
+      {
+        "card": "rRender",
+        "items": [
+          "SSR (Server-Side Rendering)"
+        ]
+      },
+      {
+        "card": "rDesign",
+        "items": [
+          "Moderní & Minimalistický (Shadcn styl)"
+        ]
+      },
+      {
+        "card": "rCss",
+        "items": [
+          "Tailwind CSS + Shadcn/UI"
+        ]
+      },
+      {
+        "card": "rState",
+        "items": [
+          "Zustand / Pinia"
+        ]
+      },
+      {
+        "card": "rForms",
+        "items": [
+          "React Hook Form + Zod"
+        ]
+      },
+      {
+        "card": "rAnimation",
+        "items": [
+          "Framer Motion"
+        ]
+      },
+      {
+        "card": "rI18n",
+        "items": [
+          "Bez i18n (jednojazyčná aplikace)"
+        ]
+      },
+      {
+        "card": "rBe",
+        "items": [
+          "Next.js API Routes / Server Actions"
+        ]
+      },
+      {
+        "card": "rDbStrategy",
+        "items": [
+          "Neon (serverless Postgres, vlastní Auth)"
+        ]
+      },
+      {
+        "card": "rVercelDb",
+        "items": [
+          "Nativní integrace Neon (auto ENV inject)"
+        ]
+      },
+      {
+        "card": "rOrm",
+        "items": [
+          "Prisma"
+        ]
+      },
+      {
+        "card": "rFetch",
+        "items": [
+          "TanStack Query"
+        ]
+      },
+      {
+        "card": "rRealtime",
+        "items": [
+          "Žádná (REST only)"
+        ]
+      },
+      {
+        "card": "rPooling",
+        "items": [
+          "Neon serverless driver (HTTP, žádný pool)"
+        ]
+      },
+      {
+        "card": "rCache",
+        "items": [
+          "Next.js unstable_cache / Data Cache"
+        ]
+      },
+      {
+        "card": "rApiDesign",
+        "items": [
+          "REST + Zod validace"
+        ]
+      },
+      {
+        "card": "rDeploy",
+        "items": [
+          "Vercel (BaaS + Edge)"
+        ]
+      },
+      {
+        "card": "rIac",
+        "items": [
+          "Vercel CLI + vercel.json"
+        ]
+      },
+      {
+        "card": "rAuthType",
+        "items": [
+          "NextAuth v5 / Auth.js"
+        ]
+      },
+      {
+        "card": "rCms",
+        "items": [
+          "Vlastní DB + Administrace"
+        ]
+      },
+      {
+        "card": "rCmsEditor",
+        "items": [
+          "TipTap (headless, vlastní UI)"
+        ]
+      },
+      {
+        "card": "rAdminShell",
+        "items": [
+          "Vlastní admin-kit (custom)"
+        ]
+      },
+      {
+        "card": "rSeo",
+        "items": [
+          "Nativní (Next.js metadata / Nuxt useHead)"
+        ]
+      },
+      {
+        "card": "rAbTesting",
+        "items": [
+          "Žádné"
+        ]
+      },
+      {
+        "card": "rMobileNav",
+        "items": [
+          "Expo Router (file-based)"
+        ]
+      },
+      {
+        "card": "rMobileUi",
+        "items": [
+          "React Native Paper"
+        ]
+      },
+      {
+        "card": "rMobileState",
+        "items": [
+          "Zustand + TanStack Query"
+        ]
+      },
+      {
+        "card": "rMobileAuth",
+        "items": [
+          "Expo AuthSession (OAuth)"
+        ]
+      },
+      {
+        "card": "rMobileDeploy",
+        "items": [
+          "Expo EAS Build (cloud)"
+        ]
+      }
+    ]
+  },
+  "triggerOf": {
+    "E-shop / E-commerce": {
+      "card": "rAppDomain",
+      "kind": "domain"
+    },
+    "Rezervační systém (salon, lékař, restaurace)": {
+      "card": "rAppDomain",
+      "kind": "domain"
+    },
+    "SaaS platforma": {
+      "card": "rAppDomain",
+      "kind": "domain"
+    },
+    "LMS (Learning Management System)": {
+      "card": "rAppDomain",
+      "kind": "domain"
+    },
+    "CRM / Interní nástroj": {
+      "card": "rAppDomain",
+      "kind": "domain"
+    },
+    "Blog / Magazín / Média": {
+      "card": "rAppDomain",
+      "kind": "domain"
+    },
+    "Portfolio / Prezentační web": {
+      "card": "rAppDomain",
+      "kind": "domain"
+    },
+    "Sociální síť / Komunita": {
+      "card": "rAppDomain",
+      "kind": "domain"
+    },
+    "Marketplace (více prodejců)": {
+      "card": "rAppDomain",
+      "kind": "domain"
+    },
+    "Booking + platby (kombinace)": {
+      "card": "rAppDomain",
+      "kind": "domain"
+    },
+    "React Native + Expo (SDK 57+)": {
+      "card": "rMobile",
+      "kind": "mobile"
+    },
+    "React Native (bare, bez Expo)": {
+      "card": "rMobile",
+      "kind": "mobile"
+    },
+    "Flutter": {
+      "card": "rMobile",
+      "kind": "mobile"
+    },
+    "Capacitor (web → nativní)": {
+      "card": "rMobile",
+      "kind": "mobile"
+    },
+    "PWA (Progressive Web App)": {
+      "card": "rMobile",
+      "kind": "mobile"
+    },
+    "Next.js (App Router)": {
+      "card": "rFe",
+      "kind": "framework"
+    },
+    "React + Vite": {
+      "card": "rFe",
+      "kind": "framework"
+    },
+    "Vue 3 + Vite": {
+      "card": "rFe",
+      "kind": "framework"
+    },
+    "Nuxt 3/4": {
+      "card": "rFe",
+      "kind": "framework"
+    },
+    "SvelteKit": {
+      "card": "rFe",
+      "kind": "framework"
+    },
+    "Astro (Islands Architecture)": {
+      "card": "rFe",
+      "kind": "framework"
+    },
+    "Angular 22": {
+      "card": "rFe",
+      "kind": "framework"
+    },
+    "React Router v8 (framework mode)": {
+      "card": "rFe",
+      "kind": "framework"
+    },
+    "Web + Administrace": {
+      "card": "rTarget",
+      "kind": "target"
+    },
+    "Web + Administrace + Mobilní aplikace": {
+      "card": "rTarget",
+      "kind": "target"
+    },
+    "Web + Mobilní aplikace (bez adminu)": {
+      "card": "rTarget",
+      "kind": "target"
+    },
+    "Pouze web (desktop + mobil)": {
+      "card": "rTarget",
+      "kind": "target"
+    },
+    "Obecná / Univerzální": {
+      "card": "rAppDomain",
+      "kind": "domain"
+    }
+  },
+  "groupsByKind": {
+    "domain": [
+      "rArch",
+      "rArchType",
+      "rRender",
+      "rDesign",
+      "rCss",
+      "rState",
+      "rForms",
+      "rAnimation",
+      "rI18n",
+      "rBe",
+      "rDbStrategy",
+      "rVercelDb",
+      "rOrm",
+      "rFetch",
+      "rRealtime",
+      "rPooling",
+      "rCache",
+      "rApiDesign",
+      "rDeploy",
+      "rIac",
+      "rAuthType",
+      "rCms",
+      "rCmsEditor",
+      "rAdminShell",
+      "rSeo",
+      "rAbTesting",
+      "rMobileNav",
+      "rMobileUi",
+      "rMobileState",
+      "rMobileAuth",
+      "rMobileDeploy",
+      "cEcommerce",
+      "cCore",
+      "cIntegrations",
+      "cLegal",
+      "cAdmin",
+      "cMarketing",
+      "cAuth",
+      "cSec",
+      "cCompliance",
+      "cCiCd",
+      "cTest",
+      "cObservability",
+      "cLog",
+      "cBuildValidation",
+      "cSecurityBehavior",
+      "cAccessibility",
+      "cBooking",
+      "cSaas",
+      "cDocsBehavior",
+      "cLms",
+      "cCrm",
+      "cVercelFeatures",
+      "cPerformance",
+      "cAi"
+    ],
+    "mobile": [
+      "rArch",
+      "rArchType",
+      "rRender",
+      "rDesign",
+      "rCss",
+      "rState",
+      "rForms",
+      "rAnimation",
+      "rI18n",
+      "rBe",
+      "rDbStrategy",
+      "rVercelDb",
+      "rOrm",
+      "rFetch",
+      "rRealtime",
+      "rPooling",
+      "rCache",
+      "rApiDesign",
+      "rDeploy",
+      "rIac",
+      "rAuthType",
+      "rCms",
+      "rCmsEditor",
+      "rAdminShell",
+      "rSeo",
+      "rAbTesting",
+      "rMobileNav",
+      "rMobileUi",
+      "rMobileState",
+      "rMobileAuth",
+      "rMobileDeploy",
+      "cMobileFeatures",
+      "cMarketing",
+      "cAccessibility"
+    ],
+    "framework": [
+      "rArch",
+      "rArchType",
+      "rRender",
+      "rDesign",
+      "rCss",
+      "rState",
+      "rForms",
+      "rAnimation",
+      "rI18n",
+      "rBe",
+      "rDbStrategy",
+      "rVercelDb",
+      "rOrm",
+      "rFetch",
+      "rRealtime",
+      "rPooling",
+      "rCache",
+      "rApiDesign",
+      "rDeploy",
+      "rIac",
+      "rAuthType",
+      "rCms",
+      "rCmsEditor",
+      "rAdminShell",
+      "rSeo",
+      "rAbTesting",
+      "rMobileNav",
+      "rMobileUi",
+      "rMobileState",
+      "rMobileAuth",
+      "rMobileDeploy",
+      "cLint",
+      "cFeUi",
+      "cTest",
+      "cCiCd"
+    ],
+    "target": [
+      "rArch",
+      "rArchType",
+      "rRender",
+      "rDesign",
+      "rCss",
+      "rState",
+      "rForms",
+      "rAnimation",
+      "rI18n",
+      "rBe",
+      "rDbStrategy",
+      "rVercelDb",
+      "rOrm",
+      "rFetch",
+      "rRealtime",
+      "rPooling",
+      "rCache",
+      "rApiDesign",
+      "rDeploy",
+      "rIac",
+      "rAuthType",
+      "rCms",
+      "rCmsEditor",
+      "rAdminShell",
+      "rSeo",
+      "rAbTesting",
+      "rMobileNav",
+      "rMobileUi",
+      "rMobileState",
+      "rMobileAuth",
+      "rMobileDeploy",
+      "cAdmin",
+      "cAuth",
+      "cSec",
+      "cCompliance",
+      "rMobile",
+      "cMobileFeatures",
+      "cFeUi",
+      "cAccessibility",
+      "cPerformance"
+    ]
+  },
+  "sharedLists": {
+    "optDomains": [
+      "Obecná / Univerzální",
+      "E-shop / E-commerce",
+      "Rezervační systém (salon, lékař, restaurace)",
+      "SaaS platforma",
+      "LMS (Learning Management System)",
+      "Sociální síť / Komunita",
+      "Blog / Magazín / Média",
+      "Marketplace (více prodejců)",
+      "CRM / Interní nástroj",
+      "Portfolio / Prezentační web",
+      "Booking + platby (kombinace)"
+    ],
+    "optFrameworks": [
+      "Next.js (App Router)",
+      "React + Vite",
+      "Vue 3 + Vite",
+      "Nuxt 3/4",
+      "SvelteKit",
+      "Astro (Islands Architecture)",
+      "Angular 22",
+      "React Router v8 (framework mode)"
+    ],
+    "optMobilePlat": [
+      "Žádná (pouze web)",
+      "React Native + Expo (SDK 57+)",
+      "React Native (bare, bez Expo)",
+      "Flutter",
+      "Capacitor (web → nativní)",
+      "PWA (Progressive Web App)"
+    ],
+    "optTargets": [
+      "Pouze web (desktop + mobil)",
+      "Web + Administrace",
+      "Web + Administrace + Mobilní aplikace",
+      "Web + Mobilní aplikace (bez adminu)",
+      "PWA (Progressive Web App)"
+    ]
+  }
+}

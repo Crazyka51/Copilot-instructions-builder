@@ -1,0 +1,7 @@
+# Konfigurace pnpm (pnpm 10+ už nečte pole "pnpm" v package.json).
+# Povolujeme build skript esbuild, jinak pnpm install skončí chybou ERR_PNPM_IGNORED_BUILDS.
+packages:
+  - '.'
+
+allowBuilds:
+  esbuild: true

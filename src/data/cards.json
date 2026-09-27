@@ -1,0 +1,1486 @@
+[
+  {
+    "id": "rArch",
+    "title": "Struktura Repozitáře",
+    "kind": "radio",
+    "tab": "Architektura",
+    "options": [
+      "Standardní (jedna aplikace)",
+      "pnpm workspaces + apps/ (monorepo)",
+      "Turborepo (pnpm workspaces)",
+      "Modulární monolit (čisté hranice)"
+    ],
+    "pos": {
+      "x": 0,
+      "y": 0,
+      "w": 440,
+      "h": 200
+    }
+  },
+  {
+    "id": "rFe",
+    "title": "Frontend Framework",
+    "kind": "radio",
+    "tab": "Architektura",
+    "options": [
+      "Next.js (App Router)",
+      "React + Vite",
+      "Vue 3 + Vite",
+      "Nuxt 3/4",
+      "SvelteKit",
+      "Astro (Islands Architecture)",
+      "Angular 22",
+      "React Router v8 (framework mode)"
+    ],
+    "pos": {
+      "x": 460,
+      "y": 0,
+      "w": 440,
+      "h": 200
+    }
+  },
+  {
+    "id": "cLint",
+    "title": "Standardy Kódu",
+    "kind": "check",
+    "tab": "Architektura",
+    "options": [
+      "ESLint",
+      "Prettier",
+      "Biome",
+      "Striktní TS (no implicit any)",
+      "Knip",
+      "Husky",
+      "Commitlint"
+    ],
+    "pos": {
+      "x": 920,
+      "y": 0,
+      "w": 440,
+      "h": 200
+    }
+  },
+  {
+    "id": "rAuthType",
+    "title": "Autentizace",
+    "kind": "radio",
+    "tab": "Architektura",
+    "options": [
+      "NextAuth v5 / Auth.js",
+      "Vlastní JWT + bearer tokeny",
+      "Clerk (hosted)",
+      "Supabase Auth"
+    ],
+    "pos": {
+      "x": 0,
+      "y": 220,
+      "w": 440,
+      "h": 200
+    }
+  },
+  {
+    "id": "rDbStrategy",
+    "title": "Databáze",
+    "kind": "radio",
+    "tab": "Architektura",
+    "options": [
+      "Neon (serverless Postgres, vlastní Auth)",
+      "Supabase (kompletní backend: DB + Auth + Storage)",
+      "Vlastní PostgreSQL (VPS)",
+      "PlanetScale (MySQL)"
+    ],
+    "pos": {
+      "x": 460,
+      "y": 220,
+      "w": 440,
+      "h": 200
+    }
+  },
+  {
+    "id": "rDeploy",
+    "title": "Nasazení",
+    "kind": "radio",
+    "tab": "Architektura",
+    "options": [
+      "Vercel (BaaS + Edge)",
+      "Netlify",
+      "Docker Container (VPS/AWS)",
+      "AWS ECS / Fargate (Enterprise)"
+    ],
+    "pos": {
+      "x": 920,
+      "y": 220,
+      "w": 440,
+      "h": 200
+    }
+  },
+  {
+    "id": "rArchType",
+    "title": "Typ Architektury",
+    "kind": "radio",
+    "tab": "Architektura",
+    "options": [
+      "Monolit (jedna aplikace)",
+      "Modulární monolit (moduly s vlastními hranicemi)",
+      "Mikroservisy (nezávislé služby)",
+      "Serverless / Edge funkce",
+      "Hybridní (modulární monolit + extrahované služby)"
+    ],
+    "pos": {
+      "x": 0,
+      "y": 440,
+      "w": 440,
+      "h": 230
+    }
+  },
+  {
+    "id": "rTarget",
+    "title": "Cílové Platformy",
+    "kind": "radio",
+    "tab": "Architektura",
+    "options": [
+      "Pouze web (desktop + mobil)",
+      "Web + Administrace",
+      "Web + Administrace + Mobilní aplikace",
+      "Web + Mobilní aplikace (bez adminu)",
+      "PWA (Progressive Web App)"
+    ],
+    "pos": {
+      "x": 460,
+      "y": 440,
+      "w": 440,
+      "h": 230
+    }
+  },
+  {
+    "id": "rDesign",
+    "title": "Design System a Vibe",
+    "kind": "radio",
+    "tab": "Architektura",
+    "options": [
+      "Moderní & Minimalistický (Shadcn styl)",
+      "Enterprise (Korporátní data)",
+      "Dark Mode orientovaný",
+      "Hravý / Barevný",
+      "Material Design 3",
+      "Glassmorphism / Neumorphism"
+    ],
+    "pos": {
+      "x": 920,
+      "y": 440,
+      "w": 440,
+      "h": 230
+    }
+  },
+  {
+    "id": "rRender",
+    "title": "Rendering Strategie",
+    "kind": "radio",
+    "tab": "Frontend",
+    "options": [
+      "SSR (Server-Side Rendering)",
+      "SPA (Single Page App)",
+      "SSG (Static Site Generation)",
+      "ISR (Incremental Static Regeneration)"
+    ],
+    "pos": {
+      "x": 0,
+      "y": 0,
+      "w": 440,
+      "h": 200
+    }
+  },
+  {
+    "id": "rCss",
+    "title": "Styling",
+    "kind": "radio",
+    "tab": "Frontend",
+    "options": [
+      "Tailwind CSS + Shadcn/UI",
+      "Tailwind CSS (čistý)",
+      "MUI",
+      "CSS Modules + Vanilla Extract"
+    ],
+    "pos": {
+      "x": 460,
+      "y": 0,
+      "w": 440,
+      "h": 200
+    }
+  },
+  {
+    "id": "rI18n",
+    "title": "Internacionalizace",
+    "kind": "radio",
+    "tab": "Frontend",
+    "options": [
+      "Bez i18n (jednojazyčná aplikace)",
+      "next-intl (Next.js App Router)",
+      "Vlastní JSON slovník",
+      "Vue I18n / SvelteKit i18n"
+    ],
+    "pos": {
+      "x": 920,
+      "y": 0,
+      "w": 440,
+      "h": 200
+    }
+  },
+  {
+    "id": "rState",
+    "title": "State Management",
+    "kind": "radio",
+    "tab": "Frontend",
+    "options": [
+      "Zustand / Pinia",
+      "Redux Toolkit",
+      "Context API",
+      "Bez globálního stavu"
+    ],
+    "pos": {
+      "x": 0,
+      "y": 220,
+      "w": 440,
+      "h": 200
+    }
+  },
+  {
+    "id": "rForms",
+    "title": "Formuláře a Validace",
+    "kind": "radio",
+    "tab": "Frontend",
+    "options": [
+      "React Hook Form + Zod",
+      "VeeValidate + Zod",
+      "Server Actions (Nativní)",
+      "Čistý state"
+    ],
+    "pos": {
+      "x": 460,
+      "y": 220,
+      "w": 440,
+      "h": 200
+    }
+  },
+  {
+    "id": "rAnimation",
+    "title": "Animace",
+    "kind": "radio",
+    "tab": "Frontend",
+    "options": [
+      "Žádná (minimalistické)",
+      "Framer Motion",
+      "GSAP",
+      "CSS Animations (nativní)"
+    ],
+    "pos": {
+      "x": 920,
+      "y": 220,
+      "w": 440,
+      "h": 200
+    }
+  },
+  {
+    "id": "cFeUi",
+    "title": "UI Knihovny",
+    "kind": "check",
+    "tab": "Frontend",
+    "options": [
+      "Lucide Icons",
+      "Sonner (toast notifikace)",
+      "next-themes (dark mode)",
+      "Recharts (grafy)"
+    ],
+    "pos": {
+      "x": 0,
+      "y": 440,
+      "w": 440,
+      "h": 200
+    }
+  },
+  {
+    "id": "rBe",
+    "title": "Backend Jádro",
+    "kind": "radio",
+    "tab": "Backend",
+    "options": [
+      "Next.js API Routes / Server Actions",
+      "Oddělený Node.js (Express / NestJS)",
+      "Hono",
+      "BaaS (Supabase / Firebase)",
+      "Python (FastAPI / Django)",
+      "Go (Gin / Echo / Fiber)",
+      "Rust (Axum / Actix)",
+      "Edge Functions (Cloudflare Workers)"
+    ],
+    "pos": {
+      "x": 0,
+      "y": 0,
+      "w": 440,
+      "h": 200
+    }
+  },
+  {
+    "id": "rVercelDb",
+    "title": "Integrace DB",
+    "kind": "radio",
+    "tab": "Backend",
+    "options": [
+      "Nativní integrace Neon (auto ENV inject)",
+      "Supabase Marketplace (one-click)",
+      "Manuální správa ENV",
+      "Nepoužívám Vercel"
+    ],
+    "pos": {
+      "x": 460,
+      "y": 0,
+      "w": 440,
+      "h": 200
+    }
+  },
+  {
+    "id": "rOrm",
+    "title": "ORM / Data Layer",
+    "kind": "radio",
+    "tab": "Backend",
+    "options": [
+      "Prisma",
+      "Drizzle ORM",
+      "Supabase Client",
+      "Raw SQL + prepared statements"
+    ],
+    "pos": {
+      "x": 920,
+      "y": 0,
+      "w": 440,
+      "h": 200
+    }
+  },
+  {
+    "id": "rFetch",
+    "title": "Data Fetching",
+    "kind": "radio",
+    "tab": "Backend",
+    "options": [
+      "TanStack Query",
+      "SWR",
+      "tRPC",
+      "Nativní fetch()"
+    ],
+    "pos": {
+      "x": 0,
+      "y": 220,
+      "w": 440,
+      "h": 200
+    }
+  },
+  {
+    "id": "rRealtime",
+    "title": "Real-time komunikace",
+    "kind": "radio",
+    "tab": "Backend",
+    "options": [
+      "Žádná (REST only)",
+      "WebSockets (Socket.io / nativní)",
+      "Server-Sent Events (SSE)",
+      "Supabase Realtime / Firebase"
+    ],
+    "pos": {
+      "x": 460,
+      "y": 220,
+      "w": 440,
+      "h": 200
+    }
+  },
+  {
+    "id": "rPooling",
+    "title": "Connection Pooling",
+    "kind": "radio",
+    "tab": "Backend",
+    "options": [
+      "Neon serverless driver (HTTP, žádný pool)",
+      "Supabase Supavisor (transaction mode)",
+      "Prisma Accelerate",
+      "Vlastní konfigurace poolu"
+    ],
+    "pos": {
+      "x": 920,
+      "y": 220,
+      "w": 440,
+      "h": 200
+    }
+  },
+  {
+    "id": "rCache",
+    "title": "Cache strategie",
+    "kind": "radio",
+    "tab": "Backend",
+    "options": [
+      "Žádná (fresh data)",
+      "Vercel KV / Upstash Redis",
+      "Next.js unstable_cache / Data Cache",
+      "React Query cache (client-side)"
+    ],
+    "pos": {
+      "x": 0,
+      "y": 440,
+      "w": 440,
+      "h": 200
+    }
+  },
+  {
+    "id": "rApiDesign",
+    "title": "API Design",
+    "kind": "radio",
+    "tab": "Backend",
+    "options": [
+      "REST + OpenAPI spec",
+      "REST + Zod validace",
+      "GraphQL (Cursor Connections)",
+      "tRPC (end-to-end typesafe)"
+    ],
+    "pos": {
+      "x": 460,
+      "y": 440,
+      "w": 440,
+      "h": 200
+    }
+  },
+  {
+    "id": "cTest",
+    "title": "Testování",
+    "kind": "check",
+    "tab": "DevOps",
+    "options": [
+      "Vitest",
+      "Playwright (E2E)",
+      "Jest",
+      "Testing Library (React/Vue)",
+      "MSW (Mock Service Worker)",
+      "k6 / Artillery (load testing)"
+    ],
+    "pos": {
+      "x": 0,
+      "y": 0,
+      "w": 440,
+      "h": 200
+    }
+  },
+  {
+    "id": "cCiCd",
+    "title": "CI/CD Pipeline",
+    "kind": "check",
+    "tab": "DevOps",
+    "options": [
+      "GitHub Actions",
+      "Automatické testy na PR",
+      "Preview deployment (Vercel)",
+      "Databázové migrace v CI",
+      "Build APK (Android)",
+      "Build IPA (iOS)",
+      "Semantic Release (auto-versioning)"
+    ],
+    "pos": {
+      "x": 460,
+      "y": 0,
+      "w": 440,
+      "h": 200
+    }
+  },
+  {
+    "id": "cVercelFeatures",
+    "title": "Vercel konfigurace",
+    "kind": "check",
+    "tab": "DevOps",
+    "options": [
+      "Preview Deployment na PR",
+      "Edge Functions",
+      "Vercel Blob (soubory)",
+      "Cron Jobs"
+    ],
+    "pos": {
+      "x": 920,
+      "y": 0,
+      "w": 440,
+      "h": 200
+    }
+  },
+  {
+    "id": "rIac",
+    "title": "Infrastructure as Code",
+    "kind": "radio",
+    "tab": "DevOps",
+    "options": [
+      "Žádné (manuální správa)",
+      "Terraform",
+      "Pulumi",
+      "Vercel CLI + vercel.json"
+    ],
+    "pos": {
+      "x": 0,
+      "y": 220,
+      "w": 440,
+      "h": 200
+    }
+  },
+  {
+    "id": "cObservability",
+    "title": "Observability",
+    "kind": "check",
+    "tab": "DevOps",
+    "options": [
+      "Vercel Analytics",
+      "Vercel Speed Insights",
+      "Google Analytics 4",
+      "Sentry (chyby)",
+      "PostHog (product analytics)",
+      "OpenTelemetry (tracing)",
+      "Grafana / Prometheus (metriky)"
+    ],
+    "pos": {
+      "x": 460,
+      "y": 220,
+      "w": 440,
+      "h": 200
+    }
+  },
+  {
+    "id": "cLog",
+    "title": "Logování",
+    "kind": "check",
+    "tab": "DevOps",
+    "options": [
+      "Pino (JSON logy)",
+      "Winston",
+      "Axiom / Logtail (aggregation)",
+      "Datadog",
+      "Loki"
+    ],
+    "pos": {
+      "x": 920,
+      "y": 220,
+      "w": 440,
+      "h": 200
+    }
+  },
+  {
+    "id": "cAuth",
+    "title": "Autentizace & Role",
+    "kind": "check",
+    "tab": "Bezpečnost",
+    "options": [
+      "RBAC (Admin/User/Moderator)",
+      "OAuth (Google, GitHub)",
+      "Magic Links (bez hesla)",
+      "2FA / TOTP",
+      "Session management",
+      "Refresh tokeny",
+      "Device tracking"
+    ],
+    "pos": {
+      "x": 0,
+      "y": 0,
+      "w": 440,
+      "h": 230
+    }
+  },
+  {
+    "id": "cSec",
+    "title": "Bezpečnostní moduly",
+    "kind": "check",
+    "tab": "Bezpečnost",
+    "options": [
+      "T3 Env (Validace .env přes Zod)",
+      "Rate Limiting",
+      "Helmet hlavičky",
+      "CORS konfigurace",
+      "CSRF ochrana (SameSite)",
+      "Content Security Policy (CSP)",
+      "Password hashing (argon2/bcrypt)"
+    ],
+    "pos": {
+      "x": 460,
+      "y": 0,
+      "w": 440,
+      "h": 230
+    }
+  },
+  {
+    "id": "cCompliance",
+    "title": "Compliance",
+    "kind": "check",
+    "tab": "Bezpečnost",
+    "options": [
+      "GDPR (cookie consent, RLS)",
+      "Audit trail (kdo co změnil)",
+      "Data retention policy",
+      "Backup & disaster recovery",
+      "AI cost tracking",
+      "SOC2 ready"
+    ],
+    "pos": {
+      "x": 920,
+      "y": 0,
+      "w": 440,
+      "h": 230
+    }
+  },
+  {
+    "id": "rCms",
+    "title": "Správa obsahu",
+    "kind": "radio",
+    "tab": "Funkce",
+    "options": [
+      "Vlastní DB + Administrace",
+      "Lokální soubory (MDX / Markdown)",
+      "Headless CMS (Sanity / Strapi / Payload)",
+      "Hardcoded (neřešit)"
+    ],
+    "pos": {
+      "x": 0,
+      "y": 0,
+      "w": 440,
+      "h": 200
+    }
+  },
+  {
+    "id": "rCmsEditor",
+    "title": "CMS Editor",
+    "kind": "radio",
+    "tab": "Funkce",
+    "options": [
+      "TipTap (headless, vlastní UI)",
+      "Lexical (Meta)",
+      "Slate.js",
+      "Žádný (pouze MDX)"
+    ],
+    "pos": {
+      "x": 460,
+      "y": 0,
+      "w": 440,
+      "h": 200
+    }
+  },
+  {
+    "id": "rAdminShell",
+    "title": "Admin Shell",
+    "kind": "radio",
+    "tab": "Funkce",
+    "options": [
+      "Vlastní admin-kit (custom)",
+      "Refine.dev",
+      "React Admin",
+      "Payload CMS (admin v ceně)"
+    ],
+    "pos": {
+      "x": 920,
+      "y": 0,
+      "w": 440,
+      "h": 200
+    }
+  },
+  {
+    "id": "rSeo",
+    "title": "SEO",
+    "kind": "radio",
+    "tab": "Funkce",
+    "options": [
+      "Nativní (Next.js metadata / Nuxt useHead)",
+      "Unhead (deduplikace + async aware)",
+      "next-seo / vue-seo",
+      "Ruční správa (vlastní komponenta)"
+    ],
+    "pos": {
+      "x": 0,
+      "y": 220,
+      "w": 440,
+      "h": 200
+    }
+  },
+  {
+    "id": "cAdmin",
+    "title": "Administrace",
+    "kind": "check",
+    "tab": "Funkce",
+    "options": [
+      "Dashboard (Statistiky, grafy)",
+      "Správa uživatelů (Tabulky)",
+      "Audit Log (Historie změn)",
+      "Import/Export dat (CSV/Excel)"
+    ],
+    "pos": {
+      "x": 460,
+      "y": 220,
+      "w": 440,
+      "h": 200
+    }
+  },
+  {
+    "id": "cCore",
+    "title": "Byznys Funkce",
+    "kind": "check",
+    "tab": "Funkce",
+    "options": [
+      "Upload souborů (S3/Supabase/Blob)",
+      "Platby (Stripe)",
+      "E-maily (Resend / Postmark)",
+      "PDF generování",
+      "Notifikace (push/email/SMS)",
+      "Full-text vyhledávání (Meilisearch)"
+    ],
+    "pos": {
+      "x": 920,
+      "y": 220,
+      "w": 440,
+      "h": 230
+    }
+  },
+  {
+    "id": "cAi",
+    "title": "AI Integrace",
+    "kind": "check",
+    "tab": "Funkce",
+    "options": [
+      "Vercel AI SDK",
+      "OpenAI API",
+      "Anthropic Claude API",
+      "RAG (Vektorová databáze)"
+    ],
+    "pos": {
+      "x": 0,
+      "y": 440,
+      "w": 440,
+      "h": 200
+    }
+  },
+  {
+    "id": "rAbTesting",
+    "title": "A/B Testování",
+    "kind": "radio",
+    "tab": "Funkce",
+    "options": [
+      "Žádné",
+      "PostHog (feature flags + experiments)",
+      "GrowthBook (self-hosted)",
+      "Statsig"
+    ],
+    "pos": {
+      "x": 460,
+      "y": 440,
+      "w": 440,
+      "h": 200
+    }
+  },
+  {
+    "id": "rMobile",
+    "title": "Mobilní platforma",
+    "kind": "radio",
+    "tab": "Mobil",
+    "options": [
+      "Žádná (pouze web)",
+      "React Native + Expo (SDK 57+)",
+      "React Native (bare, bez Expo)",
+      "Flutter",
+      "Capacitor (web → nativní)",
+      "PWA (Progressive Web App)"
+    ],
+    "pos": {
+      "x": 0,
+      "y": 0,
+      "w": 440,
+      "h": 230
+    }
+  },
+  {
+    "id": "cMobileFeatures",
+    "title": "Mobilní funkce",
+    "kind": "check",
+    "tab": "Mobil",
+    "options": [
+      "Offline drafty (AsyncStorage)",
+      "SecureStore pro tokeny",
+      "Push notifikace (Expo Notifications)",
+      "Sdílené API s webem",
+      "Biometrické přihlášení",
+      "Dark/Light/System téma",
+      "Deep linking",
+      "Photo picker / Camera"
+    ],
+    "pos": {
+      "x": 460,
+      "y": 0,
+      "w": 440,
+      "h": 230
+    }
+  },
+  {
+    "id": "rMobileDeploy",
+    "title": "Distribuce mobilu",
+    "kind": "radio",
+    "tab": "Mobil",
+    "options": [
+      "Expo EAS Build (cloud)",
+      "App Store / Google Play",
+      "Interní distribuce (Firebase App Distribution)"
+    ],
+    "pos": {
+      "x": 920,
+      "y": 0,
+      "w": 440,
+      "h": 200
+    }
+  },
+  {
+    "id": "rMobileNav",
+    "title": "Mobilní navigace",
+    "kind": "radio",
+    "tab": "Mobil",
+    "options": [
+      "Expo Router (file-based)",
+      "React Navigation",
+      "Vlastní stack",
+      "Tabs + Stack kombinace"
+    ],
+    "pos": {
+      "x": 0,
+      "y": 250,
+      "w": 440,
+      "h": 200
+    }
+  },
+  {
+    "id": "rMobileUi",
+    "title": "Mobilní UI",
+    "kind": "radio",
+    "tab": "Mobil",
+    "options": [
+      "React Native Paper",
+      "NativeBase",
+      "Tamagui",
+      "Vlastní komponenty"
+    ],
+    "pos": {
+      "x": 460,
+      "y": 250,
+      "w": 440,
+      "h": 200
+    }
+  },
+  {
+    "id": "rMobileState",
+    "title": "Mobilní state",
+    "kind": "radio",
+    "tab": "Mobil",
+    "options": [
+      "Zustand + TanStack Query",
+      "Redux Toolkit + RTK Query",
+      "Jotai + SWR",
+      "Context + vlastní fetch"
+    ],
+    "pos": {
+      "x": 920,
+      "y": 250,
+      "w": 440,
+      "h": 200
+    }
+  },
+  {
+    "id": "rMobileAuth",
+    "title": "Mobilní autentizace",
+    "kind": "radio",
+    "tab": "Mobil",
+    "options": [
+      "Bearer tokeny (vlastní JWT)",
+      "Expo AuthSession (OAuth)",
+      "Supabase Auth (shared)",
+      "Biometrické + PIN"
+    ],
+    "pos": {
+      "x": 0,
+      "y": 470,
+      "w": 440,
+      "h": 200
+    }
+  },
+  {
+    "id": "rAppDomain",
+    "title": "Primární doména",
+    "kind": "radio",
+    "tab": "Moduly",
+    "options": [
+      "Obecná / Univerzální",
+      "E-shop / E-commerce",
+      "Rezervační systém (salon, lékař, restaurace)",
+      "SaaS platforma",
+      "LMS (Learning Management System)",
+      "Sociální síť / Komunita",
+      "Blog / Magazín / Média",
+      "Marketplace (více prodejců)",
+      "CRM / Interní nástroj",
+      "Portfolio / Prezentační web",
+      "Booking + platby (kombinace)"
+    ],
+    "pos": {
+      "x": 0,
+      "y": 0,
+      "w": 440,
+      "h": 230
+    }
+  },
+  {
+    "id": "cEcommerce",
+    "title": "E-shop moduly",
+    "kind": "check",
+    "tab": "Moduly",
+    "options": [
+      "Product catalog (varianty, SKU)",
+      "Košík + checkout flow",
+      "Platební brána (Stripe / GoPay)",
+      "Doprava (Packeta / DPD / PPL)",
+      "Skladové hospodářství",
+      "Fakturace (Fakturoid / iDoklad)",
+      "Slevové kódy a akce",
+      "Recenze produktů",
+      "Wishlist / oblíbené",
+      "Porovnání produktů",
+      "Doporučovací engine",
+      "Abandoned cart recovery"
+    ],
+    "pos": {
+      "x": 460,
+      "y": 0,
+      "w": 440,
+      "h": 230
+    }
+  },
+  {
+    "id": "cBooking",
+    "title": "Rezervační moduly",
+    "kind": "check",
+    "tab": "Moduly",
+    "options": [
+      "Kalendář s časovými sloty",
+      "Správa zaměstnanců / specialistů",
+      "Rezervace + platba (deposit)",
+      "Přesuny a storna",
+      "SMS / Email reminder",
+      "Google Calendar sync",
+      "Opakované rezervace",
+      "Waitlist (fronta čekajících)",
+      "Dárkové vouchery",
+      "Věrnostní program"
+    ],
+    "pos": {
+      "x": 920,
+      "y": 0,
+      "w": 440,
+      "h": 230
+    }
+  },
+  {
+    "id": "cSaas",
+    "title": "SaaS moduly",
+    "kind": "check",
+    "tab": "Moduly",
+    "options": [
+      "Multi-tenant architektura",
+      "Subscription billing (Stripe Billing)",
+      "Plány + feature gating",
+      "Trial + upgrade/downgrade",
+      "Usage-based billing",
+      "Invoice generování",
+      "Dunning management",
+      "Team / organizace",
+      "Invite systém",
+      "RBAC per tenant",
+      "White-label možnost"
+    ],
+    "pos": {
+      "x": 0,
+      "y": 250,
+      "w": 440,
+      "h": 230
+    }
+  },
+  {
+    "id": "cLms",
+    "title": "LMS / Vzdělávání",
+    "kind": "check",
+    "tab": "Moduly",
+    "options": [
+      "Kurzy + lekce",
+      "Video streaming (Mux / Cloudflare)",
+      "Kvízy a testy",
+      "Certifikáty (PDF generování)",
+      "Progress tracking",
+      "Diskusní fórum",
+      "Live sessions (Zoom / Daily.co)",
+      "Předplatné kurzu",
+      "Drip content"
+    ],
+    "pos": {
+      "x": 460,
+      "y": 250,
+      "w": 440,
+      "h": 200
+    }
+  },
+  {
+    "id": "cCrm",
+    "title": "CRM / Interní nástroje",
+    "kind": "check",
+    "tab": "Moduly",
+    "options": [
+      "Kontakty + firmy",
+      "Pipeline / deals",
+      "Úkoly a aktivity",
+      "Reporty a dashboardy",
+      "Import/Export dat",
+      "Email sekvence",
+      "Lead scoring",
+      "Ticket systém"
+    ],
+    "pos": {
+      "x": 920,
+      "y": 250,
+      "w": 440,
+      "h": 200
+    }
+  },
+  {
+    "id": "cIntegrations",
+    "title": "Integrace třetích stran",
+    "kind": "check",
+    "tab": "Moduly",
+    "options": [
+      "Platby: Stripe",
+      "Platby: GoPay",
+      "Platby: PayPal",
+      "Doprava: Packeta / Zásilkovna",
+      "Doprava: DPD / PPL",
+      "Fakturace: Fakturoid",
+      "Fakturace: iDoklad",
+      "Email: Resend / Postmark",
+      "SMS: Twilio / SMS.cz",
+      "Účetnictví: Pohoda / Money S3",
+      "Marketing: Mailchimp / Klaviyo",
+      "Analytics: GA4 / Meta Pixel"
+    ],
+    "pos": {
+      "x": 0,
+      "y": 500,
+      "w": 440,
+      "h": 230
+    }
+  },
+  {
+    "id": "cMarketing",
+    "title": "Marketing & Growth",
+    "kind": "check",
+    "tab": "Moduly",
+    "options": [
+      "Newsletter",
+      "Blog s MDX",
+      "Landing pages builder",
+      "Referral systém",
+      "Affiliate program",
+      "Structured data (JSON-LD)",
+      "Open Graph optimalizace",
+      "Sitemap + robots.txt",
+      "RSS feed",
+      "Push notifikace (web)"
+    ],
+    "pos": {
+      "x": 460,
+      "y": 500,
+      "w": 440,
+      "h": 230
+    }
+  },
+  {
+    "id": "cLegal",
+    "title": "Právní & Compliance",
+    "kind": "check",
+    "tab": "Moduly",
+    "options": [
+      "GDPR (souhlasy, výmaz)",
+      "Obchodní podmínky",
+      "Cookies consent (Cookiebot)",
+      "Reklamační systém",
+      "14 dní na vrácení (spotřebitel)",
+      "Ochrana osobních údajů",
+      "Autorská práva a licence",
+      "VAT / DPH kalkulace"
+    ],
+    "pos": {
+      "x": 920,
+      "y": 500,
+      "w": 440,
+      "h": 200
+    }
+  },
+  {
+    "id": "cBuildValidation",
+    "title": "Sestavení a validace",
+    "kind": "check",
+    "tab": "Chování",
+    "options": [
+      "Nikdy neinstalujte nedeklarované závislosti",
+      "Spusťte testovací sadu",
+      "Spusťte linter a formátovač",
+      "Kontrola typů",
+      "Replikujte CI kontroly lokálně"
+    ],
+    "pos": {
+      "x": 0,
+      "y": 0,
+      "w": 440,
+      "h": 230
+    }
+  },
+  {
+    "id": "cProjectLayout",
+    "title": "Rozložení projektu",
+    "kind": "check",
+    "tab": "Chování",
+    "options": [
+      "Dodržujte stávající strukturu",
+      "Společné umístění testů",
+      "Vyhněte se novým závislostem",
+      "Respektujte konfigurační soubory"
+    ],
+    "pos": {
+      "x": 460,
+      "y": 0,
+      "w": 440,
+      "h": 230
+    }
+  },
+  {
+    "id": "cCodeStyle",
+    "title": "Styl kódu",
+    "kind": "check",
+    "tab": "Chování",
+    "options": [
+      "Preferujte konst",
+      "Předsazené výrazy (early returns)",
+      "Popisné pojmenování",
+      "Malé funkce",
+      "Autodokumentační kód"
+    ],
+    "pos": {
+      "x": 920,
+      "y": 0,
+      "w": 440,
+      "h": 230
+    }
+  },
+  {
+    "id": "cTestingBehavior",
+    "title": "Testování",
+    "kind": "check",
+    "tab": "Chování",
+    "options": [
+      "Pokrytí pro nové kódy",
+      "Jednotkové testy",
+      "Okrajové případy",
+      "Testovací názvy",
+      "AAA vzor"
+    ],
+    "pos": {
+      "x": 0,
+      "y": 250,
+      "w": 440,
+      "h": 230
+    }
+  },
+  {
+    "id": "cDocsBehavior",
+    "title": "Dokumentace",
+    "kind": "check",
+    "tab": "Chování",
+    "options": [
+      "JSDoc/Docstringy",
+      "Aktualizace README",
+      "Složitá logika",
+      "Dokumentace API"
+    ],
+    "pos": {
+      "x": 460,
+      "y": 250,
+      "w": 440,
+      "h": 200
+    }
+  },
+  {
+    "id": "cSecurityBehavior",
+    "title": "Zabezpečení (obecné)",
+    "kind": "check",
+    "tab": "Chování",
+    "options": [
+      "Ověřujte vstupy",
+      "Žádná tvrdá tajemství",
+      "Parametrizované dotazy",
+      "Prevence XSS"
+    ],
+    "pos": {
+      "x": 920,
+      "y": 250,
+      "w": 440,
+      "h": 200
+    }
+  },
+  {
+    "id": "cAccessibility",
+    "title": "Přístupnost",
+    "kind": "check",
+    "tab": "Chování",
+    "options": [
+      "Sémantické HTML",
+      "Alternativní text u obrázků",
+      "Navigace klávesnicí",
+      "Štítky ARIA",
+      "Přístupné formuláře",
+      "Přístupná média a alt texty",
+      "Kontrast a vizuální přístupnost"
+    ],
+    "pos": {
+      "x": 0,
+      "y": 480,
+      "w": 440,
+      "h": 200
+    }
+  },
+  {
+    "id": "cPerformance",
+    "title": "Výkon",
+    "kind": "check",
+    "tab": "Chování",
+    "options": [
+      "Lint pravidla pro výkon",
+      "Memoizace",
+      "Vyhněte se N+1 dotazům",
+      "Velikost svazku"
+    ],
+    "pos": {
+      "x": 460,
+      "y": 480,
+      "w": 440,
+      "h": 200
+    }
+  },
+  {
+    "id": "cProjectDocs",
+    "title": "Doplňky do instrukcí",
+    "kind": "check",
+    "tab": "Projekt",
+    "options": [
+      "Struktura repozitáře",
+      "Workflow příklady (formulář, API, komponenta)",
+      "Anti-patterns (co nikdy nedělat)",
+      "Kontrolní seznam pro code review"
+    ],
+    "pos": {
+      "x": 0,
+      "y": 0,
+      "w": 440,
+      "h": 260
+    }
+  },
+  {
+    "id": "cProjectFiles",
+    "title": "Samostatné soubory",
+    "kind": "check",
+    "tab": "Projekt",
+    "options": [
+      "PROJECT_PLAN.md (fáze vývoje)",
+      ".agentic/manifest.json (strojový kontext)",
+      "CONTRIBUTING.md (postup přispívání)"
+    ],
+    "pos": {
+      "x": 460,
+      "y": 0,
+      "w": 440,
+      "h": 260
+    }
+  },
+  {
+    "id": "rSkillOutput",
+    "title": "Formát výstupu",
+    "kind": "radio",
+    "tab": "Skills",
+    "options": [
+      "Konsolidovaný (instrukce + agent + setup)",
+      "Rozšířený (+ skills a agent-task)",
+      "Jen instrukce"
+    ],
+    "pos": {
+      "x": 0,
+      "y": 0,
+      "w": 440,
+      "h": 200
+    }
+  },
+  {
+    "id": "rSkillScope",
+    "title": "Rozsah skills",
+    "kind": "radio",
+    "tab": "Skills",
+    "options": [
+      "Pouze zaškrtnuté skilly",
+      "Všechny skilly (kompletní sada)",
+      "Bez skills"
+    ],
+    "pos": {
+      "x": 460,
+      "y": 0,
+      "w": 440,
+      "h": 200
+    }
+  },
+  {
+    "id": "cSkillContent",
+    "title": "Obsah skills",
+    "kind": "check",
+    "tab": "Skills",
+    "options": [
+      "Kontrolní seznam (checklist)",
+      "Příklad použití",
+      "Odkazy na související soubory"
+    ],
+    "pos": {
+      "x": 920,
+      "y": 0,
+      "w": 440,
+      "h": 200
+    }
+  },
+  {
+    "id": "cSkillFrontMatter",
+    "title": "Doplňky výstupu",
+    "kind": "check",
+    "tab": "Skills",
+    "options": [
+      "Frontmatter s metadaty",
+      "Souhrnná tabulka skills",
+      "Úkolový prompt v instrukcích",
+      "Úkolový prompt jako samostatný soubor"
+    ],
+    "pos": {
+      "x": 0,
+      "y": 220,
+      "w": 440,
+      "h": 200
+    }
+  },
+  {
+    "id": "rPresetDomain",
+    "title": "Preset: Doména projektu",
+    "kind": "radio",
+    "tab": "Presety",
+    "options": [
+      "Obecná / Univerzální",
+      "E-shop / E-commerce",
+      "Rezervační systém (salon, lékař, restaurace)",
+      "SaaS platforma",
+      "LMS (Learning Management System)",
+      "Sociální síť / Komunita",
+      "Blog / Magazín / Média",
+      "Marketplace (více prodejců)",
+      "CRM / Interní nástroj",
+      "Portfolio / Prezentační web",
+      "Booking + platby (kombinace)"
+    ],
+    "pos": {
+      "x": 0,
+      "y": 0,
+      "w": 440,
+      "h": 400
+    }
+  },
+  {
+    "id": "rPresetFramework",
+    "title": "Preset: Frontend framework",
+    "kind": "radio",
+    "tab": "Presety",
+    "options": [
+      "Next.js (App Router)",
+      "React + Vite",
+      "Vue 3 + Vite",
+      "Nuxt 3/4",
+      "SvelteKit",
+      "Astro (Islands Architecture)",
+      "Angular 22",
+      "React Router v8 (framework mode)"
+    ],
+    "pos": {
+      "x": 460,
+      "y": 0,
+      "w": 440,
+      "h": 320
+    }
+  },
+  {
+    "id": "rPresetMobile",
+    "title": "Preset: Mobilní platforma",
+    "kind": "radio",
+    "tab": "Presety",
+    "options": [
+      "Žádná (pouze web)",
+      "React Native + Expo (SDK 57+)",
+      "React Native (bare, bez Expo)",
+      "Flutter",
+      "Capacitor (web → nativní)",
+      "PWA (Progressive Web App)"
+    ],
+    "pos": {
+      "x": 920,
+      "y": 0,
+      "w": 440,
+      "h": 270
+    }
+  },
+  {
+    "id": "rPresetTargets",
+    "title": "Preset: Cílové platformy",
+    "kind": "radio",
+    "tab": "Presety",
+    "options": [
+      "Pouze web (desktop + mobil)",
+      "Web + Administrace",
+      "Web + Administrace + Mobilní aplikace",
+      "Web + Mobilní aplikace (bez adminu)",
+      "PWA (Progressive Web App)"
+    ],
+    "pos": {
+      "x": 0,
+      "y": 440,
+      "w": 440,
+      "h": 240
+    }
+  },
+  {
+    "id": "cPresetOptions",
+    "title": "Chování presetů",
+    "kind": "check",
+    "tab": "Presety",
+    "options": [
+      "Před aplikací vyčistit doporučené skupiny"
+    ],
+    "pos": {
+      "x": 460,
+      "y": 440,
+      "w": 440,
+      "h": 200
+    }
+  },
+  {
+    "id": "skillGroups",
+    "title": "(skills)",
+    "kind": "check",
+    "tab": "Skills",
+    "options": [],
+    "dynamic": "skills",
+    "pos": null
+  }
+]

@@ -1,0 +1,26 @@
+{
+  "ps1Lines": 6582,
+  "steps": [
+    "tabs from navItems: 13",
+    "tab pages: 13",
+    "shared option lists: optDomains(11), optFrameworks(8), optMobilePlat(6), optTargets(5)",
+    "cards: 76, options total: 411",
+    "dynamic skill group detected",
+    "skills: 72, categories: 12",
+    "category steps: 12",
+    "help base entries: 390",
+    "help detail blocks: 421, merged help keys: 419",
+    "patches: 1 aliasu, 3 doplnenych napoved",
+    "presets: 28, tech variants: 24, base stack: 31",
+    "behavior map: 35",
+    "templates extracted: 16",
+    "domainPersona blocks: 5",
+    "functions extracted: 19",
+    "wrote src/data/tabs.json",
+    "wrote src/data/cards.json",
+    "wrote src/data/help.json",
+    "wrote src/data/skills.json",
+    "wrote src/data/presets.json",
+    "wrote src/data/behaviorMap.json"
+  ]
+}

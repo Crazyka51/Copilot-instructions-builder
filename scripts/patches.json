@@ -1,0 +1,11 @@
+{
+  "$comment": "Ruční záplaty aplikované na konci scripts/extract.mjs. Přežijí regeneraci dat z PowerShell skriptu. Sem patří jen to, co ve zdrojovém .ps1 chybí nebo je v něm nekonzistentní.",
+  "helpAliases": {
+    "Audit Log (Historie změn)": "Audit log (historie změn)"
+  },
+  "helpExtra": {
+    "Přístupné formuláře": "Formuláře musí mít popisky, správné typy vstupů a chyby svázané s polem.\n\nCo to znamená: Každé pole má <label>, správný typ a chybovou hlášku napojenou přes aria-describedby.\nProč: Bez popisků a typů vstupů formulář neovládne čtečka ani klávesnice.\nJak se to projeví: Popisek u každého pole, aria-invalid u chyby a jasný text chyby.",
+    "Přístupná média a alt texty": "U obrázků a médií doplň alternativní text, u videa titulky.\n\nCo to znamená: Dekorativní obrázek má prázdný alt, obsahový popisný alt, video má titulky.\nProč: Nevidomí a neslyšící uživatelé potřebují textovou alternativu k médiu.\nJak se to projeví: alt u obrázků, caption a track u videa, žádné sdělení pouze v obrázku.",
+    "Kontrast a vizuální přístupnost": "Hlídej kontrast textu a nepřenášej význam pouze barvou.\n\nCo to znamená: Kontrast textu alespoň 4,5:1 a stav nikdy vyjádřený jen barvou.\nProč: Slabý kontrast a barva jako jediný nositel informace vyloučí část uživatelů.\nJak se to projeví: Čitelné barvy, podtržené odkazy, ikona nebo text u stavu."
+  }
+}

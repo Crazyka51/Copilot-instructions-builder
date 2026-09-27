@@ -1,0 +1,43 @@
+AWS CDK
+AdminJS
+Audit log (historie změn)
+Auditní Log (Historie změn)
+Auto-Animate
+CDN + ISR kombinace
+Commitlint (konvence commitů)
+Concurrent Builds
+Container PaaS (Fly.io / Render)
+Coolify (self-hosted PaaS)
+Feature flags (LaunchDarkly / vlastní)
+Git-based CMS (TinaCMS / Decap)
+GitHub Actions + prebuild (APK)
+Gluestack UI
+GraphQL (Apollo / urql)
+GraphQL Subscriptions
+Husky + lint-staged (pre-commit)
+Hybridní (monolit + extrahované služby)
+Hybridní per-route (routeRules)
+Interní distribuce (Firebase)
+JSON Slovníky (i18n pro UI texty)
+Knip (detekce nepoužívaného kódu)
+Kombinace (web: NextAuth, mobil: bearer)
+Kysely (typovaný SQL builder)
+LangChain / LangGraph
+Lucia (self-hosted)
+MCP Server (Model Context Protocol)
+Mantine / Chakra UI
+Mongoose
+Monorepo s Nx
+Neon (preview DB) + Supabase (produkční backend)
+Nepotřebné (trvalé připojení)
+Ollama (lokální modely)
+PPR (Partial Prerendering)
+Panda CSS
+Quill
+Server Actions + useOptimistic
+Turso (SQLite edge)
+VM Compose (DigitalOcean / GCP)
+Vercel KV (cache)
+Vercel Postgres (Neon)
+Vlastní (DB + middleware)
+next-i18next / i18next

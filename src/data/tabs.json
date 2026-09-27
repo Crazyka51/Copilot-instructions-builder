@@ -1,0 +1,71 @@
+{
+  "order": [
+    {
+      "icon": "⚡",
+      "label": "Presety"
+    },
+    {
+      "icon": "⌘",
+      "label": "Architektura"
+    },
+    {
+      "icon": "</>",
+      "label": "Frontend"
+    },
+    {
+      "icon": "▤",
+      "label": "Backend"
+    },
+    {
+      "icon": "☁",
+      "label": "DevOps"
+    },
+    {
+      "icon": "♢",
+      "label": "Bezpečnost"
+    },
+    {
+      "icon": "✚",
+      "label": "Funkce"
+    },
+    {
+      "icon": "▯",
+      "label": "Mobil"
+    },
+    {
+      "icon": "◇",
+      "label": "Moduly"
+    },
+    {
+      "icon": "◆",
+      "label": "Skills"
+    },
+    {
+      "icon": "✓",
+      "label": "Chování"
+    },
+    {
+      "icon": "◈",
+      "label": "Projekt"
+    },
+    {
+      "icon": "▱",
+      "label": "Slovník"
+    }
+  ],
+  "pages": {
+    "tabPreset": "Presety",
+    "tab1": "Architektura",
+    "tab2": "Frontend",
+    "tab3": "Backend",
+    "tab4": "DevOps",
+    "tab5": "Bezpečnost",
+    "tab6": "Funkce",
+    "tab7": "Mobil",
+    "tab8": "Moduly",
+    "tabSkills": "Skills",
+    "tab10": "Chování",
+    "tabProject": "Projekt",
+    "tab9": "Slovník"
+  }
+}
