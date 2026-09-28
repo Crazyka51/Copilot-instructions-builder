@@ -1,4 +1,5 @@
 import { CardGrid } from './CardGrid'
+import { useI18n } from '../i18n'
 import { skills } from '../lib/state'
 import { helpFor } from '../lib/help'
 import { staggerStyle } from '../lib/ui'
@@ -23,6 +24,7 @@ export function SkillsTab({
   onSetSkills: (titles: string[]) => void
 }) {
   const checked = selection['skillGroups'] ?? []
+  const { t, help } = useI18n()
   const categories = [...new Set(skills.map((skill) => skill.category))]
   const allChecked = checked.length === skills.length
 
@@ -39,14 +41,16 @@ export function SkillsTab({
 
       <section className="panel">
         <header className="panel-head">
-          <h2>Knihovna skills ({skills.length})</h2>
+          <h2>{t('Knihovna skills ({count})', { count: skills.length })}</h2>
           <div className="grow" />
           <button type="button" className="btn btn-sm" onClick={() => onSetSkills(allChecked ? [] : skills.map((skill) => skill.title))}>
-            {allChecked ? 'Odznačit všechny' : 'Vybrat všechny'}
+            {t(allChecked ? 'Odznačit všechny' : 'Vybrat všechny')}
           </button>
         </header>
         <p className="lead">
-          Vyberte postupy, které se vloží do instrukcí. Najeďte na název pro popis. Vybraných: <strong>{checked.length}</strong>.
+          {t('Vyberte postupy, které se vloží do instrukcí. Najeďte na název pro popis. Vybraných: {count}.', {
+            count: checked.length
+          })}
         </p>
 
         {categories.map((category) => {
@@ -55,7 +59,7 @@ export function SkillsTab({
           return (
             <div className="skill-category" key={category}>
               <div className="skill-category-head">
-                <span className="skill-category-label">{category}</span>
+                <span className="skill-category-label">{t(category)}</span>
                 <span className="muted">
                   {checkedInCategory}/{inCategory.length}
                 </span>
@@ -68,7 +72,7 @@ export function SkillsTab({
                       key={skill.slug}
                       type="button"
                       className={on ? 'chip on' : 'chip'}
-                      title={helpFor(skill.title) || skill.description}
+                      title={help(skill.title, helpFor(skill.title) || skill.description)}
                       style={staggerStyle(index)}
                       aria-pressed={on}
                       onClick={() => onToggleSkill(skill.title)}
@@ -78,7 +82,7 @@ export function SkillsTab({
                           ✓
                         </span>
                       )}
-                      {skill.title}
+                      {t(skill.title)}
                     </button>
                   )
                 })}

@@ -1,10 +1,11 @@
+import { useI18n } from '../i18n'
+import { LANGUAGES } from '../i18n/types'
 import { formatLabel } from '../lib/ui'
 import type { OutputFormat } from '../lib/types'
 
-/** Horní lišta: název projektu, stav a hlavní akce. */
+/** Horní lišta: název projektu pro kontext, stav a hlavní akce. */
 export function TopBar({
   projectName,
-  onProjectName,
   totalChecked,
   format,
   onSave,
@@ -13,7 +14,6 @@ export function TopBar({
   onGenerate
 }: {
   projectName: string
-  onProjectName: (value: string) => void
   totalChecked: number
   format: OutputFormat
   onSave: () => void
@@ -21,38 +21,49 @@ export function TopBar({
   onReset: () => void
   onGenerate: () => void
 }) {
+  const { t, lang, setLang } = useI18n()
+
   return (
     <header className="topbar">
       <div className="brand">
         <h1>
-          Copilot <span>Workspace Architect</span>
+          Copilot <span>Instructions Builder</span>
         </h1>
         <span className="version">v1.1</span>
       </div>
 
-      <div className="field topbar-field">
-        <label htmlFor="project-name">Název projektu</label>
-        <input
-          id="project-name"
-          type="text"
-          value={projectName}
-          onChange={(e) => onProjectName(e.target.value)}
-          placeholder="EnterpriseProject"
-        />
-      </div>
+      {/* Jen pro kontext. Název se zadává v průvodci, aby nebyl na dvou místech. */}
+      <span className="topbar-project" title={t('Název projektu. Nastavíte ho v průvodci.')}>
+        {projectName || t('Název projektu')}
+      </span>
 
       <div className="grow" />
 
       <span className="topbar-status">
-        <strong>{totalChecked}</strong> voleb · <code>{formatLabel(format)}</code>
+        <strong>{totalChecked}</strong> {t('voleb')} · <code>{t(formatLabel(format))}</code>
       </span>
 
+      <div className="lang-switch" role="group" aria-label={t('Jazyk rozhraní')}>
+        {LANGUAGES.map((language) => (
+          <button
+            key={language.code}
+            type="button"
+            className={language.code === lang ? 'on' : ''}
+            aria-pressed={language.code === lang}
+            title={`${t('Přepnout jazyk')}: ${language.nativeName}`}
+            onClick={() => setLang(language.code)}
+          >
+            {language.short}
+          </button>
+        ))}
+      </div>
+
       <div className="topbar-actions">
-        <button type="button" className="btn" onClick={onSave} title="Uloží volby do souboru builder-config.json">
-          Uložit konfiguraci
+        <button type="button" className="btn" onClick={onSave} title={t('Uloží volby do souboru builder-config.json')}>
+          {t('Uložit konfiguraci')}
         </button>
-        <label className="btn btn-file" title="Načte volby ze souboru builder-config.json">
-          Načíst konfiguraci
+        <label className="btn btn-file" title={t('Načte volby ze souboru builder-config.json')}>
+          {t('Načíst konfiguraci')}
           <input
             type="file"
             accept="application/json,.json"
@@ -63,11 +74,11 @@ export function TopBar({
             }}
           />
         </label>
-        <button type="button" className="btn" onClick={onReset} title="Smaže všechny volby a vrátí výchozí stav">
-          Reset
+        <button type="button" className="btn" onClick={onReset} title={t('Smaže všechny volby a vrátí výchozí stav')}>
+          {t('Reset')}
         </button>
         <button type="button" className="btn btn-primary" onClick={onGenerate}>
-          Vygenerovat soubory
+          {t('Vygenerovat soubory')}
         </button>
       </div>
     </header>

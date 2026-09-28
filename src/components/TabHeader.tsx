@@ -1,3 +1,5 @@
+import { useI18n } from '../i18n'
+
 /** Kontextová lišta nad obsahem záložky: název, filtr a hromadné akce. */
 export function TabHeader({
   title,
@@ -14,10 +16,12 @@ export function TabHeader({
   onQuery: (value: string) => void
   onClearTab?: () => void
 }) {
+  const { t } = useI18n()
+
   return (
     <div className="tab-header">
       <div className="tab-header-title">
-        <h2>{title}</h2>
+        <h2>{t(title)}</h2>
         {count > 0 && <span className="pill">{count}</span>}
       </div>
 
@@ -29,12 +33,12 @@ export function TabHeader({
             type="search"
             value={query}
             onChange={(e) => onQuery(e.target.value)}
-            placeholder="Hledat volbu nebo nápovědu…"
-            aria-label="Hledat volbu nebo nápovědu"
+            placeholder={t('Hledat volbu nebo nápovědu…')}
+            aria-label={t('Hledat volbu nebo nápovědu')}
           />
           {query && (
             <button type="button" className="btn btn-sm" onClick={() => onQuery('')}>
-              Zrušit
+              {t('Zrušit')}
             </button>
           )}
         </div>
@@ -42,7 +46,7 @@ export function TabHeader({
 
       {onClearTab && (
         <button type="button" className="btn btn-sm" onClick={onClearTab}>
-          Vyčistit záložku
+          {t('Vyčistit záložku')}
         </button>
       )}
     </div>

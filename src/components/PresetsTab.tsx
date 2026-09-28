@@ -1,4 +1,5 @@
 import { cardById, cards, triggerOf } from '../lib/state'
+import { useI18n } from '../i18n'
 import { helpFor } from '../lib/help'
 import { PRESET_MIRROR, WIZARD_STEPS, formatLabel, staggerStyle } from '../lib/ui'
 import type { OutputFormat, Selection, Spec } from '../lib/types'
@@ -35,6 +36,7 @@ export function PresetsTab({
   format: OutputFormat
   onGenerate: () => void
 }) {
+  const { t, help } = useI18n()
   const radio = (cardId: string) => selection[cardId]?.[0] ?? ''
   const optionsOf = (cardId: string) => cardById.get(cardId)?.options ?? []
   const presetCards = cards.filter((card) => card.tab === 'Presety' && !card.dynamic)
@@ -43,12 +45,12 @@ export function PresetsTab({
 
   const select = (id: string, label: string, cardId: string) => (
     <div className="field">
-      <label htmlFor={id}>{label}</label>
+      <label htmlFor={id}>{t(label)}</label>
       <select id={id} value={radio(cardId)} onChange={(e) => e.target.value && onChooseTrigger(e.target.value, cardId)}>
-        <option value="">- nevybráno -</option>
+        <option value="">{t('- nevybráno -')}</option>
         {optionsOf(cardId).map((option) => (
           <option key={option} value={option}>
-            {option}
+            {t(option)}
           </option>
         ))}
       </select>
@@ -58,9 +60,9 @@ export function PresetsTab({
   return (
     <>
       <section className="panel">
-        <h2>Průvodce založením projektu</h2>
+        <h2>{t('Průvodce založením projektu')}</h2>
         <p className="lead">
-          Projděte krok za krokem. Volby se propisují do ostatních záložek a doporučené moduly se předvyplní podle presetu.
+          {t('Projděte krok za krokem. Volby se propisují do ostatních záložek a doporučené moduly se předvyplní podle presetu.')}
         </p>
 
         <ol className="wizard-steps">
@@ -75,7 +77,7 @@ export function PresetsTab({
                 <span className="step-index" aria-hidden="true">
                   {index + 1}
                 </span>
-                {label}
+                {t(label)}
               </button>
             </li>
           ))}
@@ -87,17 +89,17 @@ export function PresetsTab({
         {step === 0 && (
           <div className="row">
             <div className="field">
-              <label htmlFor="wiz-name">Název projektu</label>
+              <label htmlFor="wiz-name">{t('Název projektu')}</label>
               <input id="wiz-name" type="text" value={projectName} onChange={(e) => onProjectName(e.target.value)} />
             </div>
             <div className="field wide">
-              <label htmlFor="wiz-goal">Co má projekt řešit?</label>
+              <label htmlFor="wiz-goal">{t('Co má projekt řešit?')}</label>
               <textarea
                 id="wiz-goal"
                 rows={4}
                 value={goal}
                 onChange={(e) => onGoal(e.target.value)}
-                placeholder="Popište výsledek vlastními slovy. Text se uloží do PROJECT_PLAN.md a README.md."
+                placeholder={t('Popište výsledek vlastními slovy. Text se uloží do PROJECT_PLAN.md a README.md.')}
               />
             </div>
           </div>
@@ -115,13 +117,13 @@ export function PresetsTab({
             {select('wiz-fe', 'Frontend framework', 'rFe')}
             {select('wiz-mobile', 'Mobilní platforma', 'rMobile')}
             <div className="field wide">
-              <label className="opt opt-bare" title={helpFor('Před aplikací vyčistit doporučené skupiny')}>
+              <label className="opt opt-bare" title={help('Před aplikací vyčistit doporučené skupiny', helpFor('Před aplikací vyčistit doporučené skupiny'))}>
                 <input
                   type="checkbox"
                   checked={(selection['cPresetOptions'] ?? []).length > 0}
                   onChange={() => onToggleOption('cPresetOptions', 'Před aplikací vyčistit doporučené skupiny')}
                 />
-                <span>Před aplikací presetu vyčistit doporučené skupiny</span>
+                <span>{t('Před aplikací presetu vyčistit doporučené skupiny')}</span>
               </label>
             </div>
           </div>
@@ -130,27 +132,27 @@ export function PresetsTab({
         {step === 3 && (
           <div className="row">
             <div className="field">
-              <label htmlFor="wiz-creates">Co vytváří</label>
+              <label htmlFor="wiz-creates">{t('Co vytváří')}</label>
               <textarea id="wiz-creates" rows={3} value={spec.creates} onChange={(e) => onSpec({ ...spec, creates: e.target.value })} />
             </div>
             <div className="field">
-              <label htmlFor="wiz-audience">Pro koho to vytváří</label>
+              <label htmlFor="wiz-audience">{t('Pro koho to vytváří')}</label>
               <textarea id="wiz-audience" rows={3} value={spec.audience} onChange={(e) => onSpec({ ...spec, audience: e.target.value })} />
             </div>
             <div className="field">
-              <label htmlFor="wiz-tech">Jaké technologie použít</label>
+              <label htmlFor="wiz-tech">{t('Jaké technologie použít')}</label>
               <textarea id="wiz-tech" rows={3} value={spec.tech} onChange={(e) => onSpec({ ...spec, tech: e.target.value })} />
             </div>
             <div className="field">
-              <label htmlFor="wiz-functions">Jaké funkce implementovat</label>
+              <label htmlFor="wiz-functions">{t('Jaké funkce implementovat')}</label>
               <textarea id="wiz-functions" rows={3} value={spec.functions} onChange={(e) => onSpec({ ...spec, functions: e.target.value })} />
             </div>
             <div className="field">
-              <label htmlFor="wiz-files">Jaké soubory vytvořit</label>
+              <label htmlFor="wiz-files">{t('Jaké soubory vytvořit')}</label>
               <textarea id="wiz-files" rows={3} value={spec.files} onChange={(e) => onSpec({ ...spec, files: e.target.value })} />
             </div>
             <div className="field">
-              <label htmlFor="wiz-deps">Závislosti nepřidávat bez důvodu</label>
+              <label htmlFor="wiz-deps">{t('Závislosti nepřidávat bez důvodu')}</label>
               <textarea
                 id="wiz-deps"
                 rows={3}
@@ -163,54 +165,57 @@ export function PresetsTab({
 
         {step === 4 && (
           <dl className="summary">
-            <dt>Projekt</dt>
-            <dd>{projectName || '(neuvedeno)'}</dd>
-            <dt>Cíl</dt>
-            <dd>{goal || '(neuvedeno)'}</dd>
-            <dt>Doména</dt>
-            <dd>{radio('rAppDomain') || '(nevybráno)'}</dd>
-            <dt>Platforma</dt>
-            <dd>{radio('rTarget') || '(nevybráno)'}</dd>
-            <dt>Frontend</dt>
-            <dd>{radio('rFe') || '(nevybráno)'}</dd>
-            <dt>Mobil</dt>
-            <dd>{radio('rMobile') || '(nevybráno)'}</dd>
-            <dt>Technologie</dt>
-            <dd>{spec.tech || '(neuvedeno)'}</dd>
-            <dt>Formát výstupu</dt>
-            <dd>{formatLabel(format)}</dd>
-            <dt>Vybraných voleb</dt>
+            <dt>{t('Projekt')}</dt>
+            <dd>{projectName || t('(neuvedeno)')}</dd>
+            <dt>{t('Cíl')}</dt>
+            <dd>{goal || t('(neuvedeno)')}</dd>
+            <dt>{t('Doména')}</dt>
+            <dd>{radio('rAppDomain') ? t(radio('rAppDomain')) : t('(nevybráno)')}</dd>
+            <dt>{t('Platforma')}</dt>
+            <dd>{radio('rTarget') ? t(radio('rTarget')) : t('(nevybráno)')}</dd>
+            <dt>{t('Frontend')}</dt>
+            <dd>{radio('rFe') ? t(radio('rFe')) : t('(nevybráno)')}</dd>
+            <dt>{t('Mobil')}</dt>
+            <dd>{radio('rMobile') ? t(radio('rMobile')) : t('(nevybráno)')}</dd>
+            <dt>{t('Technologie')}</dt>
+            <dd>{spec.tech || t('(neuvedeno)')}</dd>
+            <dt>{t('Formát výstupu')}</dt>
+            <dd>{t(formatLabel(format))}</dd>
+            <dt>{t('Vybraných voleb')}</dt>
             <dd>{totalChecked}</dd>
           </dl>
         )}
 
         <div className="wizard-nav">
           <button type="button" className="btn" disabled={step === 0} onClick={() => onStep(Math.max(0, step - 1))}>
-            ‹ Zpět
+            {t('‹ Zpět')}
           </button>
           {isLast ? (
             <button type="button" className="btn btn-primary" onClick={onGenerate}>
-              Hotovo, vygenerovat
+              {t('Hotovo, vygenerovat')}
             </button>
           ) : (
-            <button type="button" className="btn btn-primary" disabled={!canNext} onClick={() => onStep(Math.min(WIZARD_STEPS.length - 1, step + 1))}>
-              Další ›
+            <button
+              type="button"
+              className="btn btn-primary"
+              disabled={!canNext}
+              onClick={() => onStep(Math.min(WIZARD_STEPS.length - 1, step + 1))}
+            >
+              {t('Další ›')}
             </button>
           )}
-          <span className="status">
-            Krok {step + 1} z {WIZARD_STEPS.length}
-          </span>
+          <span className="status">{t('Krok {step} z {total}', { step: step + 1, total: WIZARD_STEPS.length })}</span>
         </div>
       </section>
 
       <section className="panel">
-        <h2>Rychlé šablony (presety)</h2>
-        <p className="lead">Kliknutím na preset se doplní doporučené volby. Poté je můžete libovolně upravit nebo odznačit.</p>
+        <h2>{t('Rychlé šablony (presety)')}</h2>
+        <p className="lead">{t('Kliknutím na preset se doplní doporučené volby. Poté je můžete libovolně upravit nebo odznačit.')}</p>
         {presetCards.map((card) => {
           const mirrorId = PRESET_MIRROR[card.id] ?? card.id
           return (
             <div className="preset-group" key={card.id}>
-              <div className="preset-group-label">{card.title}</div>
+              <div className="preset-group-label">{t(card.title)}</div>
               <div className="chips">
                 {card.options.map((option, index) => {
                   const target = triggerOf[option]?.card ?? mirrorId
@@ -220,12 +225,12 @@ export function PresetsTab({
                       key={option}
                       type="button"
                       className={active ? 'chip on' : 'chip'}
-                      title={helpFor(option) || undefined}
+                      title={help(option, helpFor(option)) || undefined}
                       style={staggerStyle(index)}
                       aria-pressed={active}
                       onClick={() => onChooseTrigger(option, mirrorId)}
                     >
-                      {option}
+                      {t(option)}
                     </button>
                   )
                 })}

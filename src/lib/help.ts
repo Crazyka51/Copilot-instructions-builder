@@ -22,11 +22,13 @@ export function helpLabels(): string[] {
 }
 
 /** Filtruje klíče nápovědy podle dotazu (název i text). */
-export function filterHelpKeys(query: string): string[] {
+export function filterHelpKeys(query: string, extra?: (text: string) => string): string[] {
   const keys = helpLabels()
   const q = query.trim().toLocaleLowerCase('cs')
   if (!q) return keys
-  return keys.filter((key) => key.toLocaleLowerCase('cs').includes(q) || (help[key] ?? '').toLocaleLowerCase('cs').includes(q))
+  const matches = (text: string) =>
+    `${text} ${extra?.(text) ?? ''}`.toLocaleLowerCase('cs').includes(q)
+  return keys.filter((key) => matches(key) || matches(help[key] ?? ''))
 }
 
 export const helpCount = Object.keys(help).length

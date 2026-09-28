@@ -1,4 +1,5 @@
 import { CardGrid } from './CardGrid'
+import { useI18n } from '../i18n'
 import { formatLabel } from '../lib/ui'
 import type { OutputFormat, Selection } from '../lib/types'
 
@@ -20,11 +21,13 @@ export function ProjectTab({
   onSelectAll: (cardId: string) => void
   onClearCard: (cardId: string) => void
 }) {
+  const { t } = useI18n()
+
   return (
     <>
       <div className="notes info">
-        <strong>Aktuální formát výstupu: {formatLabel(format)}</strong>
-        <p className="notes-lead">Vygeneruje se {files.length} souborů:</p>
+        <strong>{t('Aktuální formát výstupu: {format}', { format: t(formatLabel(format)) })}</strong>
+        <p className="notes-lead">{t('Vygeneruje se {count} souborů:', { count: files.length })}</p>
         <ul>
           {files.map((file) => (
             <li key={file}>

@@ -1,3 +1,4 @@
+import { useI18n } from '../i18n'
 import { TAB_GROUPS } from '../lib/ui'
 import type { TabDef } from '../lib/types'
 
@@ -17,13 +18,14 @@ export function Sidebar({
   totalOptions: number
   onSelect: (tab: string) => void
 }) {
+  const { t } = useI18n()
   const percent = totalOptions ? Math.min(100, Math.round((totalChecked / totalOptions) * 100)) : 0
 
   return (
-    <nav className="sidebar" aria-label="Záložky průvodce">
+    <nav className="sidebar" aria-label={t('Záložky průvodce')}>
       <div className="sidebar-progress">
         <div className="sidebar-progress-text">
-          <span>Vybrané volby</span>
+          <span>{t('Vybrané volby')}</span>
           <strong>
             {totalChecked}
             <span className="muted">/{totalOptions}</span>
@@ -35,7 +37,7 @@ export function Sidebar({
           aria-valuemin={0}
           aria-valuemax={totalOptions}
           aria-valuenow={totalChecked}
-          aria-label="Počet vybraných voleb"
+          aria-label={t('Počet vybraných voleb')}
         >
           <span style={{ width: `${percent}%` }} />
         </div>
@@ -48,7 +50,7 @@ export function Sidebar({
         if (!groupTabs.length) return null
         return (
           <div className="nav-group" key={group.label}>
-            <div className="nav-group-label">{group.label}</div>
+            <div className="nav-group-label">{t(group.label)}</div>
             {groupTabs.map((tab) => {
               const count = counts[tab.label] ?? 0
               const isActive = tab.label === active
@@ -64,7 +66,7 @@ export function Sidebar({
                     <span className="icon" aria-hidden="true">
                       {tab.icon}
                     </span>
-                    {tab.label}
+                    {t(tab.label)}
                   </span>
                   {count > 0 && <span className="count">{count}</span>}
                 </button>

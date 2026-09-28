@@ -1,4 +1,5 @@
 import type { CSSProperties } from 'react'
+import { useI18n } from '../i18n'
 import { helpFor } from '../lib/help'
 import { matchOptions } from '../lib/filter'
 import type { Card } from '../lib/types'
@@ -22,48 +23,52 @@ export function CardView({
   onClear?: () => void
 }) {
   const single = card.kind === 'radio'
-  const options = matchOptions(card, query)
+  const { t, help } = useI18n()
+  const extra = (text: string) => `${t(text)} ${help(text, helpFor(text))}`
+  const options = matchOptions(card, query, extra)
   const checkedCount = card.options.filter((o) => selected.includes(o)).length
 
   return (
     <section className="card" style={style}>
       <header className="card-head">
-        <h3>{card.title}</h3>
-        <span className={single ? 'badge' : 'badge badge-alt'}>{single ? 'jedna volba' : 'více voleb'}</span>
+        <h3>{t(card.title)}</h3>
+        <span className={single ? 'badge' : 'badge badge-alt'}>
+          {t(single ? 'jedna volba' : 'více voleb')}
+        </span>
         <span className="grow" />
-        <span className="card-count" title="Vybrané volby z celku">
+        <span className="card-count" title={t('Vybrané volby z celku')}>
           {checkedCount}/{card.options.length}
         </span>
       </header>
 
       <p className="hint">
-        {single ? 'Volitelné: vyberte jednu možnost, nebo nechte nevybráno.' : 'Volitelné moduly a integrace.'}
+        {t(single ? 'Volitelné: vyberte jednu možnost, nebo nechte nevybráno.' : 'Volitelné moduly a integrace.')}
       </p>
 
       <div className="opts">
         {options.map((option) => {
           const on = selected.includes(option)
-          const title = helpFor(option)
+          const tip = help(option, helpFor(option))
           return (
-            <label key={option} className={on ? 'opt on' : 'opt'} title={title || undefined}>
+            <label key={option} className={on ? 'opt on' : 'opt'} title={tip || undefined}>
               <input type={single ? 'radio' : 'checkbox'} checked={on} onChange={() => onSelect(option)} />
-              <span>{option}</span>
+              <span>{t(option)}</span>
             </label>
           )
         })}
-        {!options.length && <p className="empty">Žádná volba neodpovídá filtru.</p>}
+        {!options.length && <p className="empty">{t('Žádná volba neodpovídá filtru.')}</p>}
       </div>
 
       {(onClear || (!single && onSelectAll)) && (
         <footer className="card-actions">
           {!single && onSelectAll && (
             <button type="button" className="btn btn-sm" onClick={onSelectAll}>
-              Vybrat vše
+              {t('Vybrat vše')}
             </button>
           )}
           {onClear && (
             <button type="button" className="btn btn-sm" onClick={onClear} disabled={checkedCount === 0}>
-              Vyčistit
+              {t('Vyčistit')}
             </button>
           )}
         </footer>

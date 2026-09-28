@@ -13,6 +13,23 @@ export function staggerStyle(index: number): CSSProperties {
   return { '--stagger': Math.min(index, 8) } as CSSProperties
 }
 
+/**
+ * Název ZIP archivu odvozený z názvu projektu.
+ *
+ * Pozor: tohle je jen název staženého souboru. Slug, který se používá uvnitř
+ * generovaných souborů, počítá `buildValues` v generate.ts a měnit se nesmí,
+ * jinak by se rozešel výstup s paritním testem.
+ */
+export function zipFileName(projectName: string): string {
+  const slug = (projectName || '')
+    .toLowerCase()
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-+|-+$/g, '')
+  return `${slug || 'projekt'}.zip`
+}
+
 /** Kapitoly průvodce, kopíruje kroky z PowerShell verze. */
 export const WIZARD_STEPS = ['Projekt', 'Cíl', 'Technologie', 'Specifikace', 'Souhrn']
 

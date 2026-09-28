@@ -6,8 +6,7 @@
   <img src="https://img.shields.io/badge/React-18-61DAFB?style=flat-square&logo=react&logoColor=black" alt="React 18">
   <img src="https://img.shields.io/badge/TypeScript-5.7-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript 5.7">
   <img src="https://img.shields.io/badge/Vite-6-646CFF?style=flat-square&logo=vite&logoColor=white" alt="Vite 6">
-  <img src="https://img.shields.io/badge/testy-26%20proch%C3%A1z%C3%AD-00c88a?style=flat-square" alt="Testy">
-  <img src="https://img.shields.io/badge/parita%20s%20PowerShellem-25%20z%2025-00c88a?style=flat-square" alt="Parita s PowerShellem">
+  <img src="https://img.shields.io/badge/testy-43%20proch%C3%A1z%C3%AD-00c88a?style=flat-square" alt="Testy">
   <img src="https://img.shields.io/badge/pnpm-vy%C5%BEadov%C3%A1n-F69220?style=flat-square&logo=pnpm&logoColor=white" alt="pnpm">
   <img src="https://img.shields.io/badge/licence-MIT-00c88a?style=flat-square" alt="Licence MIT">
 </p>
@@ -22,7 +21,7 @@
 
 Copilot Instructions Builder je webový průvodce, který z vašich voleb sestaví sadu souborů pro GitHub Copilot. Provede vás projektem od domény (e-shop, SaaS, LMS) přes technologický stack až po jednotlivé moduly. Copilot pak z těch souborů čte kontext, takže píše kód podle vašich konvencí místo toho, aby si vymýšlel vlastní.
 
-Původně to byl PowerShell skript s oknem ve WinForms. Tahle verze je jeho přepis do Reactu a TypeScriptu, přičemž výstup musí zůstat shodný do posledního bajtu.
+Všechno se počítá v prohlížeči. Nepotřebujete backend, přihlášení ani instalaci, a vygenerované soubory si jen zkopírujete do svého repozitáře.
 
 > [!TIP]
 > Chcete vygenerovat konfiguraci hned? Otevřete aplikaci, projděte pět kroků průvodce a klikněte na **Vygenerovat soubory**. Všechno běží v prohlížeči, nikam se nic neposílá.
@@ -73,13 +72,26 @@ Aplikace má tři vrstvy, mezi kterými se dá volně přeskakovat:
 2. **Detailní záložky.** Architektura, Frontend, Backend, DevOps, Bezpečnost, Funkce, Moduly, Mobil a Chování. Každá obsahuje karty s volbami, které se propisují do výstupu.
 3. **Skills a výstup.** Na záložce Skills vyberete postupy, které se vloží do instrukcí. Tlačítkem **Vygenerovat soubory** vznikne náhled, odkud je zkopírujete nebo stáhnete.
 
+V náhledu jde uložit jednotlivý soubor, nebo si stáhnout **všechno najednou jako ZIP**. Archiv zachová cesty včetně složek, takže se dá rozbalit přímo do kořene repozitáře a nic nemusíte přemisťovat.
+
 Doplňky, které se hodí znát:
 
 - Volby se ukládají do `localStorage`, takže obnovení stránky nic neztratí. Tlačítko **Reset** vrátí výchozí stav.
 - Vyhledávací pole v hlavičce záložky hledá v názvech voleb i v textu nápovědy.
 - Najeďte na volbu a uvidíte vysvětlení. Celý slovník je na záložce **Slovník**.
 - Konfiguraci lze uložit do `builder-config.json` a později načíst, takže se dá sdílet nebo verzovat.
-- V okně s výstupem zavře `Esc`, obsah jde kopírovat nebo uložit hromadně.
+- V okně s výstupem zavře `Esc`, obsah jde kopírovat nebo stáhnout.
+
+## Stažení jako ZIP
+
+Tlačítko **Stáhnout vše (.zip)** zabalí všechny vygenerované soubory do jednoho archivu. Název se odvodí z názvu projektu, takže `Můj E-shop 2026` dá `muj-e-shop-2026.zip`.
+
+Archiv se sestavuje přímo v prohlížeči a bez externí knihovny, protože projekt drží v produkci jen React. Zápis formátu ZIP i CRC32 jsou v `src/lib/zip.ts`.
+
+Komprese jde přes nativní `CompressionStream('deflate-raw')`. Když ji prohlížeč neumí, soubory se uloží nekomprimovaně. Takový archiv je pořád platný, jen větší. Naměřená úspora na osmi typických souborech je **63 %** (33 kB na 12 kB).
+
+> [!NOTE]
+> Dřív se pouštělo víc stažení za sebou, jenže prohlížeče takové chování blokují a uživatel dostal jen první soubor. Jeden archiv je spolehlivější a taky praktičtější.
 
 ## Spuštění lokálně
 
@@ -105,27 +117,23 @@ Build je statický, takže `dist/` nasadíte na GitHub Pages, Netlify nebo Verce
 
 ```mermaid
 flowchart LR
-    PS["CopilotBuilderPro2.ps1<br/>PowerShell zdroj pravdy"] -->|extract.mjs| DATA["src/data/*.json<br/>karty, presety, skills, nápovědy"]
-    PS -->|extract.mjs| RAW["scripts/raw/*<br/>here-stringy"]
-    RAW -->|to-ts.mjs| TPL["src/lib/templates.ts"]
-    DATA --> GEN["src/lib/generate.ts"]
-    TPL --> GEN
-    GEN --> UI["React UI"]
-    PS -->|harness.ps1| PS_OUT["výstup PowerShellu"]
-    GEN -->|gen-ts.ts| TS_OUT["výstup TypeScriptu"]
-    PS_OUT --> CMP{"parity.mjs"}
-    TS_OUT --> CMP
+    DATA["src/data<br/>karty, presety, skills, nápovědy"] --> STATE["src/lib/state.ts<br/>výběr voleb a presety"]
+    DATA --> GEN["src/lib/generate.ts<br/>sestavení souborů"]
+    TPL["src/lib/templates.ts<br/>textové šablony"] --> GEN
+    STATE --> GEN
+    UI["React UI<br/>App.tsx a components"] --> STATE
+    GEN --> OUT["sada souborů<br/>ke zkopírování do repozitáře"]
 ```
 
-Aplikace **neobsahuje ručně psané šablony**. Všechny texty, karty, presety, skilly a nápovědy se odvozují z PowerShell skriptu. Když se změní on, spustíte `pnpm run extract` a data se přegenerují.
+Rozhraní drží volby ve stavu, generátor z nich a ze šablon sestaví výsledné soubory. Klíčové moduly:
 
-| Krok | Soubor | Co dělá |
-| --- | --- | --- |
-| 1 | `scripts/extract.mjs` | Parser PowerShellu. Vytáhne karty, presety, katalog skills, nápovědy a šablony. |
-| 2 | `scripts/to-ts.mjs` | Převede here-stringy na TS šablonové funkce včetně interpolací a podmínek. |
-| 3 | `src/lib/generate.ts` | Generátor. Zrcadlí funkce `Get-*` z PowerShellu. |
-| 4 | `scripts/harness.ps1` | Spustí původní skript bez GUI a bez dialogů. |
-| 5 | `scripts/parity.mjs` | Porovná oba výstupy soubor po souboru. |
+| Soubor | Co dělá |
+| --- | --- |
+| `src/lib/state.ts` | Drží výběr voleb, aplikuje presety a načítá uloženou konfiguraci. |
+| `src/lib/generate.ts` | Sestaví soubory z voleb a šablon, včetně obalení markery. |
+| `src/lib/templates.ts` | Textové šablony vygenerovaných souborů. |
+| `src/data/` | Karty, presety, katalog skills a texty nápovědy. |
+| `src/components/` | Jednotlivé části rozhraní. |
 
 > [!IMPORTANT]
 > Soubory `src/lib/templates.ts` a vše v `src/data/` jsou **generované**. Ruční úpravy přepíše příkaz `pnpm run extract`.
@@ -135,9 +143,8 @@ Aplikace **neobsahuje ručně psané šablony**. Všechny texty, karty, presety,
 ```bash
 pnpm typecheck   # tsc --noEmit
 pnpm lint        # ESLint, flat config
-pnpm test        # 26 testů přes node:test a tsx
+pnpm test        # 43 testů přes node:test a tsx
 pnpm smoke       # 28 presetů krát 3 formáty
-pnpm parity      # srovnání s PowerShell verzí
 ```
 
 Aktuální stav:
@@ -146,20 +153,19 @@ Aktuální stav:
 | --- | --- |
 | Typová kontrola | 0 chyb |
 | Lint | 0 problémů |
-| Testy | 26 z 26 |
+| Testy | 43 z 43 |
 | Smoke test | prochází |
-| Parita | 25 z 25 souborů |
 
 Testy pokrývají stav voleb a presety, konfiguraci a její načtení, generátor včetně markerů a validity JSON, a také integritu dat. Ta poslední skupina odhalí třeba to, že preset odkazuje na volbu, která už v datech není.
 
-## Ruční záplaty
+## Ruční záplaty nápovědy
 
-Něco ve zdrojovém PowerShellu chybí nebo je nekonzistentní. Takové opravy patří do `scripts/patches.json`, protože je `extract.mjs` aplikuje na konci a přežijí regeneraci dat:
+Několik textů nápovědy v datech chybí nebo se liší jen velikostí písmen. Takové opravy patří do `scripts/patches.json`, odkud je `pnpm run extract` aplikuje na konci:
 
-- `helpAliases` pro klíč nápovědy, který se ve skriptu liší jen velikostí písmen.
+- `helpAliases` pro klíč nápovědy, který se v datech liší jen velikostí písmen.
 - `helpExtra` pro úplně chybějící text nápovědy.
 
-Díky tomu se oprava neztratí při dalším `pnpm run extract`, což je u generovaných dat jinak běžný problém.
+Díky tomu se oprava neztratí při další regeneraci dat, což je u generovaných souborů jinak běžný problém. Na chybějící nápovědu upozorní i test.
 
 ## Struktura projektu
 
@@ -194,22 +200,48 @@ src/
     usePersistentState.ts stav v localStorage
     types.ts              sdílené typy
     *.test.ts             testy
-  data/                   GENEROVÁNO z PowerShellu
+  data/                   GENEROVÁNO
 scripts/
-  extract.mjs             extrakce dat ze skriptu
+  extract.mjs             regenerace dat
   to-ts.mjs               převod šablon do TypeScriptu
-  gen-ts.ts               spuštění TS generátoru
-  harness.ps1             běh původního skriptu bez GUI
-  parity.mjs              paritní test
+  gen-ts.ts               spuštění generátoru mimo prohlížeč
   smoke.ts                smoke test
-  resolve-ps1.mjs         hledání zdrojového skriptu
-  vendor-ps1.mjs          vendorování skriptu
-  patches.json            ruční záplaty
+  patches.json            ruční záplaty nápovědy
+public/
+  _headers               bezpečnostní hlavičky pro Netlify a Cloudflare Pages
+vercel.json              bezpečnostní hlavičky pro Vercel
 docs/
   banner.svg              banner pro README
 ```
 
 </details>
+
+## Bezpečnostní hlavičky
+
+Aplikace je statický web, takže hlavičky nastavuje každý hosting zvlášť. V repu jsou proto na všech místech, odkud se dá nasadit:
+
+| Soubor | Kde se uplatní |
+| --- | --- |
+| `vite.config.ts` | Lokální vývoj a `pnpm preview` |
+| `public/_headers` | Netlify a Cloudflare Pages |
+| `vercel.json` | Vercel |
+
+Zatím se posílá `X-Content-Type-Options: nosniff`. Prohlížeč díky tomu zpracuje soubor jen podle deklarovaného typu a nezkouší hádat jiný. Soubor označený jako text se tak nikdy nevykoná jako skript.
+
+> [!NOTE]
+> Hlavičku **nelze** nastavit meta tagem v `index.html`, prohlížeče u ní meta tag ignorují. Musí přijít v HTTP odpovědi, proto jsou konfigurace pro hosting.
+
+Aby hodnoty nezůstaly někde zapomenuté, hlídá je test `src/lib/security-headers.test.ts`. Ten si načte skutečnou konfiguraci Vite a zkontroluje i oba soubory pro hosting.
+
+**GitHub Pages** vlastní hlavičky nepodporuje. Pokud tam aplikaci nasadíte, hlavička se nepošle a je potřeba vložit proxy nebo CDN, které je přidá.
+
+Výsledek ověření:
+
+```
+dev server     X-Content-Type-Options: nosniff
+preview (HTML) X-Content-Type-Options: nosniff
+preview (JS)   X-Content-Type-Options: nosniff
+```
 
 ## Poznámky pro vývojáře
 
@@ -217,11 +249,10 @@ docs/
 - Konfigurace pnpm je v `pnpm-workspace.yaml`. Od pnpm 10 se pole `pnpm` v `package.json` ignoruje, proto je povolení build skriptu pro `esbuild` tam.
 - Karty na záložce Skills mají konfigurační klíč ve tvaru `Skills|<název>`, stejně jako kategorie skills. Načítání konfigurace proto nejdřív zkouší kartu a teprve pak kategorii.
 - Presety **neobsahují** radio karty domény, frameworku, mobilu a cíle. Hodnotu těchto karet zapisuje funkce `applyPresetWithTrigger`, jinak by ji průvodce nikdy neuložil.
-- Funkce `polish()` převádí `Nespecifikováno` na `neuvedeno`. Na JSON konfiguraci se záměrně neaplikuje, aby zůstala shoda s PowerShell verzí.
+- Funkce `polish()` převádí `Nespecifikováno` na `neuvedeno` v textových výstupech. JSON konfigurace zůstává bez této úpravy.
 - Animace respektují `prefers-reduced-motion`.
 
 ## Časté otázky
-
 
 **Posílá se něco na server?**
 Ne. Všechno se počítá v prohlížeči, včetně generování souborů. Volby zůstávají ve vašem `localStorage`.
@@ -232,8 +263,8 @@ Po `pnpm build` ano. Výsledek je statický web bez backendu.
 **Můžu si vygenerované soubory přepsat?**
 Ano a klidně je to i žádoucí. Slouží jako startovní bod, ne jako něco, co se nesmí měnit.
 
-**Proč je výstup shodný s PowerShell verzí?**
-Protože původní skript se pořád používá a nechceme, aby se obě verze rozešly. Paritní test je pojistka, že se tak nestane.
+**Proč se soubory stahují jako ZIP?**
+Protože prohlížeče blokují víc stažení spuštěných najednou, takže by dorazil jen první soubor. Archiv navíc drží cesty ke složkám, takže se rozbalí přímo do repozitáře.
 
 ## Licence
 

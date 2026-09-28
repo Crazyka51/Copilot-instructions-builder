@@ -1,4 +1,6 @@
 import { CardView } from './CardView'
+import { useI18n } from '../i18n'
+import { helpFor } from '../lib/help'
 import { cards } from '../lib/state'
 import { cardMatches } from '../lib/filter'
 import { staggerStyle } from '../lib/ui'
@@ -20,13 +22,15 @@ export function CardGrid({
   onSelectAll: (cardId: string) => void
   onClearCard: (cardId: string) => void
 }) {
-  const visible = cards.filter((card) => card.tab === tab && !card.dynamic && cardMatches(card, query))
+  const { t, help } = useI18n()
+  const extra = (text: string) => `${t(text)} ${help(text, helpFor(text))}`
+  const visible = cards.filter((card) => card.tab === tab && !card.dynamic && cardMatches(card, query, extra))
 
   if (!cards.some((card) => card.tab === tab && !card.dynamic)) {
-    return <div className="empty-state">Tato záložka neobsahuje žádné volby.</div>
+    return <div className="empty-state">{t('Tato záložka neobsahuje žádné volby.')}</div>
   }
   if (!visible.length) {
-    return <div className="empty-state">Nic nenalezeno. Zkuste jiný výraz, nebo filtr vyčistěte.</div>
+    return <div className="empty-state">{t('Nic nenalezeno. Zkuste jiný výraz, nebo filtr vyčistěte.')}</div>
   }
 
   return (

@@ -1,8 +1,8 @@
 // Stažení vygenerovaných souborů v prohlížeči.
+import { createZip, type ZipFile } from './zip'
 
-/** Stáhne jeden soubor jako blob. */
-export function download(name: string, content: string, mime: string): void {
-  const blob = new Blob([content], { type: `${mime};charset=utf-8` })
+/** Stáhne připravený blob pod daným názvem. */
+export function downloadBlob(name: string, blob: Blob): void {
   const url = URL.createObjectURL(blob)
   const link = document.createElement('a')
   link.href = url
@@ -13,13 +13,19 @@ export function download(name: string, content: string, mime: string): void {
   URL.revokeObjectURL(url)
 }
 
+/** Stáhne jeden soubor jako text. */
+export function download(name: string, content: string, mime: string): void {
+  downloadBlob(name, new Blob([content], { type: `${mime};charset=utf-8` }))
+}
+
 /**
- * Stáhne sadu souborů pod jejich názvy. Prohlížeč může některá stažení zablokovat,
- * proto mezi jednotlivými soubory necháváme malou mezeru.
+ * Stáhne všechny soubory najednou jako jeden ZIP archiv.
+ *
+ * Dřív se pouštělo víc stažení za sebou, jenže prohlížeče takové chování blokují
+ * a uživatel dostal jen první soubor. Jeden archiv je navíc praktičtější, protože
+ * se dá rozbalit přímo do kořene repozitáře a zachová cesty.
  */
-export function downloadMany(files: { path: string; content: string }[]): void {
-  files.forEach((file, index) => {
-    const name = file.path.split('/').pop() ?? 'soubor.txt'
-    window.setTimeout(() => download(name, file.content, 'text/plain'), index * 120)
-  })
+export async function downloadZip(name: string, files: ZipFile[]): Promise<void> {
+  const bytes = await createZip(files)
+  downloadBlob(name, new Blob([bytes], { type: 'application/zip' }))
 }
